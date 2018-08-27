@@ -5,6 +5,7 @@ import { Cuenta } from '../../../model/movil/cuenta';
 import {MatSort, MatPaginator, MatTableDataSource, MatDialog} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
 import { DialogPagarComponent } from '../dialog-pagar/dialog-pagar.component';
+import { DialogDocumentosComponent } from '../dialog-documentos/dialog-documentos.component';
 
 @Component({
   selector: 'app-facturacion',
@@ -15,7 +16,7 @@ export class FacturacionComponent implements OnInit {
 
   cuentas = Array<Cuenta>();
   dataSource;
-  displayedColumns: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion'];
+  displayedColumns: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion', 'factura'];
   selection = new SelectionModel<Cuenta>(true, []);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -39,6 +40,16 @@ export class FacturacionComponent implements OnInit {
 
   openDialogPagar(cuenta): void {
     const dialogRef = this.dialog.open(DialogPagarComponent, {
+      data: cuenta
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  openDialogDocumentos(cuenta): void {
+    const dialogRef = this.dialog.open(DialogDocumentosComponent, {
       data: cuenta
     });
 

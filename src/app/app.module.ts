@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FacturacionComponent } from './component/movil/facturacion/facturacion.component';
 import { FacturacionService } from './service/movil/facturacion.service';
 import { DialogPagarComponent } from './component/movil/dialog-pagar/dialog-pagar.component';
+import { DialogDocumentosComponent } from './component/movil/dialog-documentos/dialog-documentos.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DialogPagarComponent } from './component/movil/dialog-pagar/dialog-paga
     MenuComponent,
     SubHeadComponent,
     FacturacionComponent,
-    DialogPagarComponent
+    DialogPagarComponent,
+    DialogDocumentosComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { DialogPagarComponent } from './component/movil/dialog-pagar/dialog-paga
     MaterialModule
   ],
   entryComponents: [
-    DialogPagarComponent
+    DialogPagarComponent,
+    DialogDocumentosComponent
   ],
   providers: [FacturacionService],
   bootstrap: [AppComponent]
