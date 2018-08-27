@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+@font-face{
+  src: url("/assets/Telefonica Fonts/Web_FontFiles/Light/TelefonicaWeb-Light.woff") format("woff");
+  font-family: "TelefonicaWeb-Light";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  src: url("/assets/Telefonica Fonts/Web_FontFiles/Bold/TelefonicaWeb-Bold.woff") format("woff");
+  font-family: "TelefonicaWeb-Bold";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  src: url("/assets/Telefonica Fonts/Web_FontFiles/Regular/TelefonicaWeb-Regular.woff") format("woff");
+  font-family: "TelefonicaWeb-Regular";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  src: url("/assets/Telefonica Fonts/Web_FontFiles/ExtraLight/TelefonicaWeb-ExtraLight.woff") format("woff");
+  font-family: "TelefonicaWeb-ExtraLight";
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'TelefonicaWeb-Light';
+  background: #fff;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+i,
+span {
+  display: inline-block;
+}
+
+/* ---------------------------------------------------
+  SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+/* ---------------------------------------------------
+  CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.3s;
+}

@@ -1,0 +1,11 @@
+#footer{
+  background:#343a40;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+#footer h4{
+  color:#ffffff;
+}

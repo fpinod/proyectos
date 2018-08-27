@@ -1,0 +1,28 @@
+.navbar {
+  background: #D3D4D3;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.row{
+  background: #D3D4D3;
+  margin-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'ArialMT', 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  color: #333333;
+  text-align: center;
+  line-height: normal;
+}
+
+.nav-item .nav-link:active{
+  background: #00A9E0;
+}
+.nav-link:hover{
+  background: #00A9E0;
+  color: white;
+}
+.nav-link:selection{
+  background: #00A9E0;
+}

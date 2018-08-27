@@ -1,0 +1,34 @@
+table {
+  width: 100%;
+}
+
+.layout {
+  margin-top: 4%;
+  width: 100%;
+  height: 100%;
+}
+
+.layout td {
+  padding: 20px;
+}
+
+.tabla-cuentas{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.docs-example-viewer-body{
+  padding: 10px;
+}
+
+.navbar{
+  padding-left: 30px;
+  font-family: 'Telefonica-ExtraLight', 'Telefonica ExtraLight', 'Telefonica';
+  font-weight: 200;
+  font-style: normal;
+  font-size: 28px;
+  color: #666666;
+
+}
+

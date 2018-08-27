@@ -1,0 +1,32 @@
+.navbar {
+  padding: 0px, 0px;
+  background: #343a40;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px px rgba(0, 0, 0, 0.2);
+  line-height: 1;
+  color: white;
+  height: 54px;
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+h5{
+  font-family: 'TelefonicaWeb-Regular';
+  margin-right: 30px;
+}
+
+small{
+  font-family: 'TelefonicaWeb-Light';
+  font-size: 1.15ch;
+  color: #E9EAE8;
+  margin-left: 30px;
+}
+
+.nav-item{
+  color: #00a9e0;
+}
