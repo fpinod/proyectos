@@ -21,7 +21,7 @@
 
       <ng-container matColumnDef="cuenta">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Cuenta </th>
-        <td mat-cell *matCellDef="let cuenta"> {{cuenta.cuenta}} </td>
+        <td mat-cell *matCellDef="let cuenta" (click)="openDialogDocumentos(cuenta)" class="tag"> {{cuenta.cuenta}} </td>
       </ng-container>
 
       <ng-container matColumnDef="deuda_vencida">
