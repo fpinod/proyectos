@@ -1,9 +1,11 @@
-<h4 mat-dialog-title>Seleccione el monto que desea Pagar de la cuenta {{data.cuenta}}</h4>
-<mat-dialog-content>
-<p>{{data.deuda_vencida}}</p><p>{{data.total}}</p>
-</mat-dialog-content>
-<mat-dialog-actions>
+<h4 mat-dialog-title>Seleccione el monto que desea Pagar de la cuenta: {{data.cuenta}}</h4>
+<div class="row">
+<div class="col-sm-6">
+  <p class="card-text">{{data.deuda_vencida}}</p>
   <button mat-raised-button>Deuda vencidad</button>
+</div>
+<div class="col-sm-6">
+  <p class="card-text">{{data.total}}</p>
   <button mat-raised-button>Deuda total</button>
-</mat-dialog-actions>
-
+</div>
+</div>
