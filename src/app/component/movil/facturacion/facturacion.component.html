@@ -28,12 +28,12 @@
 
       <ng-container matColumnDef="deuda_vencida">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Deuda vencida </th>
-        <td mat-cell *matCellDef="let cuenta" (click)="$event.stopPropagation()"> {{cuenta.deuda_vencida}} </td>
+        <td mat-cell *matCellDef="let cuenta" (click)="$event.stopPropagation()"> {{cuenta.deuda_vencida | currency:'CLP':'$':0:es-CL }} </td>
       </ng-container>
 
       <ng-container matColumnDef="total">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Deuda total </th>
-        <td mat-cell *matCellDef="let cuenta" (click)="$event.stopPropagation()"> {{cuenta.total}} </td>
+        <td mat-cell *matCellDef="let cuenta" (click)="$event.stopPropagation()"> {{cuenta.total | currency:'CLP':'$':0:es-CL }} </td>
       </ng-container>
 
       <ng-container matColumnDef="accion">
@@ -44,7 +44,8 @@
           </button> -->
           <button mat-raised-button (click)="openDialogPagar(cuenta)"
                   matTooltip="Seleccione monto que desea pagar"
-                  aria-label="Button that displays a tooltip when focused or hovered over">
+                  aria-label="Button that displays a tooltip when focused or hovered over"
+                  class="botonMovistar">
                   Pagar
           </button>
         </td>

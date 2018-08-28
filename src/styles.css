@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: 'TelefonicaWeb-Light';
+  font-family: 'TelefonicaWeb-Light' !important;
   background: #fff;
 }
 

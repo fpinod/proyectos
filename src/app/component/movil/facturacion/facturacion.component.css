@@ -16,6 +16,11 @@ table {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 25px;
+  font-family: "TelefonicaWeb-Light" !important;
+}
+
+.tabla-cuentas tr th{
+  font-weight: bold;
 }
 
 .docs-example-viewer-body{
@@ -24,7 +29,7 @@ table {
 
 .navbar{
   padding-left: 30px;
-  font-family: 'Telefonica-ExtraLight', 'Telefonica ExtraLight', 'Telefonica';
+  font-family: 'Telefonica-ExtraLight', 'Telefonica ExtraLight', 'Telefonica' !important;
   font-weight: 200;
   font-style: normal;
   font-size: 28px;
@@ -35,4 +40,10 @@ table {
 .tag{
   cursor:pointer;
   text-decoration: underline;
+}
+
+.botonMovistar{
+  background-color: #5BC500;
+  color: white;
+  font-family: "TelefonicaWeb-Light";
 }
