@@ -35,26 +35,26 @@
   "total": 500000,
   "tipo": "directorio",
   "documentos": [{
-      "mes": "Diciembre",
+      "mes": "Septiembre",
       "factura": 33097334,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
+      "fecha_emitida": "2018/09/09",
+      "fecha_vencida": "2018/10/09",
       "valor": 100000,
       "deuda": 50000
     },
     {
       "mes": "Noviembre",
       "factura": 12097778,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
+      "fecha_emitida": "2018/11/19",
+      "fecha_vencida": "2018/11/19",
       "valor": 100000,
       "deuda": 50000
     },
     {
-      "mes": "Noviembre",
+      "mes": "Octubre",
       "factura": 13097316,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
+      "fecha_emitida": "2018/10/09",
+      "fecha_vencida": "2018/10/30",
       "valor": 100000,
       "deuda": 50000
     }
@@ -92,7 +92,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139840,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -123,7 +123,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398300,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -154,7 +154,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139845,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -185,7 +185,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398301,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -216,7 +216,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139900,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -247,7 +247,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398304,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -278,7 +278,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139902,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -309,7 +309,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398395,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -340,7 +340,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139906,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -371,7 +371,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398396,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -402,7 +402,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139907,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -433,7 +433,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398397,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -464,7 +464,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139911,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -495,7 +495,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398399,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -526,7 +526,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139912,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -557,7 +557,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398401,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -588,7 +588,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96141000,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -619,7 +619,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398402,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -650,7 +650,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96141005,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -681,7 +681,7 @@
   ]
 },
 {
-  "cuenta": 61398298,
+  "cuenta": 61398408,
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
@@ -712,7 +712,7 @@
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96141077,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
