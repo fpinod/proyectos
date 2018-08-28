@@ -22,17 +22,33 @@ export class DialogDocumentosComponent implements OnInit {
   dataSource;
 
   constructor(public dialogRef: MatDialogRef<DialogDocumentosComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Cuenta) {
+    @Inject(MAT_DIALOG_DATA) public cuenta: Cuenta) {
 
-      this.dataSource = new MatTableDataSource<Documento>(data.documentos);
+      this.dataSource = new MatTableDataSource<Documento>(cuenta.documentos);
       console.log(this.dataSource);
-
-      this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.sort;
-
     }
 
   ngOnInit() {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
+
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+    /** Whether the number of selected elements matches the total number of rows. */
+    isAllSelected() {
+      const numSelected = this.selection.selected.length;
+      const numRows = this.dataSource.data.length;
+      return numSelected === numRows;
+    }
+
+    /** Selects all rows if they are not all selected; otherwise clear selection. */
+    masterToggle() {
+      this.isAllSelected() ?
+          this.selection.clear() :
+          this.dataSource.data.forEach(row => this.selection.select(row));
+    }
 
 }

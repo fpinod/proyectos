@@ -16,7 +16,7 @@ export class FacturacionComponent implements OnInit {
 
   cuentas = Array<Cuenta>();
   dataSource;
-  displayedColumns: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion', 'factura'];
+  displayedColumns: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion', 'detalle'];
   selection = new SelectionModel<Cuenta>(true, []);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;

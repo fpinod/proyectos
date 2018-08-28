@@ -1,8 +1,11 @@
-<div class="docs-example-viewer-body">
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Facturas de la cuenta {{cuenta}}</span>
+</nav>
+<div class="ng-container">
   <mat-form-field>
     <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtrar">
   </mat-form-field>
-  <div class="tabla-documentos">
+  <div class="">
     <table mat-table [dataSource]="dataSource" matSort>
       <!-- Checkbox Column -->
       <ng-container matColumnDef="select">
