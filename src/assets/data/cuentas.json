@@ -1,36 +1,36 @@
 [{
   "cuenta": 61398298,
-  "deuda_vencida": 36,
-  "total": 12,
+  "deuda_vencida": 200479,
+  "total": 300000,
   "tipo": "gerentes",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097333,
+      "factura": 33097364,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 100000
     },
     {
       "mes": "Noviembre",
-      "factura": 12097777,
+      "factura": 12097778,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 100000
     },
     {
       "mes": "Noviembre",
       "factura": 13097315,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
-      "valor": 100000,
-      "deuda": 50000
+      "valor": 150000,
+      "deuda": 60000
     }
   ]
 },
 {
-  "cuenta": 6139839,
+  "cuenta": 96139839,
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
@@ -61,8 +61,8 @@
   ]
 },
 {
-  "cuenta": 61398298,
-  "deuda_vencida": 36,
+  "cuenta": 61398299,
+  "deuda_vencida": 45000,
   "total": 12,
   "tipo": "gerentes",
   "documentos": [{
