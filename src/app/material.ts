@@ -23,6 +23,7 @@ import {
     MatSortModule,
     MatTableModule,
     MatToolbarModule,
+    MatTooltipModule,
     MatRadioModule
 } from '@angular/material';
 import { NgModule } from '@angular/core';
@@ -53,6 +54,7 @@ import { NgModule } from '@angular/core';
     MatSortModule,
     MatTableModule,
     MatToolbarModule,
+    MatTooltipModule,
     MatRadioModule
   ],
   exports: [
@@ -80,6 +82,7 @@ import { NgModule } from '@angular/core';
     MatSortModule,
     MatTableModule,
     MatToolbarModule,
+    MatTooltipModule,
     MatRadioModule
   ],
 })
