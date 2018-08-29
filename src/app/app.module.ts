@@ -11,6 +11,9 @@ import { SubHeadComponent } from './component/sub-head/sub-head.component';
 import { MaterialModule } from './material';
 // ANIMATIONS
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+
+import './polyfills';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FacturacionComponent } from './component/movil/facturacion/facturacion.component';

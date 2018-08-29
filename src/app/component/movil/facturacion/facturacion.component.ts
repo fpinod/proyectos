@@ -2,8 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FacturacionService } from '../../../service/movil/facturacion.service';
 import { Cuenta } from '../../../model/movil/cuenta';
 
-import {MatSort, MatPaginator, MatTableDataSource, MatDialog} from '@angular/material';
-import {SelectionModel} from '@angular/cdk/collections';
+import { MatSort, MatPaginator, MatTableDataSource, MatDialog } from '@angular/material';
+import { SelectionModel } from '@angular/cdk/collections';
 import { DialogPagarComponent } from '../dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from '../dialog-documentos/dialog-documentos.component';
 
