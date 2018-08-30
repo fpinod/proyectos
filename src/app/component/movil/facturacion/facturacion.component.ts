@@ -2,22 +2,34 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FacturacionService } from '../../../service/movil/facturacion.service';
 import { Cuenta } from '../../../model/movil/cuenta';
 
-import {MatSort, MatPaginator, MatTableDataSource, MatDialog} from '@angular/material';
-import {SelectionModel} from '@angular/cdk/collections';
+import { MatSort, MatPaginator, MatTableDataSource, MatDialog } from '@angular/material';
+import { SelectionModel } from '@angular/cdk/collections';
 import { DialogPagarComponent } from '../dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from '../dialog-documentos/dialog-documentos.component';
+import {animate, state, style, transition, trigger} from '@angular/animations';
+import { Documento } from '../../../model/movil/documento';
 
 @Component({
   selector: 'app-facturacion',
   templateUrl: './facturacion.component.html',
-  styleUrls: ['./facturacion.component.css']
+  styleUrls: ['./facturacion.component.css'],
+  animations: [
+    trigger('detailExpand', [
+      state('collapsed', style({height: '0px', minHeight: '0', display: 'none'})),
+      state('expanded', style({height: '*'})),
+      transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
+    ]),
+  ],
 })
 export class FacturacionComponent implements OnInit {
 
   cuentas = Array<Cuenta>();
   dataSource;
-  displayedColumns: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion', 'detalle'];
+  columnsToDisplay: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion', 'detalle'];
+  columnsDetailToDisplay: string[] = ['select_detail', 'mes', 'factura', 'fecha_emitida', 'fecha_vencida', 'valor', 'deuda', 'descarga'];
+  expandedElement: Cuenta;
   selection = new SelectionModel<Cuenta>(true, []);
+  selection_detail = new SelectionModel<Documento>(true, []);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -71,9 +83,15 @@ export class FacturacionComponent implements OnInit {
 
   /** Selects all rows if they are not all selected; otherwise clear selection. */
   masterToggle() {
-    this.isAllSelected() ?
-        this.selection.clear() :
-        this.dataSource.data.forEach(row => this.selection.select(row));
+    console.log('this.isAllSelected() ' + this.isAllSelected() );
+    if ( this.isAllSelected() ) {
+      this.selection.clear();
+      this.selection_detail.clear();
+    }    else {
+      for ( let i = 0; i < this.dataSource.data.length; i++) {
+        this.selection.select(this.dataSource.data[i]);
+        this.selection_detail.clear();
+     }
+    }
   }
-
 }
