@@ -13,7 +13,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097778,
+      "factura": 33097365,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -21,7 +21,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097315,
+      "factura": 33097366,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 150000,
@@ -36,7 +36,7 @@
   "tipo": "directorio",
   "documentos": [{
       "mes": "Septiembre",
-      "factura": 33097334,
+      "factura": 33097367,
       "fecha_emitida": "2018/09/09",
       "fecha_vencida": "2018/10/09",
       "valor": 100000,
@@ -44,7 +44,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097778,
+      "factura": 33097368,
       "fecha_emitida": "2018/11/19",
       "fecha_vencida": "2018/11/19",
       "valor": 100000,
@@ -52,7 +52,7 @@
     },
     {
       "mes": "Octubre",
-      "factura": 13097316,
+      "factura": 33097369,
       "fecha_emitida": "2018/10/09",
       "fecha_vencida": "2018/10/30",
       "valor": 100000,
@@ -67,14 +67,6 @@
   "tipo": "gerentes",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097333,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
-      "valor": 100000,
-      "deuda": 50000
-    },
-    {
-      "mes": "Noviembre",
       "factura": 12097777,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
@@ -83,7 +75,15 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097315,
+      "factura": 12097778,
+      "fecha_emitida": "2018/11/09",
+      "fecha_vencida": "2018/11/09",
+      "valor": 100000,
+      "deuda": 50000
+    },
+    {
+      "mes": "Noviembre",
+      "factura": 12097779,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -98,7 +98,7 @@
   "tipo": "directorio",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097334,
+      "factura": 12097900,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -106,7 +106,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097778,
+      "factura": 12097902,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -114,7 +114,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097316,
+      "factura": 12097903,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -129,7 +129,7 @@
   "tipo": "gerentes",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097333,
+      "factura": 12098003,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -137,7 +137,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097777,
+      "factura": 12098004,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -145,7 +145,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097315,
+      "factura": 12098005,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -160,7 +160,7 @@
   "tipo": "directorio",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097334,
+      "factura": 12098010,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -168,7 +168,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097778,
+      "factura": 12098011,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -176,7 +176,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097316,
+      "factura": 12098012,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -191,7 +191,7 @@
   "tipo": "gerentes",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097333,
+      "factura": 12099010,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -199,7 +199,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097777,
+      "factura": 12099011,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -207,7 +207,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097315,
+      "factura": 12099012,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -222,7 +222,7 @@
   "tipo": "directorio",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097334,
+      "factura": 20099011,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -230,7 +230,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097778,
+      "factura": 20099012,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -238,7 +238,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097316,
+      "factura": 20099012,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -253,7 +253,7 @@
   "tipo": "gerentes",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097333,
+      "factura": 20099021,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -261,7 +261,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097777,
+      "factura": 20099022,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -269,7 +269,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097315,
+      "factura": 20099023,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -284,7 +284,7 @@
   "tipo": "directorio",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097334,
+      "factura": 20099033,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -292,7 +292,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097778,
+      "factura": 20099034,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -300,7 +300,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097316,
+      "factura": 20099035,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -315,7 +315,7 @@
   "tipo": "gerentes",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 33097333,
+      "factura": 23099062,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -323,7 +323,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 12097777,
+      "factura": 23099066,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
@@ -331,7 +331,7 @@
     },
     {
       "mes": "Noviembre",
-      "factura": 13097315,
+      "factura": 23099067,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
