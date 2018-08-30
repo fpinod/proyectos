@@ -18,20 +18,11 @@ table {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 25px;
+  border-color: #E9EAE8 !important;
+}
+
+.tabla-cuentas tr{
   border: 1px solid #E9EAE8 !important;
-
-}
-
-.tabla-cuentas tr.example-element-row{
-  border: 1px solid #E9EAE8 !important;
-}
-
-.tabla-cuentas tr.example-detail-row{
-  /*display: none;*/
-}
-
-div.mat-sort-header-arrow{
-  color: #FFFFFF !important;
 }
 
 
@@ -45,9 +36,29 @@ div.mat-sort-header-arrow{
 }
 
 .tabla-cuentas tr td{
+  border: none;
+}
+
+.tabla-cuentas tr.example-element-row:active{
+  background-color: #F4FAFB !important;
+}
+
+.tabla-cuentas tr.example-element-row:hover{
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3); 
+  /*-webkit-box-shadow: 2px 1px 10px 0px rgba(0,0,0,0.66); 
+  box-shadow: 2px 1px 10px 0px rgba(0,0,0,0.66);*/
+}
+
+.tabla-cuentas tr.example-element-row td{
   font-size: 14px !important;
   color: #86888C !important;
   padding: 15px 0px 15px 20px;
+}
+
+tr td.center, tr th.center{
+  text-align: center;
+  padding: 0px !important;
 }
 
 span.bold{
