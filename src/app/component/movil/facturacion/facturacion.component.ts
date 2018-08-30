@@ -83,14 +83,32 @@ export class FacturacionComponent implements OnInit {
 
   /** Selects all rows if they are not all selected; otherwise clear selection. */
   masterToggle() {
-    console.log('this.isAllSelected() ' + this.isAllSelected() );
     if ( this.isAllSelected() ) {
+      console.log('masterToggle 1 ');
       this.selection.clear();
       this.selection_detail.clear();
     }    else {
+      console.log('masterToggle 2 ');
+      this.selection_detail.clear();
       for ( let i = 0; i < this.dataSource.data.length; i++) {
         this.selection.select(this.dataSource.data[i]);
-        this.selection_detail.clear();
+     }
+    }
+  }
+
+  borrarSeleccionDocumentos(row) {
+
+    for (let index = 0; index < row.documentos.length; index++) {
+      const element = row.documentos[index];
+      console.log('row' + element.factura);
+
+      for ( let i = 0; i < this.selection_detail.selected.length; i++) {
+        // console.log('masterToggle 5 ' + this.selection_detail.selected[i].factura );
+
+        if (element.factura === this.selection_detail.selected[i].factura) {
+          console.log('encontrado' + element.factura);
+          this.selection_detail.clear();
+        }
      }
     }
   }

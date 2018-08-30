@@ -13,8 +13,8 @@
           <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">
           </mat-checkbox>
         </th>
-        <td mat-cell *matCellDef="let row">
-          <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
+        <td mat-cell *matCellDef="let row" (click)="$event.stopPropagation()" >
+          <mat-checkbox (click)="borrarSeleccionDocumentos(row)" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
           </mat-checkbox>
         </td>
       </ng-container>
@@ -115,7 +115,7 @@
               </ng-container>
 
               <tr mat-header-row *matHeaderRowDef="columnsDetailToDisplay"></tr>
-              <tr mat-row *matRowDef="let row_documento; columns: columnsDetailToDisplay;" (click)="selection.toggle(row_documento)">
+              <tr mat-row *matRowDef="let row_documento; columns: columnsDetailToDisplay;" (click)="selection_detail.toggle(row_documento)">
               </tr>
             </table>
           </div>
