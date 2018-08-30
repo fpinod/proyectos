@@ -59,7 +59,7 @@
         <td mat-cell *matCellDef="let cuenta" [attr.colspan]="columnsToDisplay.length">
           <div class="example-element-detail" [@detailExpand]="cuenta == expandedElement ? 'expanded' : 'collapsed'">
             <!-- AQUI SE DEBE PINTAR LAS FACTURAS -->
-            <table mat-table [dataSource]="cuenta.documentos" class="mat-elevation-z8">
+            <table mat-table [dataSource]="cuenta.documentos" class="mat-elevation-z8 tabla-facturas">
 
               <!-- Checkbox Column -->
               <ng-container matColumnDef="select_detail">

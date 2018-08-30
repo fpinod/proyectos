@@ -44,10 +44,9 @@ table {
 }
 
 .tabla-cuentas tr.example-element-row:hover{
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
   box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3); 
-  /*-webkit-box-shadow: 2px 1px 10px 0px rgba(0,0,0,0.66); 
-  box-shadow: 2px 1px 10px 0px rgba(0,0,0,0.66);*/
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3);
 }
 
 .tabla-cuentas tr.example-element-row td{
@@ -98,20 +97,27 @@ span.bold{
 
 
 /*****DETALLE CUENTA*****/
+.tabla-facturas tr th,
+.tabla-facturas tr td{
+  text-align: center;
+}
+
+.tabla-facturas tr th{
+  font-size: 14px !important;
+  color: #FFFFFF !important;
+}
+
+.tabla-facturas tr td{
+  font-size: 14px !important;
+  color: #86888C !important;
+}
+
 tr.example-detail-row {
   height: 0;
 }
 
-tr.example-element-row:not(.example-expanded-row):hover {
-  background: #f5f5f5;
-}
-
-tr.example-element-row:not(.example-expanded-row):active {
-  background: #efefef;
-}
-
-.example-element-row td {
-  border-bottom-width: 0;
+tr.example-detail-row td{
+  padding: 0 !important;
 }
 
 .example-element-detail {
