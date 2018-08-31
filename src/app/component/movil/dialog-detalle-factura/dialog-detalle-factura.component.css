@@ -1,7 +1,23 @@
+.row{
+  margin-bottom: 30px;
+}
+
 .empresa{
   margin-bottom: 10px;
 }
 
 .detalle{
   margin-bottom: 10px;
+}
+
+.factura-electronica{
+  margin-bottom: 10px;
+}
+
+.consumo{
+  margin-bottom: 20px;
+}
+
+.trafico{
+  margin-bottom: 20px;
 }
