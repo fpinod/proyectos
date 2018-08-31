@@ -3,6 +3,8 @@
   "deuda_vencida": 200479,
   "total": 300000,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097364,
@@ -34,6 +36,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Septiembre",
       "factura": 33097367,
@@ -65,6 +69,8 @@
   "deuda_vencida": 45000,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 12097777,
@@ -96,6 +102,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 12097900,
@@ -127,6 +135,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 12098003,
@@ -158,6 +168,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 12098010,
@@ -189,6 +201,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 12099010,
@@ -220,6 +234,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 20099011,
@@ -251,6 +267,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 20099021,
@@ -282,6 +300,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 20099033,
@@ -313,6 +333,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 23099062,
@@ -344,6 +366,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097334,
@@ -375,6 +399,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097333,
@@ -406,6 +432,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097334,
@@ -437,6 +465,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097333,
@@ -468,6 +498,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097334,
@@ -499,6 +531,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097333,
@@ -530,6 +564,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097334,
@@ -561,6 +597,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097333,
@@ -592,6 +630,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097334,
@@ -623,6 +663,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097333,
@@ -654,6 +696,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097334,
@@ -685,6 +729,8 @@
   "deuda_vencida": 36,
   "total": 12,
   "tipo": "gerentes",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097333,
@@ -716,6 +762,8 @@
   "deuda_vencida": 500000,
   "total": 500000,
   "tipo": "directorio",
+  "cant_doc_vencida": "1 factura",
+  "cant_doc_total": "2 facturas",
   "documentos": [{
       "mes": "Diciembre",
       "factura": 33097334,
