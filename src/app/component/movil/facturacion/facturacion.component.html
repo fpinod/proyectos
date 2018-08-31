@@ -61,7 +61,6 @@
             <!-- AQUI SE DEBE PINTAR LAS FACTURAS -->
             <table mat-table [dataSource]="cuenta.documentos" class="mat-elevation-z8 tabla-facturas">
 
-              <!-- Checkbox Column -->
               <ng-container matColumnDef="select_detail">
                 <th mat-header-cell *matHeaderCellDef>
                 </th>
@@ -71,37 +70,31 @@
                 </td>
               </ng-container>
 
-              <!-- Position Column -->
               <ng-container matColumnDef="mes">
                 <th mat-header-cell *matHeaderCellDef> MES </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.mes}} </td>
               </ng-container>
 
-              <!-- Name Column -->
               <ng-container matColumnDef="factura">
                 <th mat-header-cell *matHeaderCellDef> N° FACTURA </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.factura}} </td>
               </ng-container>
 
-              <!-- Weight Column -->
               <ng-container matColumnDef="fecha_emitida">
                 <th mat-header-cell *matHeaderCellDef> FECHA EMITIDA </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.fecha_emitida}} </td>
               </ng-container>
 
-              <!-- Symbol Column -->
               <ng-container matColumnDef="fecha_vencida">
                 <th mat-header-cell *matHeaderCellDef> FECHA VENCIMIENTO </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.fecha_vencida}} </td>
               </ng-container>
 
-              <!-- Weight Column -->
               <ng-container matColumnDef="valor">
                 <th mat-header-cell *matHeaderCellDef> VALOR FACTURADO </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.valor}} </td>
               </ng-container>
 
-              <!-- Symbol Column -->
               <ng-container matColumnDef="deuda">
                 <th mat-header-cell *matHeaderCellDef> DEUDA COCUMENTO </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.deuda}} </td>
