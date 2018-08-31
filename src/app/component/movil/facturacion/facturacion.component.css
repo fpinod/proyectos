@@ -32,7 +32,7 @@ table {
   color: #FFFFFF;
   background-color: #2694B6;
   border: 1px solid #FFFFFF;
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
 
 .tabla-cuentas tr td{
@@ -99,12 +99,13 @@ span.bold{
 /*****DETALLE CUENTA*****/
 .tabla-facturas tr th,
 .tabla-facturas tr td{
-  text-align: center;
+  padding-left: 20px !important;
 }
 
 .tabla-facturas tr th{
   font-size: 14px !important;
-  color: #FFFFFF !important;
+  color: #86888C !important;
+  background-color: #F6F7F6;
 }
 
 .tabla-facturas tr td{
