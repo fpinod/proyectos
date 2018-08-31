@@ -6,7 +6,7 @@ import { MatSort, MatPaginator, MatTableDataSource, MatDialog } from '@angular/m
 import { SelectionModel } from '@angular/cdk/collections';
 import { DialogPagarComponent } from '../dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from '../dialog-documentos/dialog-documentos.component';
-import {animate, state, style, transition, trigger} from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Documento } from '../../../model/movil/documento';
 
 @Component({
@@ -40,14 +40,11 @@ export class FacturacionComponent implements OnInit {
 
   ngOnInit() {
     this._facturacionService.getCuentas().subscribe(data => {
-      console.log(data);
-      this.cuentas = data as Cuenta[];
-      this.dataSource = new MatTableDataSource<Cuenta>(this.cuentas);
-      console.log(this.dataSource);
-
+      this.dataSource = new MatTableDataSource<Cuenta>(data as Cuenta[]);
+      // console.log(this.dataSource);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
-   });
+    });
   }
 
   openDialogPagar(cuenta): void {
@@ -84,11 +81,9 @@ export class FacturacionComponent implements OnInit {
   /** Selects all rows if they are not all selected; otherwise clear selection. */
   masterToggle() {
     if ( this.isAllSelected() ) {
-      console.log('masterToggle 1 ');
       this.selection.clear();
       this.selection_detail.clear();
     }    else {
-      console.log('masterToggle 2 ');
       this.selection_detail.clear();
       for ( let i = 0; i < this.dataSource.data.length; i++) {
         this.selection.select(this.dataSource.data[i]);
@@ -97,19 +92,23 @@ export class FacturacionComponent implements OnInit {
   }
 
   borrarSeleccionDocumentos(row) {
-
     for (let index = 0; index < row.documentos.length; index++) {
       const element = row.documentos[index];
-      console.log('row' + element.factura);
-
       for ( let i = 0; i < this.selection_detail.selected.length; i++) {
-        // console.log('masterToggle 5 ' + this.selection_detail.selected[i].factura );
-
         if (element.factura === this.selection_detail.selected[i].factura) {
-          console.log('encontrado' + element.factura);
-          this.selection_detail.clear();
+          this.selection_detail.toggle(this.selection_detail.selected[i]);
         }
      }
     }
   }
+
+  borrarSeleccionadoCuenta(cuenta) {
+    for ( let i = 0; i < this.selection.selected.length; i++) {
+      if (this.selection.selected[i].cuenta === cuenta.cuenta) {
+        this.selection.toggle(this.selection.selected[i]);
+      }
+    }
+  }
+
+
 }
