@@ -20,6 +20,8 @@ import { FacturacionComponent } from './component/movil/facturacion/facturacion.
 import { FacturacionService } from './service/movil/facturacion.service';
 import { DialogPagarComponent } from './component/movil/dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from './component/movil/dialog-documentos/dialog-documentos.component';
+import { DialogFiltrosComponent } from './component/movil/dialog-filtros/dialog-filtros.component';
+import { DialogDetalleFacturaComponent } from './component/movil/dialog-detalle-factura/dialog-detalle-factura.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { DialogDocumentosComponent } from './component/movil/dialog-documentos/d
     SubHeadComponent,
     FacturacionComponent,
     DialogPagarComponent,
-    DialogDocumentosComponent
+    DialogDocumentosComponent,
+    DialogFiltrosComponent,
+    DialogDetalleFacturaComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { DialogDocumentosComponent } from './component/movil/dialog-documentos/d
   ],
   entryComponents: [
     DialogPagarComponent,
-    DialogDocumentosComponent
+    DialogDocumentosComponent,
+    DialogDetalleFacturaComponent,
+    DialogFiltrosComponent
   ],
   providers: [FacturacionService],
   bootstrap: [AppComponent]

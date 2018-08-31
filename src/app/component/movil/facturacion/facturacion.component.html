@@ -110,7 +110,7 @@
               <ng-container matColumnDef="descarga">
                 <th mat-header-cell *matHeaderCellDef> descarga </th>
                 <td mat-cell *matCellDef="let documento">
-                    <button mat-raised-button >Boleta</button>
+                    <button mat-raised-button (click)="openDialogDetalleFactura(documento)">Boleta</button>
                 </td>
               </ng-container>
 

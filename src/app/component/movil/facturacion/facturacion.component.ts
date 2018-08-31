@@ -8,6 +8,7 @@ import { DialogPagarComponent } from '../dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from '../dialog-documentos/dialog-documentos.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Documento } from '../../../model/movil/documento';
+import { DialogDetalleFacturaComponent } from '../dialog-detalle-factura/dialog-detalle-factura.component';
 
 @Component({
   selector: 'app-facturacion',
@@ -60,6 +61,16 @@ export class FacturacionComponent implements OnInit {
   openDialogDocumentos(cuenta): void {
     const dialogRef = this.dialog.open(DialogDocumentosComponent, {
       data: cuenta
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  openDialogDetalleFactura(documento): void {
+    const dialogRef = this.dialog.open(DialogDetalleFacturaComponent, {
+      data: documento
     });
 
     dialogRef.afterClosed().subscribe(result => {
