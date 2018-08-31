@@ -22,7 +22,8 @@ table {
   background: transparent !important;
 }
 
-.tabla-cuentas tr{
+.tabla-cuentas tr,
+.tabla-facturas tr{
   -webkit-box-shadow: inset 0 -1px 0 0 #E9EAE8;
   box-shadow: inset 0 -1px 0 0 #E9EAE8;
 }
@@ -41,7 +42,7 @@ table {
   border: none;
 }
 
-.tabla-cuentas tr.example-element-row:active{
+.tabla-cuentas tr.active{
   background-color: #F4FAFB !important;
 }
 
@@ -59,7 +60,6 @@ table {
       0 1px 2px 0 rgba(60,64,67,.3),
       0 1px 3px 1px rgba(60,64,67,.15);
   z-index: 1;
-
 }
 
 .tabla-cuentas tr.example-element-row td{
@@ -110,6 +110,10 @@ span.bold{
 
 
 /*****DETALLE CUENTA*****/
+.tabla-facturas{
+  background: transparent !important;
+}
+
 .tabla-facturas tr th,
 .tabla-facturas tr td{
   padding-left: 20px !important;
@@ -118,13 +122,17 @@ span.bold{
 .tabla-facturas tr th{
   font-size: 14px !important;
   color: #86888C !important;
-  background-color: #F6F7F6;
+  background: #F6F7F6 !important;
   border: none !important;
 }
 
 .tabla-facturas tr td{
   font-size: 14px !important;
   color: #86888C !important;
+}
+
+.tabla-facturas tr:hover{
+  background-color: #FCFCFC;
 }
 
 tr.example-detail-row {
@@ -166,6 +174,4 @@ tr.example-detail-row td{
 
 
 /**********CHECKBOX*********/
-.mat-checkbox-frame{
-  border: 1px solid #E9EAE8 !important;
-}
+
