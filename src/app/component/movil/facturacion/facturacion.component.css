@@ -3,6 +3,11 @@ table {
   font-family: "TelefonicaWeb-Light" !important;
 }
 
+.tabla-cuentas tr th.center{
+  text-align:center;
+  padding: 0px !important;
+}
+
 .layout {
   margin-top: 4%;
   width: 100%;
@@ -175,3 +180,33 @@ tr.example-detail-row td{
 
 /**********CHECKBOX*********/
 
+
+
+/********ICONOS**************/
+.accion{
+  background-image: url("/assets/img/regular_informacion.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15px;
+  width: 15px;
+  margin-left: 10px;
+  margin-bottom: -2px;
+}
+
+.detalleDown{
+  background-image: url("/assets/img/arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
+
+.detalleUp{
+  background-image: url("/assets/img/arrow_up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+}
