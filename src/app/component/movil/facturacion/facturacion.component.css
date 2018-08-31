@@ -106,6 +106,7 @@ span.bold{
   font-size: 14px !important;
   color: #86888C !important;
   background-color: #F6F7F6;
+  border: none !important;
 }
 
 .tabla-facturas tr td{
