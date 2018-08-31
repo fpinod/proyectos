@@ -177,10 +177,11 @@ tr.example-detail-row td{
   opacity: 0.5;
 }
 
-.tabla-facturas th.sortDetalle{
-  
+.tag{
+  text-decoration: underline;
 }
 
+.tabla-facturas th.sortDetalle{}
 
 
 /**********CHECKBOX*********/
@@ -239,13 +240,16 @@ tr.example-detail-row td{
 
 /***********TEXTOS***********/
 .rojo{
+  display:block;
   color: #D93D3D !important; 
 }
 
 .naranjo{
-  font-size: 12px !important;
+  display:block;
+  color: #FF7B00 !important; 
 }
 
 .gris{
-  font-size: 12px !important;
+  display:block;
+  color: #86888C !important; 
 }
