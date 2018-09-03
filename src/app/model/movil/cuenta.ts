@@ -5,7 +5,7 @@ export interface Cuenta {
   deuda_vencida: number;
   total:         number;
   tipo:          string;
-  cant_doc_vencida: string;
-  cant_doc_total: string;
+  cant_doc_vencida: string; // solo estetico
+  cant_doc_total: string;   // solo estetico
   documentos:    Documento[];
 }

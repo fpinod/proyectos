@@ -11,7 +11,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 100000
+      "deuda": 100000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -19,15 +20,17 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 100000
+      "deuda": 100000,
+      "situacion": "Por Vencer"
     },
     {
-      "mes": "Noviembre",
+      "mes": "Septiembre",
       "factura": 33097366,
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 150000,
-      "deuda": 60000
+      "deuda": 60000,
+      "situacion": "Vencida"
     }
   ]
 },
@@ -44,7 +47,8 @@
       "fecha_emitida": "2018/09/09",
       "fecha_vencida": "2018/10/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -52,7 +56,8 @@
       "fecha_emitida": "2018/11/19",
       "fecha_vencida": "2018/11/19",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Octubre",
@@ -60,7 +65,8 @@
       "fecha_emitida": "2018/10/09",
       "fecha_vencida": "2018/10/30",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     }
   ]
 },
@@ -77,7 +83,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     },
     {
       "mes": "Noviembre",
@@ -85,7 +92,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -93,7 +101,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     }
   ]
 },
@@ -110,7 +119,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -118,7 +128,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -126,7 +137,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -143,7 +155,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -151,7 +164,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     },
     {
       "mes": "Noviembre",
@@ -159,7 +173,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -176,7 +191,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -184,7 +200,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -192,7 +209,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -209,7 +227,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -217,7 +236,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -225,7 +245,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     }
   ]
 },
@@ -242,7 +263,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -250,7 +272,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -258,7 +281,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -275,7 +299,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -283,7 +308,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -291,7 +317,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -308,7 +335,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -316,7 +344,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -324,7 +353,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -341,7 +371,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -349,7 +380,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -357,7 +389,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -374,7 +407,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     },
     {
       "mes": "Noviembre",
@@ -382,7 +416,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -390,7 +425,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -407,7 +443,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -415,7 +452,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -423,7 +461,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -440,7 +479,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -448,7 +488,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -456,7 +497,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -473,7 +515,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -481,7 +524,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -489,7 +533,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -506,7 +551,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -514,7 +560,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -522,7 +569,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -539,7 +587,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -547,7 +596,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -555,7 +605,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -572,7 +623,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -580,7 +632,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -588,7 +641,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     }
   ]
 },
@@ -605,7 +659,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -613,7 +668,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -621,7 +677,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -638,7 +695,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -646,7 +704,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -654,7 +713,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -671,7 +731,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -679,7 +740,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -687,7 +749,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -704,7 +767,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -712,7 +776,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -720,7 +785,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -737,7 +803,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     },
     {
       "mes": "Noviembre",
@@ -745,7 +812,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -753,7 +821,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 },
@@ -770,7 +839,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     },
     {
       "mes": "Noviembre",
@@ -778,7 +848,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Vencida"
     },
     {
       "mes": "Noviembre",
@@ -786,7 +857,8 @@
       "fecha_emitida": "2018/11/09",
       "fecha_vencida": "2018/11/09",
       "valor": 100000,
-      "deuda": 50000
+      "deuda": 50000,
+      "situacion": "Por Vencer"
     }
   ]
 }]

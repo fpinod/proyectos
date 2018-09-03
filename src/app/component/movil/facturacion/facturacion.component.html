@@ -119,7 +119,19 @@
                 <th mat-header-cell *matHeaderCellDef class="center"> Descarga Documento </th>
                 <td mat-cell *matCellDef="let documento" class="center">
                   <!-- <button mat-raised-button (click)="openDialogDetalleFactura(documento)">Boleta</button> -->
-                  <span class="boleta center" (click)="openDialogDetalleFactura(documento)"></span>
+                  <!-- <span class="boleta center" (click)="openDialogDetalleFactura(documento)"></span> -->
+
+                  <div class="dropdown">
+                    <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="boleta center"></span>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Resumen consumo</a>
+                      <a class="dropdown-item" href="#">Detalle tráfico</a>
+                      <a class="dropdown-item" href="#">Cuenta fácil</a>
+                    </div>
+                  </div>
                 </td>
               </ng-container>
 
