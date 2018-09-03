@@ -100,28 +100,28 @@
 
               <ng-container matColumnDef="factura">
                 <th mat-header-cell *matHeaderCellDef> N° Factura </th>
-                <td mat-cell *matCellDef="let documento" (click)="openDialogDetalleFactura(documento)"> <span class="tag"  >{{documento.factura}} </span>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> <span class="tag" (click)="openDialogDetalleFactura(documento)" >{{documento.factura}} </span>
                   <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
-                'naranjo': documento.situacion === 'Por Vencer'}"> {{documento.situacion}} </span>
+                'naranjo': documento.situacion === 'Por vencer'}"> {{documento.situacion}} </span>
                 </td>
               </ng-container>
 
-              <ng-container matColumnDef="fecha_emitida">
+              <ng-container matColumnDef="fecha_emitida" (click)="$event.stopPropagation()">
                 <th mat-header-cell *matHeaderCellDef> Fecha Emitida </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.fecha_emitida}} </td>
               </ng-container>
 
-              <ng-container matColumnDef="fecha_vencida">
+              <ng-container matColumnDef="fecha_vencida" (click)="$event.stopPropagation()">
                 <th mat-header-cell *matHeaderCellDef> Fecha Vencimiento </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.fecha_vencida}} </td>
               </ng-container>
 
-              <ng-container matColumnDef="valor">
+              <ng-container matColumnDef="valor" (click)="$event.stopPropagation()">
                 <th mat-header-cell *matHeaderCellDef> Valor Facturado </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.valor | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
 
-              <ng-container matColumnDef="deuda">
+              <ng-container matColumnDef="deuda" (click)="$event.stopPropagation()">
                 <th mat-header-cell *matHeaderCellDef> Deuda Documento </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.deuda | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
