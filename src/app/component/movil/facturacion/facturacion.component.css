@@ -251,22 +251,33 @@ tr.example-detail-row td{
   background-image: url("/assets/img/arrow_down.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 .detalleUp{
   background-image: url("/assets/img/arrow_up.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 .boleta{
   background-image: url("/assets/img/descargar_gris.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 45px;
+  vertical-align: bottom;
+}
+
+.boleta:hover{
+  background-image: url("/assets/img/descargar_azul.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 25px;
@@ -307,6 +318,13 @@ tr.example-detail-row td{
   display:block;
   color: #86888C !important;
 }
+
+.grisMargin{
+  display:block;
+  color: #86888C !important;
+  margin-left: 20px;
+}
+
 
 
 /***********CARDS************/
