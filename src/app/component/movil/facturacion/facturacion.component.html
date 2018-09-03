@@ -1,20 +1,30 @@
 <nav class="navbar navbar-light bg-light">
   <span>Facturación Móvil</span>
 </nav>
-<div class="docs-example-viewer-body">
-  <mat-form-field>
-    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtrar">
-  </mat-form-field>
-  <div class="">
+<div class="row">
+  <div class="col-sm-4">
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtrar">
+    </mat-form-field>
+  </div>
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
     <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort class="tabla-cuentas">
       <!-- Checkbox Column -->
       <ng-container matColumnDef="select">
         <th mat-header-cell *matHeaderCellDef>
-          <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()" class="checkboxHeader">
+          <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()"
+            class="checkboxHeader">
           </mat-checkbox>
         </th>
         <td mat-cell *matCellDef="let row" (click)="$event.stopPropagation()">
-          <mat-checkbox (click)="borrarSeleccionDocumentos(row)" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)" class="checkboxBody">
+          <mat-checkbox (click)="borrarSeleccionDocumentos(row)" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)"
+            class="checkboxBody">
           </mat-checkbox>
         </td>
       </ng-container>
@@ -54,7 +64,7 @@
 
       <ng-container matColumnDef="detalle">
         <th mat-header-cell *matHeaderCellDef class="center"> Ver detalle </th>
-        <td mat-cell *matCellDef="let cuenta"  class="center" >
+        <td mat-cell *matCellDef="let cuenta" class="center">
           <span [ngClass]="{'detalleUp': expandedElement === cuenta, 'detalleDown': expandedElement !== cuenta}"></span>
         </td>
       </ng-container>
@@ -69,7 +79,8 @@
                 <th mat-header-cell *matHeaderCellDef>
                 </th>
                 <td mat-cell *matCellDef="let row_documento" (click)="$event.stopPropagation()">
-                  <mat-checkbox (click)="borrarSeleccionadoCuenta(cuenta)" (change)="$event ? selection_detail.toggle(row_documento) : null" [checked]="selection_detail.isSelected(row_documento)">
+                  <mat-checkbox (click)="borrarSeleccionadoCuenta(cuenta)" (change)="$event ? selection_detail.toggle(row_documento) : null"
+                    [checked]="selection_detail.isSelected(row_documento)">
                   </mat-checkbox>
                 </td>
               </ng-container>
@@ -107,9 +118,9 @@
               <ng-container matColumnDef="descarga">
                 <th mat-header-cell *matHeaderCellDef class="center"> DESCARGA DOCUMENTO </th>
                 <td mat-cell *matCellDef="let documento" class="center">
-                    <!-- <button mat-raised-button (click)="openDialogDetalleFactura(documento)">Boleta</button> -->
-                    <span class="boleta center" (click)="openDialogDetalleFactura(documento)"></span>
-                  </td>
+                  <!-- <button mat-raised-button (click)="openDialogDetalleFactura(documento)">Boleta</button> -->
+                  <span class="boleta center" (click)="openDialogDetalleFactura(documento)"></span>
+                </td>
               </ng-container>
 
               <tr mat-header-row *matHeaderRowDef="columnsDetailToDisplay"></tr>
@@ -122,8 +133,7 @@
 
       <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
       <tr mat-row *matRowDef="let cuenta; columns: columnsToDisplay;" class="example-element-row" [class.example-expanded-row]="expandedElement === cuenta"
-        (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta"
-        [ngClass]="{'active': selection.isSelected(cuenta)}">
+        (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta" [ngClass]="{'active': selection.isSelected(cuenta)}">
       </tr>
       <tr mat-row *matRowDef="let cuenta; columns: ['expandedDetail']" class="example-detail-row"></tr>
     </table>

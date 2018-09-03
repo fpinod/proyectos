@@ -3,8 +3,13 @@ table {
   font-family: "TelefonicaWeb-Light" !important;
 }
 
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .tabla-cuentas tr th.center,
-.tabla-facturas tr th.center{
+.tabla-facturas tr th.center {
   text-align: center !important;
   padding: 0px !important;
 }
@@ -53,14 +58,14 @@ table {
 }
 
 .tabla-cuentas tr.example-element-row:hover{
-  /*box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3); 
+  /*box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3);
   -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3);*/
-  box-shadow: 
+  box-shadow:
       inset 1px 0 0 #dadce0,
       inset -1px 0 0 #dadce0,
       0 1px 2px 0 rgba(60,64,67,.3),
       0 1px 3px 1px rgba(60,64,67,.15);
-  -webkit-box-shadow: 
+  -webkit-box-shadow:
       inset 1px 0 0 #dadce0,
       inset -1px 0 0 #dadce0,
       0 1px 2px 0 rgba(60,64,67,.3),
@@ -241,15 +246,15 @@ tr.example-detail-row td{
 /***********TEXTOS***********/
 .rojo{
   display:block;
-  color: #D93D3D !important; 
+  color: #D93D3D !important;
 }
 
 .naranjo{
   display:block;
-  color: #FF7B00 !important; 
+  color: #FF7B00 !important;
 }
 
 .gris{
   display:block;
-  color: #86888C !important; 
+  color: #86888C !important;
 }
