@@ -1,108 +1,153 @@
 [{
   "cuenta": 61398298,
-  "deuda_vencida": 200479,
+  "deuda_vencida": 200000,
   "total": 300000,
   "tipo": "gerentes",
   "cant_doc_vencida": "1 factura",
   "cant_doc_total": "2 facturas",
   "documentos": [{
-      "mes": "Diciembre",
+      "mes": "Julio",
       "factura": 33097364,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
+      "fecha_emitida": "2018/07/01",
+      "fecha_vencida": "2018/07/20",
       "valor": 100000,
       "deuda": 100000,
-      "situacion": "Por Vencer"
+      "situacion": "Vencida"
     },
     {
-      "mes": "Noviembre",
+      "mes": "Agosto",
       "factura": 33097365,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
+      "fecha_emitida": "2018/08/01",
+      "fecha_vencida": "2018/08/20",
       "valor": 100000,
       "deuda": 100000,
-      "situacion": "Por Vencer"
+      "situacion": "Vencida"
     },
     {
       "mes": "Septiembre",
       "factura": 33097366,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
-      "valor": 150000,
-      "deuda": 60000,
-      "situacion": "Vencida"
-    }
-  ]
-},
-{
-  "cuenta": 96139839,
-  "deuda_vencida": 500000,
-  "total": 500000,
-  "tipo": "directorio",
-  "cant_doc_vencida": "1 factura",
-  "cant_doc_total": "2 facturas",
-  "documentos": [{
-      "mes": "Septiembre",
-      "factura": 33097367,
-      "fecha_emitida": "2018/09/09",
-      "fecha_vencida": "2018/10/09",
+      "fecha_emitida": "2018/09/01",
+      "fecha_vencida": "2018/09/20",
       "valor": 100000,
-      "deuda": 50000,
+      "deuda": 100000,
       "situacion": "Por Vencer"
-    },
-    {
-      "mes": "Noviembre",
-      "factura": 33097368,
-      "fecha_emitida": "2018/11/19",
-      "fecha_vencida": "2018/11/19",
-      "valor": 100000,
-      "deuda": 50000,
-      "situacion": "Por Vencer"
-    },
-    {
-      "mes": "Octubre",
-      "factura": 33097369,
-      "fecha_emitida": "2018/10/09",
-      "fecha_vencida": "2018/10/30",
-      "valor": 100000,
-      "deuda": 50000,
-      "situacion": "Vencida"
     }
   ]
 },
 {
   "cuenta": 61398299,
-  "deuda_vencida": 45000,
-  "total": 12,
+  "deuda_vencida": 0,
+  "total": 8549000,
   "tipo": "gerentes",
-  "cant_doc_vencida": "1 factura",
-  "cant_doc_total": "2 facturas",
+  "cant_doc_vencida": "0 factura",
+  "cant_doc_total": "1 facturas",
+  "documentos": [{
+      "mes": "Septiembre",
+      "factura": 12097777,
+      "fecha_emitida": "2018/09/01",
+      "fecha_vencida": "2018/09/20",
+      "valor": 8549000,
+      "deuda": 8549000,
+      "situacion": "Por Vencer"
+    }
+  ]
+},
+{
+  "cuenta": 96139840,
+  "deuda_vencida": 10000000,
+  "total": 10000000,
+  "tipo": "directorio",
+  "cant_doc_vencida": "9 facturas",
+  "cant_doc_total": "10 facturas",
   "documentos": [{
       "mes": "Diciembre",
-      "factura": 12097777,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
-      "valor": 100000,
-      "deuda": 50000,
+      "factura": 12097900,
+      "fecha_emitida": "2017/12/01",
+      "fecha_vencida": "2017/12/20",
+      "valor": 1000000,
+      "deuda": 1000000,
       "situacion": "Vencida"
     },
     {
-      "mes": "Noviembre",
-      "factura": 12097778,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
-      "valor": 100000,
-      "deuda": 50000,
+      "mes": "Enero",
+      "factura": 12097902,
+      "fecha_emitida": "2018/01/01",
+      "fecha_vencida": "2018/01/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+    {
+      "mes": "Febrero",
+      "factura": 12097903,
+      "fecha_emitida": "2018/02/01",
+      "fecha_vencida": "2018/02/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+    {
+      "mes": "Marzo",
+      "factura": 12097904,
+      "fecha_emitida": "2018/03/01",
+      "fecha_vencida": "2018/03/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+    {
+      "mes": "Abril",
+      "factura": 12097905,
+      "fecha_emitida": "2018/04/01",
+      "fecha_vencida": "2018/04/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+	{
+      "mes": "Mayo",
+      "factura": 12097906,
+      "fecha_emitida": "2018/05/01",
+      "fecha_vencida": "2018/05/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+	{
+      "mes": "Junio",
+      "factura": 12097907,
+      "fecha_emitida": "2018/06/01",
+      "fecha_vencida": "2018/06/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+	{
+      "mes": "Julio",
+      "factura": 12097908,
+      "fecha_emitida": "2018/07/01",
+      "fecha_vencida": "2018/07/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+	{
+      "mes": "Agosto",
+      "factura": 12097909,
+      "fecha_emitida": "2018/08/01",
+      "fecha_vencida": "2018/08/20",
+      "valor": 1000000,
+      "deuda": 1000000,
+      "situacion": "Vencida"
+    },
+    {
+      "mes": "Septiembre",
+      "factura": 12097910,
+      "fecha_emitida": "2018/09/01",
+      "fecha_vencida": "2018/09/20",
+      "valor": 1000000,
+      "deuda": 1000000,
       "situacion": "Por Vencer"
-    },
-    {
-      "mes": "Noviembre",
-      "factura": 12097779,
-      "fecha_emitida": "2018/11/09",
-      "fecha_vencida": "2018/11/09",
-      "valor": 100000,
-      "deuda": 50000,
-      "situacion": "Vencida"
     }
   ]
 },
