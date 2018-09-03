@@ -35,10 +35,8 @@ table {
 
 .tabla-cuentas tr,
 .tabla-facturas tr{
-  position: relative !important;
   -webkit-box-shadow: inset 0 -1px 0 0 #E9EAE8;
   box-shadow: inset 0 -1px 0 0 #E9EAE8;
-  z-index:1 !important;
 }
 
 
@@ -56,7 +54,7 @@ table {
 }
 
 .tabla-cuentas tr.active{
-  background-color: #F4FAFB !important;
+  background: #F4FAFB !important;
 }
 
 .tabla-cuentas tr.example-element-row:hover{
@@ -307,11 +305,13 @@ tr.example-detail-row td{
 .rojo{
   display:block;
   color: #D93D3D !important;
+  text-decoration: none !important;
 }
 
 .naranjo{
   display:block;
   color: #FF7B00 !important;
+  text-decoration: none !important;
 }
 
 .gris{
