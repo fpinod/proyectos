@@ -11,7 +11,7 @@ export class HeadComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.nombre_empresa = 'cencosud sa';
+    this.nombre_empresa = 'Ejercito De Chile Vi Division Arica';
   }
 
 }
