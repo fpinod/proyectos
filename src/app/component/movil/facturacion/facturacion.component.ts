@@ -102,15 +102,24 @@ export class FacturacionComponent implements OnInit {
     }
   }
 
-  borrarSeleccionDocumentos(row) {
-    for (let index = 0; index < row.documentos.length; index++) {
-      const element = row.documentos[index];
-      for ( let i = 0; i < this.selection_detail.selected.length; i++) {
-        if (element.factura === this.selection_detail.selected[i].factura) {
-          this.selection_detail.toggle(this.selection_detail.selected[i]);
-        }
-     }
+  seleccionarDocumentos(row) {
+    if ( !this.selection.isSelected(row) ) {
+      for (let index = 0; index < row.documentos.length; index++) {
+        this.selection_detail.select(row.documentos[index]);
+      }
+    } else {
+      for (let index = 0; index < row.documentos.length; index++) {
+        this.selection_detail.toggle(row.documentos[index]);
+      }
     }
+    // for (let index = 0; index < row.documentos.length; index++) {
+    //   const element = row.documentos[index];
+    //   for ( let i = 0; i < this.selection_detail.selected.length; i++) {
+    //     if (element.factura === this.selection_detail.selected[i].factura) {
+    //       this.selection_detail.toggle(this.selection_detail.selected[i]);
+    //     }
+    //  }
+    // }
   }
 
   borrarSeleccionadoCuenta(cuenta) {
@@ -121,5 +130,31 @@ export class FacturacionComponent implements OnInit {
     }
   }
 
+  seleccionarDocumentosVencidos() {
+    this.selection.clear();
+    this.selection_detail.clear();
+
+    for (let index = 0; index < this.dataSource.data.length; index++) {
+      for (let index2 = 0; index2 < this.dataSource.data[index].documentos.length; index2++) {
+        const element = this.dataSource.data[index].documentos[index2];
+        if ( element.situacion === 'Vencida' ) {
+          this.selection_detail.select(element);
+        }
+      }
+    }
+  }
+
+  seleccionarDocumentosPorVencer() {
+    this.selection.clear();
+    this.selection_detail.clear();
+    for (let index = 0; index < this.dataSource.data.length; index++) {
+      for (let index2 = 0; index2 < this.dataSource.data[index].documentos.length; index2++) {
+        const element = this.dataSource.data[index].documentos[index2];
+        if ( element.situacion === 'Por vencer' ) {
+          this.selection_detail.select(element);
+        }
+      }
+    }
+  }
 
 }

@@ -1,6 +1,7 @@
 table {
   width: 100%;
   font-family: "TelefonicaWeb-Light" !important;
+  overflow: hidden;
 }
 
 .row {
