@@ -107,24 +107,24 @@
                 </td>
               </ng-container>
 
-              <ng-container matColumnDef="fecha_emitida" (click)="$event.stopPropagation()">
+              <ng-container matColumnDef="fecha_emitida" >
                 <th mat-header-cell *matHeaderCellDef> Fecha Emitida </th>
-                <td mat-cell *matCellDef="let documento"> {{documento.fecha_emitida}} </td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.fecha_emitida}} </td>
               </ng-container>
 
-              <ng-container matColumnDef="fecha_vencida" (click)="$event.stopPropagation()">
+              <ng-container matColumnDef="fecha_vencida" >
                 <th mat-header-cell *matHeaderCellDef> Fecha Vencimiento </th>
-                <td mat-cell *matCellDef="let documento"> {{documento.fecha_vencida}} </td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.fecha_vencida}} </td>
               </ng-container>
 
-              <ng-container matColumnDef="valor" (click)="$event.stopPropagation()">
+              <ng-container matColumnDef="valor" >
                 <th mat-header-cell *matHeaderCellDef> Valor Facturado </th>
-                <td mat-cell *matCellDef="let documento"> {{documento.valor | currency:'CLP':'$':0:es-CL }}</td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.valor | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
 
-              <ng-container matColumnDef="deuda" (click)="$event.stopPropagation()">
+              <ng-container matColumnDef="deuda" >
                 <th mat-header-cell *matHeaderCellDef> Deuda Documento </th>
-                <td mat-cell *matCellDef="let documento"> {{documento.deuda | currency:'CLP':'$':0:es-CL }}</td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.deuda | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
 
               <ng-container matColumnDef="descarga">
@@ -139,9 +139,9 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Resumen consumo</a>
-                      <a class="dropdown-item" href="#">Detalle tráfico</a>
-                      <a class="dropdown-item" href="#">Cuenta fácil</a>
+                      <a class="dropdown-item" href="../../../../assets/doc/cuenta facil/31465044_c_f_200518.txt (1).zip" download="Resumen consumo">Resumen consumo</a>
+                      <a class="dropdown-item" href="../../../../assets/doc/detalle trafico/d_t_61794532_200418 (1).txt.gz" download="Detalle tráfico">Detalle tráfico</a>
+                      <a class="dropdown-item" href="../../../../assets/doc/resumen consumo/17812362_d_c_011217.zip" download="Cuenta fácil">Cuenta fácil</a>
                     </div>
                   </div>
                 </td>
