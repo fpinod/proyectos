@@ -86,37 +86,37 @@
               </ng-container>
 
               <ng-container matColumnDef="mes">
-                <th mat-header-cell *matHeaderCellDef class="sortDetalle"> MES </th>
+                <th mat-header-cell *matHeaderCellDef class="sortDetalle"> Mes </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.mes}} </td>
               </ng-container>
 
               <ng-container matColumnDef="factura">
-                <th mat-header-cell *matHeaderCellDef> N° FACTURA </th>
+                <th mat-header-cell *matHeaderCellDef> N° Factura </th>
                 <td mat-cell *matCellDef="let documento" class="tag"> {{documento.factura}} </td>
               </ng-container>
 
               <ng-container matColumnDef="fecha_emitida">
-                <th mat-header-cell *matHeaderCellDef> FECHA EMITIDA </th>
+                <th mat-header-cell *matHeaderCellDef> Fecha Emitida </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.fecha_emitida}} </td>
               </ng-container>
 
               <ng-container matColumnDef="fecha_vencida">
-                <th mat-header-cell *matHeaderCellDef> FECHA VENCIMIENTO </th>
+                <th mat-header-cell *matHeaderCellDef> Fecha Vencimiento </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.fecha_vencida}} </td>
               </ng-container>
 
               <ng-container matColumnDef="valor">
-                <th mat-header-cell *matHeaderCellDef> VALOR FACTURADO </th>
+                <th mat-header-cell *matHeaderCellDef> Valor Facturado </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.valor}} </td>
               </ng-container>
 
               <ng-container matColumnDef="deuda">
-                <th mat-header-cell *matHeaderCellDef> DEUDA COCUMENTO </th>
+                <th mat-header-cell *matHeaderCellDef> Deuda Documento </th>
                 <td mat-cell *matCellDef="let documento"> {{documento.deuda}} </td>
               </ng-container>
 
               <ng-container matColumnDef="descarga">
-                <th mat-header-cell *matHeaderCellDef class="center"> DESCARGA DOCUMENTO </th>
+                <th mat-header-cell *matHeaderCellDef class="center"> Descarga Documento </th>
                 <td mat-cell *matCellDef="let documento" class="center">
                   <!-- <button mat-raised-button (click)="openDialogDetalleFactura(documento)">Boleta</button> -->
                   <span class="boleta center" (click)="openDialogDetalleFactura(documento)"></span>

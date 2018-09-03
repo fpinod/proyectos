@@ -58,8 +58,6 @@ table {
 }
 
 .tabla-cuentas tr.example-element-row:hover{
-  /*box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3);
-  -webkit-box-shadow: 1px 1px 10px 0px rgba(0,0,0,.3);*/
   box-shadow:
       inset 1px 0 0 #dadce0,
       inset -1px 0 0 #dadce0,
@@ -72,6 +70,21 @@ table {
       0 1px 3px 1px rgba(60,64,67,.15);
   z-index: 1;
 }
+
+/*.tabla-cuentas tr.example-element-row.example-expanded-row {
+  box-shadow:
+      0 2px 3px 1px rgba(60,64,67,.15),
+      0 1px 2px 0 rgba(60,64,67,.3) ,
+      inset -1px 0 0 #dadce0 ,
+      inset 1px 0 0 #dadce0 ;
+
+  -webkit-box-shadow:
+      0 -2px 3px 1px rgba(60,64,67,.15),
+      0 1px 2px 0 rgba(60,64,67,.3) ,
+      inset -1px 0 0 #dadce0 ,
+      inset 1px 0 0 #dadce0 ;
+  z-index: 1;
+}*/
 
 .tabla-cuentas tr.example-element-row td{
   font-size: 14px !important;
@@ -145,6 +158,21 @@ span.bold{
 .tabla-facturas tr:hover{
   background-color: #FCFCFC;
 }
+
+/*.tabla-facturas tr.tabla-facturas {
+    box-shadow:
+      0 -2px 3px 1px rgba(60,64,67,.15),
+      0 1px 2px 0 rgba(60,64,67,.3) ,
+      inset -1px 0 0 #dadce0 ,
+      inset 1px 0 0 #dadce0 ;
+
+  -webkit-box-shadow:
+      0 -2px 3px 1px rgba(60,64,67,.15),
+      0 1px 2px 0 rgba(60,64,67,.3) ,
+      inset -1px 0 0 #dadce0 ,
+      inset 1px 0 0 #dadce0 ;
+  z-index: 1;
+}*/
 
 tr.example-detail-row {
   height: 0;
@@ -257,4 +285,11 @@ tr.example-detail-row td{
 .gris{
   display:block;
   color: #86888C !important;
+}
+
+
+/***********CARDS************/
+.row{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
