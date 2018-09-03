@@ -45,12 +45,12 @@
       <ng-container matColumnDef="total">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Deuda total </th>
         <td mat-cell *matCellDef="let cuenta" (click)="$event.stopPropagation()"> {{cuenta.total | currency:'CLP':'$':0:es-CL
-          }} </td>
+          }} <span class="gris">{{cuenta.cant_doc_total}}</span></td>
       </ng-container>
 
       <ng-container matColumnDef="accion">
         <th mat-header-cell *matHeaderCellDef> Acción
-          <span class="accion"></span>
+          <span class="accion" matTooltip="Seleccione monto que desea pagar" ></span>
         </th>
         <td mat-cell *matCellDef="let cuenta" (click)="$event.stopPropagation()" class="center">
           <button mat-raised-button (click)="openDialogPagar(cuenta)" matTooltip="Seleccione monto que desea pagar" aria-label="Button that displays a tooltip when focused or hovered over"
@@ -105,12 +105,12 @@
 
               <ng-container matColumnDef="valor">
                 <th mat-header-cell *matHeaderCellDef> Valor Facturado </th>
-                <td mat-cell *matCellDef="let documento"> {{documento.valor}} </td>
+                <td mat-cell *matCellDef="let documento"> {{documento.valor | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
 
               <ng-container matColumnDef="deuda">
                 <th mat-header-cell *matHeaderCellDef> Deuda Documento </th>
-                <td mat-cell *matCellDef="let documento"> {{documento.deuda}} </td>
+                <td mat-cell *matCellDef="let documento"> {{documento.deuda | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
 
               <ng-container matColumnDef="descarga">

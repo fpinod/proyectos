@@ -3,11 +3,11 @@
 </nav>
 <div class="row">
 <div class="col-sm-6">
-  <p class="card-text">{{data.deuda_vencida}}</p>
+  <p class="card-text">{{data.deuda_vencida | currency:'CLP':'$':0:es-CL }}</p>
   <button mat-raised-button>Deuda vencida</button>
 </div>
 <div class="col-sm-6">
-  <p class="card-text">{{data.total}}</p>
+  <p class="card-text">{{data.total | currency:'CLP':'$':0:es-CL }}</p>
   <button mat-raised-button>Deuda total</button>
 </div>
 </div>
