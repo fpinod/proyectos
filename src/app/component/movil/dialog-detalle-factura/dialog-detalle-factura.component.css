@@ -21,3 +21,15 @@
 .trafico{
   margin-bottom: 20px;
 }
+
+.pdf
+{
+  min-width: 100%;
+  min-height: 490px;
+}
+
+.mat-typography{
+  min-width: 950px; /* Full width */
+  min-height: 500px; /* Full height */
+  padding: 0px !important;
+}
