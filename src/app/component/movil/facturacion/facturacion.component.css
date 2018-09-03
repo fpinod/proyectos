@@ -354,6 +354,22 @@ tr.example-detail-row td{
   background-color: #E6F1F5;
 }
 
+.selectTipo{
+  background-image: url("/assets/img/Flecha.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 8px;
+  margin-bottom:3px;
+  cursor: pointer;
+}
+
+.dropdown{
+  display: inline-block !important;
+  margin-left: 10px;
+  margin-right: -23px;
+}
+
 
 
 /************BUSCAR***************/
