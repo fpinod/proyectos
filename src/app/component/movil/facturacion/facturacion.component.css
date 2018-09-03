@@ -159,6 +159,10 @@ span.bold{
   background-color: #FCFCFC;
 }
 
+.tabla-facturas tr:active{
+  background-color: #F4FAFB;
+}
+
 /*.tabla-facturas tr.tabla-facturas {
     box-shadow:
       0 -2px 3px 1px rgba(60,64,67,.15),
@@ -257,8 +261,8 @@ tr.example-detail-row td{
   background-image: url("/assets/img/descargar_gris.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 50px;
+  width: 25px;
+  height: 45px;
   vertical-align: bottom;
 }
 
@@ -266,8 +270,17 @@ tr.example-detail-row td{
   background-image: url("/assets/img/descargar_azul.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 50px;
+  width: 25px;
+  height: 45px;
+  vertical-align: bottom;
+}
+
+.dropdown.show .boleta{
+  background-image: url("/assets/img/descargar_azul.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 45px;
   vertical-align: bottom;
 }
 
@@ -292,4 +305,40 @@ tr.example-detail-row td{
 .row{
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+
+
+
+/*********DROPDOWN***********/
+.dropdown-menu.show{
+  transform: translate3d(-65px, 38px, 0px) !important;
+  box-shadow: 1px 1px 1px 1px rgba(60,64,67,.15);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(60,64,67,.15);
+  z-index: 1;
+}
+
+.dropdown-item{
+  font-size: 14px !important;
+  color: #86888C !important;
+}
+
+.dropdown-item:hover{
+  background-color: #E6F1F5;
+}
+
+
+
+/************BUSCAR***************/
+.filtroBuscar{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    margin: 20px;
+    padding: 8px;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.filtroBuscar:hover{
+  box-shadow:
+    0 3px 8px 0 rgba(0,0,0,0.2),
+    0 0 0 1px rgba(0,0,0,0.08);
 }

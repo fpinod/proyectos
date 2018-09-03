@@ -2,10 +2,8 @@
   <span>Facturación Móvil</span>
 </nav>
 <div class="row">
-  <div class="col-sm-4">
-    <mat-form-field>
+  <div class="col-sm-4" class="filtroBuscar">
       <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtrar">
-    </mat-form-field>
   </div>
   <div class="col-sm-4"></div>
   <div class="col-sm-4">
@@ -136,7 +134,8 @@
               </ng-container>
 
               <tr mat-header-row *matHeaderRowDef="columnsDetailToDisplay"></tr>
-              <tr mat-row *matRowDef="let row_documento; columns: columnsDetailToDisplay;" (click)="selection_detail.toggle(row_documento)">
+              <tr mat-row *matRowDef="let row_documento; columns: columnsDetailToDisplay;" (click)="selection_detail.toggle(row_documento)"
+                [ngClass]="{'active':selection_detail.isSelected(row_documento)}">
               </tr>
             </table>
           </div>
