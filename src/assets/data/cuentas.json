@@ -157,10 +157,10 @@
   },
   {
       "cuenta": 96139840,
-      "deuda_vencida": 304500,
+      "deuda_vencida": 203000,
       "total": 304500,
       "tipo": "Comandante",
-      "cant_doc_vencida": "1 factura",
+      "cant_doc_vencida": "2 factura",
       "cant_doc_total": "3 facturas",
       "documentos": [
           {
@@ -197,7 +197,7 @@
       "deuda_vencida": 5524547,
       "total": 5524547,
       "tipo": "Guardia",
-      "cant_doc_vencida": "1 factura",
+      "cant_doc_vencida": "2 factura",
       "cant_doc_total": "2 facturas",
       "documentos": [
           {
