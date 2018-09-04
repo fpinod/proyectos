@@ -1,20 +1,3 @@
-table {
-  width: 100%;
-  font-family: "TelefonicaWeb-Light" !important;
-  overflow: hidden;
-}
-
-.row {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.tabla-cuentas tr th.center,
-.tabla-facturas tr th.center {
-  text-align: center !important;
-  padding: 0px !important;
-}
-
 .layout {
   margin-top: 4%;
   width: 100%;
@@ -23,6 +6,22 @@ table {
 
 .layout td {
   padding: 20px;
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+table {
+  width: 100%;
+  font-family: "TelefonicaWeb-Light" !important;
+}
+
+.tabla-cuentas tr th.center,
+.tabla-facturas tr th.center {
+  text-align: center !important;
+  padding: 0px !important;
 }
 
 .tabla-cuentas{
@@ -39,7 +38,6 @@ table {
   -webkit-box-shadow: inset 0 -1px 0 0 #E9EAE8;
   box-shadow: inset 0 -1px 0 0 #E9EAE8;
 }
-
 
 .tabla-cuentas tr th{
   font-size: 14px !important;
@@ -151,6 +149,7 @@ span.bold{
   border: none !important;
 }
 
+
 .tabla-facturas tr td{
   font-size: 14px !important;
   color: #86888C !important;
@@ -180,17 +179,17 @@ span.bold{
 }*/
 
 tr.example-detail-row {
-  height: 0;
+  height: 1px;
 }
 
 tr.example-detail-row td{
   padding: 0 !important;
 }
 
-.example-element-detail {
+/* .example-element-detail {
   overflow: hidden;
   display: flex;
-}
+} */
 
 .example-element-diagram {
   min-width: 80px;
@@ -217,22 +216,10 @@ tr.example-detail-row td{
 
 .tag{
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .tabla-facturas th.sortDetalle{}
-
-
-/**********CHECKBOX*********/
-.mat-checkbox-frame{
-  border: 1px solid #E9EAE8;
-}
-
-.mat-checkbox-background,
-.mat-checkbox-frame{
-  background-color: #FFFFFF !important;
-  border: 1px solid #E9EAE6 !important;
-}
-
 
 
 /********ICONOS**************/
@@ -362,12 +349,12 @@ tr.example-detail-row td{
   height: 8px;
   margin-bottom:3px;
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: -23px;
 }
 
 .dropdown{
   display: inline-block !important;
-  margin-left: 10px;
-  margin-right: -23px;
 }
 
 
