@@ -94,11 +94,13 @@ export class FacturacionComponent implements OnInit {
     if ( this.isAllSelected() ) {
       this.selection.clear();
       this.selection_detail.clear();
-    }    else {
+    } else {
+      console.log('xxxxx');
       this.selection_detail.clear();
       for ( let i = 0; i < this.dataSource.data.length; i++) {
         this.selection.select(this.dataSource.data[i]);
-     }
+        this.seleccionarDocumentos(this.dataSource.data[i]);
+      }
     }
   }
 
@@ -123,11 +125,18 @@ export class FacturacionComponent implements OnInit {
   }
 
   borrarSeleccionadoCuenta(cuenta) {
-    for ( let i = 0; i < this.selection.selected.length; i++) {
-      if (this.selection.selected[i].cuenta === cuenta.cuenta) {
-        this.selection.toggle(this.selection.selected[i]);
+    if ( !this.isAllDocumentSelected(cuenta) ) {
+      console.log('aaa');
+      for ( let i = 0; i < this.selection.selected.length; i++) {
+        if (this.selection.selected[i].cuenta === cuenta.cuenta) {
+          this.selection.toggle(this.selection.selected[i]);
+        }
       }
+    } else {
+      console.log('');
+      this.selection.select(cuenta);
     }
+
   }
 
   seleccionarDocumentosVencidos() {
@@ -140,6 +149,10 @@ export class FacturacionComponent implements OnInit {
         if ( element.situacion === 'Vencida' ) {
           this.selection_detail.select(element);
         }
+      }
+      if ( this.isAllDocumentSelected(this.dataSource.data[index]) ) {
+        console.log('aaaaaa');
+        this.selection.select(this.dataSource.data[index]);
       }
     }
   }
@@ -154,7 +167,26 @@ export class FacturacionComponent implements OnInit {
           this.selection_detail.select(element);
         }
       }
+      if ( this.isAllDocumentSelected(this.dataSource.data[index]) ) {
+        console.log('bbbbb');
+        this.selection.select(this.dataSource.data[index]);
+      }
     }
+  }
+
+  isAllDocumentSelected(row) {
+    for (let index = 0; index < row.documentos.length; index++) {
+      let valor = false;
+      for (let index2 = 0; index2 < this.selection_detail.selected.length; index2++) {
+        if ( this.selection_detail.selected[index2] === row.documentos[index] ) {
+          valor = true;
+        }
+      }
+      if ( !valor ) {
+        return false;
+      }
+    }
+    return true;
   }
 
 }
