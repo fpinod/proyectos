@@ -362,13 +362,14 @@ tr.example-detail-row td{
   height: 8px;
   margin-bottom:3px;
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: -23px;
 }
 
 .dropdown{
   display: inline-block !important;
-  margin-left: 10px;
-  margin-right: -23px;
 }
+
 
 
 
