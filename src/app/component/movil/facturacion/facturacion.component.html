@@ -88,8 +88,9 @@
                 <th mat-header-cell *matHeaderCellDef>
                 </th>
                 <td mat-cell *matCellDef="let row_documento" (click)="$event.stopPropagation()">
-                  <mat-checkbox  (change)="$event ? selection_detail.toggle(row_documento) : null"
-                    [checked]="selection_detail.isSelected(row_documento)" (click)="borrarSeleccionadoCuenta(cuenta)" >
+                  <mat-checkbox [checked]="selection_detail.isSelected(row_documento)"
+                                (change)="$event ? selection_detail.toggle(row_documento) : null"
+                                (click)="checkCuenta(row_documento, cuenta)"  >
                   </mat-checkbox>
                 </td>
               </ng-container>

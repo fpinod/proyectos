@@ -91,12 +91,10 @@ export class FacturacionComponent implements OnInit {
 
   /** Selects all rows if they are not all selected; otherwise clear selection. */
   masterToggle() {
+    this.selection_detail.clear();
     if ( this.isAllSelected() ) {
       this.selection.clear();
-      this.selection_detail.clear();
     } else {
-      console.log('xxxxx');
-      this.selection_detail.clear();
       for ( let i = 0; i < this.dataSource.data.length; i++) {
         this.selection.select(this.dataSource.data[i]);
         this.seleccionarDocumentos(this.dataSource.data[i]);
@@ -104,6 +102,7 @@ export class FacturacionComponent implements OnInit {
     }
   }
 
+  /** Selecciona o todos los documentos de una cuenta */
   seleccionarDocumentos(row) {
     if ( !this.selection.isSelected(row) ) {
       for (let index = 0; index < row.documentos.length; index++) {
@@ -114,35 +113,11 @@ export class FacturacionComponent implements OnInit {
         this.selection_detail.toggle(row.documentos[index]);
       }
     }
-    // for (let index = 0; index < row.documentos.length; index++) {
-    //   const element = row.documentos[index];
-    //   for ( let i = 0; i < this.selection_detail.selected.length; i++) {
-    //     if (element.factura === this.selection_detail.selected[i].factura) {
-    //       this.selection_detail.toggle(this.selection_detail.selected[i]);
-    //     }
-    //  }
-    // }
-  }
-
-  borrarSeleccionadoCuenta(cuenta) {
-    if ( !this.isAllDocumentSelected(cuenta) ) {
-      console.log('aaa');
-      for ( let i = 0; i < this.selection.selected.length; i++) {
-        if (this.selection.selected[i].cuenta === cuenta.cuenta) {
-          this.selection.toggle(this.selection.selected[i]);
-        }
-      }
-    } else {
-      console.log('');
-      this.selection.select(cuenta);
-    }
-
   }
 
   seleccionarDocumentosVencidos() {
     this.selection.clear();
     this.selection_detail.clear();
-
     for (let index = 0; index < this.dataSource.data.length; index++) {
       for (let index2 = 0; index2 < this.dataSource.data[index].documentos.length; index2++) {
         const element = this.dataSource.data[index].documentos[index2];
@@ -151,7 +126,6 @@ export class FacturacionComponent implements OnInit {
         }
       }
       if ( this.isAllDocumentSelected(this.dataSource.data[index]) ) {
-        console.log('aaaaaa');
         this.selection.select(this.dataSource.data[index]);
       }
     }
@@ -168,25 +142,47 @@ export class FacturacionComponent implements OnInit {
         }
       }
       if ( this.isAllDocumentSelected(this.dataSource.data[index]) ) {
-        console.log('bbbbb');
         this.selection.select(this.dataSource.data[index]);
       }
     }
   }
 
   isAllDocumentSelected(row) {
-    for (let index = 0; index < row.documentos.length; index++) {
-      let valor = false;
-      for (let index2 = 0; index2 < this.selection_detail.selected.length; index2++) {
+    let todo = true;
+    for ( let index = 0; index < row.documentos.length; index++ ) {
+      todo = false;
+      for ( let index2 = 0; index2 < this.selection_detail.selected.length; index2++ ) {
         if ( this.selection_detail.selected[index2] === row.documentos[index] ) {
-          valor = true;
+          console.log('asd ' + this.selection_detail.isSelected(this.selection_detail.selected[index2]));
+          if ( this.selection_detail.isSelected(this.selection_detail.selected[index2]) ) {
+            todo = true;
+          }
         }
       }
-      if ( !valor ) {
+      if ( !todo ) {
         return false;
       }
     }
     return true;
+  }
+
+  /** cuando se seleccionan todos los documentos de una cuenta, se agrega seleccòn de la cuenta  */
+  checkCuenta(documento, cuenta) {
+    let checkeado = false;
+    if ( !this.selection_detail.isSelected(documento) ) {
+      checkeado = true;
+      for (let index = 0; index < cuenta.documentos.length; index++) {
+        const element = cuenta.documentos[index];
+        if ( element !== documento && checkeado === true ) {
+          checkeado = this.selection_detail.isSelected(element);
+        }
+      }
+    }
+    if ( checkeado ) {
+      this.selection.select(cuenta);
+    } else {
+      this.selection.deselect(cuenta);
+    }
   }
 
 }
