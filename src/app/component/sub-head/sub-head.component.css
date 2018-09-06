@@ -1,29 +1,32 @@
+
 .navbar {
-  background: #D3D4D3;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background: #F5F5F5;
+  padding-bottom: 0px;
 }
-.row{
-  background: #D3D4D3;
-  margin-left: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: "TelefonicaWeb-Light";
-  font-weight: 400;
+.navbar-nav {
+  background: #F5F5F5;
+  padding-bottom: 0px;
+}
+.nav-item{
+  font-family: "TelefonicaWeb-Regular";
   font-style: normal;
-  font-size: 13px;
-  color: #333333;
+  font-size: 14px;
+  color: #86888c;
   text-align: center;
   line-height: normal;
-  margin-right: 0px !important;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.nav-item .nav-link:active{
-  background: #00A9E0;
-}
-.nav-link:hover{
-  background: #00A9E0;
+.nav-link:hover {
+  background: #2694B6;
   color: white;
 }
-.nav-link:selection{
-  background: #00A9E0;
+
+.barra {
+  min-height: 5px;
+}
+
+.activo {
+  background: #2694B6;
 }

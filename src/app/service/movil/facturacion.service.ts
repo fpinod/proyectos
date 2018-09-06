@@ -17,4 +17,8 @@ export class FacturacionService {
   getCuentas(): Observable<any> {
     return this.http.get('./../../../assets/data/cuentas.json');
   }
+
+  downloadPDF() {
+    return '../../../assets/doc/Documento_Cliente_17812362.pdf';
+  }
 }

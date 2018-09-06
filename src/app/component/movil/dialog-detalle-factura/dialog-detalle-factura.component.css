@@ -1,35 +1,70 @@
-.row{
-  margin-bottom: 30px;
-}
 
-.empresa{
-  margin-bottom: 10px;
-}
-
-.detalle{
-  margin-bottom: 10px;
-}
-
-.factura-electronica{
-  margin-bottom: 10px;
-}
-
-.consumo{
-  margin-bottom: 20px;
-}
-
-.trafico{
-  margin-bottom: 20px;
-}
-
-.pdf
-{
-  min-width: 100%;
-  min-height: 490px;
-}
 
 .mat-typography{
-  min-width: 950px; /* Full width */
-  min-height: 500px; /* Full height */
-  padding: 0px !important;
+  width: 700px;
+  height: 300px;
+  font-family: "TelefonicaWeb-Regular";
+}
+.navbar{
+  font-size: 16px !important;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #2694B6;
+  line-height: normal;
+}
+.row{
+  align-self: center;
+  width: 680px;
+}
+.card{
+  margin-top: 10px;
+}
+.derecha{
+  margin-right: 10px;
+}
+
+.card-body{
+  padding: 5px;
+}
+
+.links{
+  text-align: center !important;
+}
+
+.card-title{
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: bold;
+  color: #86888C;
+}
+.btn-link{
+  font-size: 14px !important;
+  font-style: normal;
+  color: #86888C;
+}
+.btn-link:hover{
+  font-size: 14px !important;
+  font-style: normal;
+  color: #2694B6;
+}
+
+
+/* PRIMERA FILA */
+.factura {
+
+}
+.pagar {
+
+}
+.documento {
+
+}
+
+/* SEGUNDA FILA */
+
+.impugnar {
+
+}
+.detalle {
+
 }

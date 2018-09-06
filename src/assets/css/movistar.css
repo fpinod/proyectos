@@ -1448,9 +1448,11 @@ th.mat-header-cell {
 .mat-datepicker-toggle-active.mat-warn {
   color: #f44336;
 }
+/* para q el modal no tenga padding */
 .mat-dialog-container {
   background: #fff;
-  color: rgba(0, 0, 0, 0.87);
+  /* color: rgba(0, 0, 0, 0.87); */
+  padding: 0px !important;
 }
 .mat-divider {
   border-top-color: rgba(0, 0, 0, 0.12);

@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubHeadComponent implements OnInit {
 
+  activo: String = 'primero';
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
