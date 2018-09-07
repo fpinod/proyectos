@@ -12,8 +12,13 @@
 }
 
 #primera-col{
-  width: 450px;
+  width: 500px;
   padding-bottom: 20px;
+  padding-right: 5px;
+}
+#segunda-col{
+  padding-bottom: 20px;
+  padding-left: 5px;
 }
 
 .row#row-monto{
@@ -25,6 +30,7 @@
 
 #col-monto{
   padding-left: 7px;
+  padding-right: 0px !important;
   text-align: left;
   font-size: 20px !important;
   font-style: normal;
@@ -43,14 +49,25 @@
 #col-pagar{
   padding-left: 5px;
   padding-right: 7px;
+  padding-bottom: 3px;
+}
+.botonMovistar{
+  background-color: #00976D !important;
+  color: #fff !important;
+  font-family: "TelefonicaWeb-Regular";
+  height: 100%;
+  width: 100%;
+  border: 1px solid #00976D;
+  border-radius: 3px;
+  box-shadow: none !important;
 }
 
 .row#row-estado{
   font-size: 14px !important;
   margin-right: 0px;
   margin-left: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 #col-estado-text{
   color: #86888C;
@@ -147,6 +164,8 @@
   text-align: right;
 }
 
+
+
 .card{
   margin-top: 10px;
 }
@@ -164,11 +183,16 @@
   font-style: normal;
   font-weight: bold;
   color: #86888C;
+  padding-top: 8px;
+  padding-bottom: 4px;
 }
 .btn-link{
   font-size: 14px !important;
   font-style: normal;
   color: #86888C;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  text-decoration: underline;
 }
 .btn-link:hover{
   font-size: 14px !important;

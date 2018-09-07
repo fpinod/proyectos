@@ -1,6 +1,7 @@
 <!-- <embed class="pdf" src="../../../../assets/doc/Documento_Cliente_17812362.pdf"> -->
 <nav class="navbar">
   <span>Detalle Factura N° {{documento.factura}}</span>
+  <button type="submit" mat-dialog-close mat-button>X</button>
 </nav>
 
 <div class="row" id="row-principal">
@@ -8,20 +9,22 @@
     <div class="card">
       <div class="card-body">
         <div class="row" id="row-monto">
-          <div class="col-sm-5" id="col-monto">
+          <div class="col-sm-4" id="col-monto">
             <span class="total">Monto a pagar</span>
           </div>
-          <div class="col-sm-4" id="col-valor">
-            <span class="monto">{{documento.valor}}</span>
+          <div class="col-sm-5" id="col-valor">
+            <span class="monto">{{documento.valor | currency:'CLP':'$':0:es-CL}}</span>
           </div>
           <div class="col-sm-3" id="col-pagar">
-            <button class="pagar"> Pagar</button>
+            <button mat-raised-button class="botonMovistar">
+              Pagar
+            </button>
           </div>
         </div>
         <mat-divider></mat-divider>
         <div class="row" id="row-estado">
           <div class="col-sm-6" id="col-estado-text">
-            <span>Estado factura</span>
+            <span>Estado factura:</span>
           </div>
           <div class="col-sm-6" id="col-estado-factura">
             <span>{{documento.situacion}}</span>
@@ -63,7 +66,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-5">
+  <div class="col-sm-5" id="segunda-col">
     <div class="card derecha">
       <div class="card-body links">
         <h5 class="card-title">Visualizar Factura</h5>
