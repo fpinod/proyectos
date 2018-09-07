@@ -5,5 +5,6 @@ export interface Documento {
   fecha_vencida: string;
   valor:         number;
   deuda:         number;
+  tipo:          string;
   situacion:     string; // solo estetico
 }

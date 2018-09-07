@@ -1,38 +1,91 @@
-<mat-dialog-content class="mat-typography">
-  <!-- <embed class="pdf" src="../../../../assets/doc/Documento_Cliente_17812362.pdf"> -->
-  <nav class="navbar">
-    <span>Detalle Factura N° {{documento.factura}}</span>
-  </nav>
+<!-- <embed class="pdf" src="../../../../assets/doc/Documento_Cliente_17812362.pdf"> -->
+<nav class="navbar">
+  <span>Detalle Factura N° {{documento.factura}}</span>
+</nav>
 
-  <div class="row">
-    <div class="col-sm-7">
-      <div class="card">
-        <div class="card-body">
-
+<div class="row" id="row-principal">
+  <div class="col-sm-7" id="primera-col">
+    <div class="card">
+      <div class="card-body">
+        <div class="row" id="row-monto">
+          <div class="col-sm-5" id="col-monto">
+            <span class="total">Monto a pagar</span>
+          </div>
+          <div class="col-sm-4" id="col-valor">
+            <span class="monto">{{documento.valor}}</span>
+          </div>
+          <div class="col-sm-3" id="col-pagar">
+            <button class="pagar"> Pagar</button>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-5">
-      <div class="card derecha">
-        <div class="card-body links">
-          <h5 class="card-title">Visualizar Factura</h5>
-          <button type="button" class="btn btn-link" (click)="downloadPDF()">Ver factura Electrónica</button>
+        <mat-divider></mat-divider>
+        <div class="row" id="row-estado">
+          <div class="col-sm-6" id="col-estado-text">
+            <span>Estado factura</span>
+          </div>
+          <div class="col-sm-6" id="col-estado-factura">
+            <span>{{documento.situacion}}</span>
+          </div>
         </div>
-      </div>
-      <div class="card derecha">
-        <div class="card-body links">
-          <h5 class="card-title">Impugnar Factura</h5>
-          <button type="button" class="btn btn-link">Ir a formulario de impugnación</button>
+        <mat-divider></mat-divider>
+        <div class="row" id="row-tipo">
+          <div class="col-sm-6" id="col-tipo-text">
+            <span>Tipo documento:</span>
+          </div>
+          <div class="col-sm-6" id="col-tipo">
+            <span>{{documento.tipo}}</span>
+          </div>
+        </div>
+        <div class="row" id="row-emision">
+          <div class="col-sm-6" id="col-emision-text">
+            <span>Emisión:</span>
+          </div>
+          <div class="col-sm-6" id="col-emision">
+            <span>{{documento.fecha_emitida}}</span>
+          </div>
+        </div>
+        <div class="row" id="row-cobro">
+          <div class="col-sm-6" id="col-cobro-text">
+            <span>Período cobro</span>
+          </div>
+          <div class="col-sm-6" id="col-cobro">
+            <span>{{documento.fecha_vencida}}</span>
+          </div>
+        </div>
+        <div class="row" id="row-vencimiento">
+          <div class="col-sm-6" id="col-vencimiento-text">
+            <span>Fecha vencimiento</span>
+          </div>
+          <div class="col-sm-6" id="col-vencimiento">
+            <span>{{documento.fecha_vencida}}</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="col-sm-5">
+    <div class="card derecha">
+      <div class="card-body links">
+        <h5 class="card-title">Visualizar Factura</h5>
+        <mat-divider></mat-divider>
+        <button type="button" class="btn btn-link" (click)="downloadPDF()">Ver factura Electrónica</button>
+      </div>
+    </div>
+    <div class="card derecha">
+      <div class="card-body links">
+        <h5 class="card-title">Impugnar Factura</h5>
+        <mat-divider></mat-divider>
+        <button type="button" class="btn btn-link">Ir a formulario de impugnación</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 
 
-  <!-- <div class="row primera-fila">
+<!-- <div class="row primera-fila">
     <div class="col-sm-3 col">
       <div class="card factura">
         <div class="card-body">
@@ -77,4 +130,3 @@
       </div>
     </div>
   </div> -->
-</mat-dialog-content>
