@@ -8,112 +8,57 @@
   padding: 20px;
 }
 
-.row {
-  padding-left: 15px;
-  padding-right: 15px;
+
+/***********CARDS************/
+.row{
+  margin: 0;
 }
 
-table {
-  width: 100%;
-  font-family: "TelefonicaWeb-Light" !important;
+.row-table{
+  overflow-x: auto;
 }
 
-.tabla-cuentas tr th.center,
-.tabla-facturas tr th.center {
-  text-align: center !important;
-  padding: 0px !important;
+
+/***********TEXTOS***********/
+.rojo{
+  display:block;
+  color: #D93D3D !important;
+  text-decoration: none !important;
 }
 
-.tabla-cuentas{
-  font-size: 14px !important;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 25px;
-  border: 1px solid #E9EAE8 !important;
-  background: transparent !important;
+.naranjo{
+  display:block;
+  color: #FF7B00 !important;
+  text-decoration: none !important;
 }
 
-.tabla-cuentas tr,
-.tabla-facturas tr{
-  -webkit-box-shadow: inset 0 -1px 0 0 #E9EAE8;
-  box-shadow: inset 0 -1px 0 0 #E9EAE8;
-}
-
-.tabla-cuentas tr th{
-  font-size: 14px !important;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #2694B6;
-  border: 1px solid #FFFFFF;
-  padding-left: 20px !important;
-}
-
-.tabla-cuentas tr td{
-  border: none;
-}
-
-.tabla-cuentas tr.active{
-  background: #F4FAFB !important;
-}
-
-.tabla-cuentas tr.example-element-row:hover{
-  box-shadow:
-      inset 1px 0 0 #dadce0,
-      inset -1px 0 0 #dadce0,
-      0 1px 2px 0 rgba(60,64,67,.3),
-      0 1px 3px 1px rgba(60,64,67,.15);
-  -webkit-box-shadow:
-      inset 1px 0 0 #dadce0,
-      inset -1px 0 0 #dadce0,
-      0 1px 2px 0 rgba(60,64,67,.3),
-      0 1px 3px 1px rgba(60,64,67,.15);
-  z-index: 1;
-}
-
-/*.tabla-cuentas tr.example-element-row.example-expanded-row {
-  box-shadow:
-      0 2px 3px 1px rgba(60,64,67,.15),
-      0 1px 2px 0 rgba(60,64,67,.3) ,
-      inset -1px 0 0 #dadce0 ,
-      inset 1px 0 0 #dadce0 ;
-
-  -webkit-box-shadow:
-      0 -2px 3px 1px rgba(60,64,67,.15),
-      0 1px 2px 0 rgba(60,64,67,.3) ,
-      inset -1px 0 0 #dadce0 ,
-      inset 1px 0 0 #dadce0 ;
-  z-index: 1;
-}*/
-
-.tabla-cuentas tr.example-element-row td{
-  font-size: 14px !important;
+.gris{
+  display:block;
   color: #86888C !important;
-  padding: 15px 0px 15px 20px;
 }
 
-tr td.center, tr th.center{
-  text-align: center;
-  padding: 0px !important;
+.grisMargin{
+  display:block;
+  color: #86888C !important;
+  margin-left: 24px;
 }
 
-span.bold{
+.bold{
   font-weight: bold;
 }
 
-.docs-example-viewer-body{
-  padding: 10px;
+.center{
+  text-align: center;
+  padding: 0 !important;
 }
 
-.navbar{
-  padding-left: 30px;
-  font-family: 'Telefonica-ExtraLight', 'Telefonica ExtraLight', 'Telefonica' !important;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 28px;
-  color: #666666;
-
+.checkboxHeader{
+  text-align: center;
+  padding-left: 12px !important;
+  padding-right: 2px !important;
 }
 
+/***********BOTONES**************/
 .botonMovistar{
   background-color: #FFFFFF;
   color: #00976D;
@@ -131,97 +76,6 @@ span.bold{
 }
 
 
-
-/*****DETALLE CUENTA*****/
-.tabla-facturas{
-  background: transparent !important;
-}
-
-.tabla-facturas tr th,
-.tabla-facturas tr td{
-  padding-left: 20px !important;
-}
-
-.tabla-facturas tr th{
-  font-size: 14px !important;
-  color: #86888C !important;
-  background: #F6F7F6 !important;
-  border: none !important;
-}
-
-
-.tabla-facturas tr td{
-  font-size: 14px !important;
-  color: #86888C !important;
-}
-
-.tabla-facturas tr:hover{
-  background-color: #FCFCFC;
-}
-
-.tabla-facturas tr:active{
-  background-color: #F4FAFB;
-}
-
-/*.tabla-facturas tr.tabla-facturas {
-    box-shadow:
-      0 -2px 3px 1px rgba(60,64,67,.15),
-      0 1px 2px 0 rgba(60,64,67,.3) ,
-      inset -1px 0 0 #dadce0 ,
-      inset 1px 0 0 #dadce0 ;
-
-  -webkit-box-shadow:
-      0 -2px 3px 1px rgba(60,64,67,.15),
-      0 1px 2px 0 rgba(60,64,67,.3) ,
-      inset -1px 0 0 #dadce0 ,
-      inset 1px 0 0 #dadce0 ;
-  z-index: 1;
-}*/
-
-tr.example-detail-row {
-  height: 1px;
-}
-
-tr.example-detail-row td{
-  padding: 0 !important;
-}
-
-/* .example-element-detail {
-  overflow: hidden;
-  display: flex;
-} */
-
-.example-element-diagram {
-  min-width: 80px;
-  border: 2px solid black;
-  padding: 8px;
-  font-weight: lighter;
-  margin: 8px 0;
-  height: 104px;
-}
-
-.example-element-symbol {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: normal;
-}
-
-.example-element-description {
-  padding: 16px;
-}
-
-.example-element-description-attribution {
-  opacity: 0.5;
-}
-
-.tag{
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.tabla-facturas th.sortDetalle{}
-
-
 /********ICONOS**************/
 .accion{
   background-image: url("/assets/img/regular_informacion.svg");
@@ -229,8 +83,18 @@ tr.example-detail-row td{
   background-position: center;
   height: 15px;
   width: 15px;
-  margin-left: 10px;
-  margin-bottom: -2px;
+  margin: 0px 0px -2px 10px;
+}
+
+.detalleDownFirst{
+  background-image: url("/assets/img/arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 15px;
+  height: 15px;
+  vertical-align: -webkit-baseline-middle;
+  cursor: pointer;
+  margin-right: 4px;
 }
 
 .detalleDown{
@@ -241,6 +105,18 @@ tr.example-detail-row td{
   height: 15px;
   vertical-align: bottom;
   cursor: pointer;
+}
+
+
+.detalleUpFirst{
+  background-image: url("/assets/img/arrow_up.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 15px;
+  height: 15px;
+  vertical-align: -webkit-baseline-middle;
+  cursor: pointer;
+  margin-right: 4px;
 }
 
 .detalleUp{
@@ -289,47 +165,20 @@ tr.example-detail-row td{
   vertical-align: bottom;
 }
 
-/***********TEXTOS***********/
-.rojo{
-  display:block;
-  color: #D93D3D !important;
-  text-decoration: none !important;
-}
-
-.naranjo{
-  display:block;
-  color: #FF7B00 !important;
-  text-decoration: none !important;
-}
-
-.gris{
-  display:block;
-  color: #86888C !important;
-}
-
-.grisMargin{
-  display:block;
-  color: #86888C !important;
-  margin-left: 20px;
-}
-
-
-
-/***********CARDS************/
-.row{
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-
-
 
 /*********DROPDOWN***********/
 .dropdown-menu.show{
-  position: absolute !important;
   transform: translate3d(-65px, 38px, 0px) !important;
   box-shadow: 1px 1px 1px 1px rgba(60,64,67,.15);
   -webkit-box-shadow: 1px 1px 1px 1px rgba(60,64,67,.15);
-  z-index: 4 !important;
+}
+
+.dropdownMenuLeft{
+  margin-left: 20px;
+}
+
+.dropdownMenuRight{
+  margin-left: -20px;
 }
 
 .dropdown-item{
@@ -338,7 +187,20 @@ tr.example-detail-row td{
 }
 
 .dropdown-item:hover{
-  background-color: #E6F1F5;
+  background-color: #E6F1F5 !important;
+}
+
+.dropdownItemCheckbox{
+  font-weight: bold;
+  cursor: default;
+}
+
+.dropdownItemCheckbox:hover{
+  background-color: transparent !important;
+}
+
+.dropdown-divider{
+  border-top: 1px solid #E9EAE8 !important;
 }
 
 .selectTipo{
@@ -347,29 +209,186 @@ tr.example-detail-row td{
   background-position: center;
   width: 10px;
   height: 8px;
-  margin-bottom:3px;
+  margin-left: 3px;
+  margin-bottom: 2px;
   cursor: pointer;
-  margin-left: 10px;
-  margin-right: -23px;
 }
 
 .dropdown{
-  display: inline-block !important;
+  display: inline-block;
 }
 
 
 
-/************BUSCAR***************/
-.filtroBuscar{
+/************FILTROS***************/
+.buscar{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
     margin: 20px;
     padding: 8px;
     border-radius: 3px;
-    width: 300px;
+    width: 100%;
 }
 
-.filtroBuscar:hover{
+.buscar:hover{
   box-shadow:
     0 3px 8px 0 rgba(0,0,0,0.2),
     0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+/**********TABLAS***********/
+.fondoTabla{
+  background: #ffffff;
+}
+
+table {
+  width: 100%;
+  font-family: "TelefonicaWeb-Light" !important;
+  font-size: 14px !important;
+}
+
+.tabla-cuentas{
+  background: transparent;
+  border: 1px solid #E9EAE8;
+}
+
+.tabla-cuentas tr th{
+  font-weight: bold;
+  font-size: 14px !important;
+  color: #FFF;
+  background: #2694B6;
+  padding: 0px 20px;
+  border: 1px solid #FFF;
+}
+
+.tabla-cuentas tr td{
+  height: 80px;
+  padding: 0px 20px;
+  border: none;
+  color: #86888C;
+}
+
+.tabla-cuentas tr,
+.tabla-facturas tr{
+  -webkit-box-shadow: inset 0 -1px 0 0 #E9EAE8;
+  box-shadow: inset 0 -1px 0 0 #E9EAE8;
+}
+
+.tabla-cuentas tr.example-element-row.active{
+  background: #F4FAFB;
+}
+
+.tabla-cuentas tr.example-element-row:hover{
+  box-shadow:
+    inset 1px 0 0 #dadce0,
+    inset -1px 0 0 #dadce0,
+    0 0px 2px 0 rgba(60,64,67,.3),
+    0 0px 3px 1px rgba(60,64,67,.15);
+  -webkit-box-shadow:
+    inset 1px 0 0 #dadce0,
+    inset -1px 0 0 #dadce0,
+    0 0px 2px 0 rgba(60,64,67,.3),
+    0 0px 3px 1px rgba(60,64,67,.15);
+  border-bottom: 2px outset rgba(60,64,67,.15);
+}
+
+.example-detail-row{
+  height: 0;
+}
+
+.tabla-cuentas tr.example-detail-row td{
+  height: 0;
+  padding: 0;
+}
+
+/*FACTURAS*/
+.tabla-facturas{
+  /* background: transparent;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 
+    0 5px 10px 1px rgba(0, 0, 0, 0.14), 
+    0 3px 14px 2px rgba(0, 0, 0, 0.12) */
+}
+
+.tabla-facturas tr th{
+  color: #86888C;
+  background: #F6F7F6;
+  border: none;
+  border-bottom: 1px solid #E9EAE8;
+}
+
+.tabla-facturas tr td{
+  height: 80px !important;
+  padding: 0px 20px 0px 25px !important;
+}
+
+.tabla-facturas tr.active{
+  background-color: #F4FAFB;
+}
+
+.tabla-facturas tr:hover{
+  background-color: #FCFCFC;
+}
+
+/************PANTALLA RESPONSIVE**********/
+@media (max-width: 768px) {
+  
+  .row-table{
+    transform: scale(0.9);
+    margin: -35px 0px;
+  }
+
+  .col-12{
+    padding: 0;
+  }
+
+  .botonMovistar{
+    height: 40px;
+    width: 1%;
+  }
+
+  .center{
+    padding: 0 20px !important;
+  }
+
+  .selectTipo{
+    margin-right: 3px;
+  }
+  
+  .dropdownMenuLeft{
+    margin-left: 30px;
+  }
+
+  .dropdownMenuRight{
+    margin-left: -30px;
+  }
+
+  .boleta{
+    width: 20px;
+    height: 40px;
+  }
+
+  .boleta:hover{
+    width: 20px;
+    height: 40px;
+  }
+
+  .boleta:active{
+    width: 20px;
+    height: 40px;
+  }
+
+  .dropdown.show .boleta{
+    width: 20px;
+    height: 40px;
+  }
+
+}
+
+@media (max-width: 352px){
+
+  .row-table{
+    transform: scale(0.87);
+    margin: -50px 0px;
+  }
+
 }
