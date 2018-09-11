@@ -199,3 +199,11 @@
   font-style: normal;
   color: #2694B6;
 }
+
+.buttonClose{
+  color: #FFFFFF;
+  background-color: #2694B6;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}

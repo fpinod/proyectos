@@ -1,3 +1,15 @@
 <div class="py-2" id="footer">
-
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <p class="text-total">Total a pagar</p>
+    </li>
+    <li class="nav-item">
+      <h4 class="total">{{total | currency:'CLP':'$':0.0:es-CL}}</h4>
+    </li>
+    <li class="nav-item">
+      <button mat-raised-button class="botonMovistar">
+        Pagar
+      </button>
+    </li>
+  </ul>
 </div>

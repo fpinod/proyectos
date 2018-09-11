@@ -1,11 +1,28 @@
 #footer{
+  font-family: "TelefonicaWeb-Regular";
   background:#343a40;
   width: 100%;
   position: fixed;
   bottom: 0;
-  text-align: center;
+
+  color:#ffffff;
 }
 
-#footer h4{
-  color:#ffffff;
+.nav-item {
+  padding-right: 20px;
+}
+
+.text-total{
+  margin-bottom: 0px !important;
+}
+
+.botonMovistar{
+  background-color: #00976D !important;
+  color: #fff !important;
+  font-family: "TelefonicaWeb-Regular";
+  height: 100%;
+  width: 100%;
+  border: 1px solid #00976D;
+  border-radius: 3px;
+  box-shadow: none !important;
 }

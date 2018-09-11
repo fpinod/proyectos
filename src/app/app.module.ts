@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeadComponent } from './component/head/head.component';
@@ -40,7 +41,8 @@ import { DialogDetalleFacturaComponent } from './component/movil/dialog-detalle-
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   entryComponents: [
     DialogPagarComponent,
