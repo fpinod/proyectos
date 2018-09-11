@@ -382,6 +382,10 @@ table {
     height: 40px;
   }
 
+  .tabla-cuentas tr.example-element-row:hover{
+    border-bottom: none;
+  }
+
 }
 
 @media (max-width: 352px){
