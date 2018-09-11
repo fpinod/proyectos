@@ -41,7 +41,7 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Cuenta </th>
         <td mat-cell *matCellDef="let cuenta">
           <span [ngClass]="{'detalleUpFirst': expandedElement === cuenta, 'detalleDownFirst': expandedElement !== cuenta}"></span>
-          &nbsp;<span class="bold"> {{cuenta.cuenta}}</span> 
+          &nbsp;<span class="bold"> {{cuenta.cuenta}}</span>
           &nbsp;&nbsp;<span class="grisMargin">{{cuenta.tipo}}</span>
         </td>
       </ng-container>

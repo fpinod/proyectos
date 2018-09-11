@@ -22,10 +22,8 @@ export class FooterComponent implements OnInit, OnChanges {
 
   ngOnChanges() {
     this.total = 0;
-    console.log('asd ' + this.lista.length);
     for (let index = 0; index < this.lista.length; index++) {
       this.total = this.total + this.lista[index].deuda;
-      console.log('asdfg ' + this.lista[index].deuda);
     }
   }
 

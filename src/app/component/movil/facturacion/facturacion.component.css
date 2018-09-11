@@ -330,7 +330,7 @@ table {
 
 /************PANTALLA RESPONSIVE**********/
 @media (max-width: 768px) {
-  
+
   .row-table{
     transform: scale(0.9);
     margin: -35px 0px;
@@ -352,7 +352,7 @@ table {
   .selectTipo{
     margin-right: 3px;
   }
-  
+
   .dropdownMenuLeft{
     margin-left: 30px;
   }
