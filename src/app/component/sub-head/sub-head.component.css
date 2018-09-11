@@ -2,6 +2,7 @@
 .navbar {
   background: #F5F5F5;
   padding-bottom: 0px;
+  display:block;
 }
 .navbar-nav {
   background: #F5F5F5;
@@ -18,15 +19,26 @@
   padding-right: 25px;
 }
 
+.nav-link{
+  text-align:center;
+}
+
 .nav-link:hover {
   background: #2694B6;
   color: white;
 }
 
 .barra {
-  min-height: 5px;
+  min-height: 3px;
 }
 
 .activo {
   background: #2694B6;
+}
+
+@media (max-width: 768px) {
+
+  .navbar-nav{
+    text-align: center;
+  }
 }
