@@ -30,7 +30,6 @@
                 <a class="dropdown-item" href="#" (click)="seleccionarDocumentosPorVencer()">Deudas por vencer</a>
               </div>
             </div>
-          </div>
         </th>
         <td mat-cell *matCellDef="let row" (click)="$event.stopPropagation()" class="center">
           <mat-checkbox (click)="seleccionarDocumentos(row)" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
@@ -42,7 +41,7 @@
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Cuenta </th>
         <td mat-cell *matCellDef="let cuenta">
           <span [ngClass]="{'detalleUpFirst': expandedElement === cuenta, 'detalleDownFirst': expandedElement !== cuenta}"></span>
-          &nbsp;<span class="bold"> {{cuenta.cuenta}}</span>
+          &nbsp;<span class="bold"> {{cuenta.cuenta}}</span> 
           &nbsp;&nbsp;<span class="grisMargin">{{cuenta.tipo}}</span>
         </td>
       </ng-container>
@@ -61,7 +60,7 @@
 
       <ng-container matColumnDef="accion">
         <th mat-header-cell *matHeaderCellDef> Acción
-          <span class="accion" matTooltip="Seleccione monto que desea pagar"></span>
+          <span class="accion" matTooltip="Seleccione monto que desea pagar" ></span>
         </th>
         <td mat-cell *matCellDef="let cuenta" (click)="$event.stopPropagation()" class="center">
           <button mat-raised-button (click)="openDialogPagar(cuenta)" matTooltip="Seleccione monto que desea pagar" aria-label="Button that displays a tooltip when focused or hovered over"
@@ -87,8 +86,7 @@
               <ng-container matColumnDef="select_detail">
                 <th mat-header-cell *matHeaderCellDef>
                 </th>
-
-                <td mat-cell *matCellDef="let row_documento" (click)="$event.stopPropagation()">
+                <td mat-cell *matCellDef="let row_documento" (click)="$event.stopPropagation()" class="center">
                   <mat-checkbox [checked]="selection_detail.isSelected(row_documento)"
                                 (change)="$event ? selection_detail.toggle(row_documento) : null"
                                 (click)="checkCuenta(row_documento, cuenta)"  >
@@ -103,35 +101,30 @@
 
               <ng-container matColumnDef="factura">
                 <th mat-header-cell *matHeaderCellDef> N° Factura </th>
-                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> <span class="tag" (click)="openDialogDetalleFactura(documento)">{{documento.factura}}
-                    </span>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> <span class="tag" (click)="openDialogDetalleFactura(documento)" >{{documento.factura}} </span>
                   <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
                 'naranjo': documento.situacion === 'Por vencer'}"> {{documento.situacion}} </span>
                 </td>
               </ng-container>
 
-              <ng-container matColumnDef="fecha_emitida">
+              <ng-container matColumnDef="fecha_emitida" >
                 <th mat-header-cell *matHeaderCellDef> Fecha Emitida </th>
-                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.fecha_emitida}}
-                  </td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.fecha_emitida}} </td>
               </ng-container>
 
-              <ng-container matColumnDef="fecha_vencida">
+              <ng-container matColumnDef="fecha_vencida" >
                 <th mat-header-cell *matHeaderCellDef> Fecha Vencimiento </th>
-                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.fecha_vencida}}
-                  </td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.fecha_vencida}} </td>
               </ng-container>
 
-              <ng-container matColumnDef="valor">
+              <ng-container matColumnDef="valor" >
                 <th mat-header-cell *matHeaderCellDef> Valor Facturado </th>
-                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.valor | currency:'CLP':'$':0:es-CL
-                  }}</td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.valor | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
 
-              <ng-container matColumnDef="deuda">
+              <ng-container matColumnDef="deuda" >
                 <th mat-header-cell *matHeaderCellDef> Deuda Documento </th>
-                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.deuda | currency:'CLP':'$':0:es-CL
-                  }}</td>
+                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> {{documento.deuda | currency:'CLP':'$':0:es-CL }}</td>
               </ng-container>
 
               <ng-container matColumnDef="descarga">
@@ -144,6 +137,7 @@
                     <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="boleta center"></span>
                     </a>
+
                     <div class="dropdown-menu dropdownMenuRight" aria-labelledby="dropdownMenuLink">
                       <a class="dropdown-item" href="../../../../assets/doc/cuenta facil/31465044_c_f_200518.txt (1).zip" download="Resumen consumo">Resumen consumo</a>
                       <a class="dropdown-item" href="../../../../assets/doc/detalle trafico/d_t_61794532_200418 (1).txt.gz" download="Detalle tráfico">Detalle tráfico</a>
@@ -173,6 +167,7 @@
     <div>
   </div>
 </div>
+
 <div *ngIf="selection_detail.selected.length > 0 ">
   <app-footer [lista]="selection_detail.selected"></app-footer>
 </div>
