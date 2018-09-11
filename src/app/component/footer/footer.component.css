@@ -10,6 +10,18 @@
 
 .nav-item {
   padding-right: 20px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.nav-text-total {
+  padding-top: 6px;
+}
+.nav-text-detalle {
+  padding-top: 6px;
+}
+.nav-total {
+  padding-top: 3px;
 }
 
 .text-total{
@@ -25,4 +37,11 @@
   border: 1px solid #00976D;
   border-radius: 3px;
   box-shadow: none !important;
+}
+
+.divisor{
+  background:#fff !important;
+  color: #fff !important;
+  min-width: 1px;
+  min-height: 100%;
 }
