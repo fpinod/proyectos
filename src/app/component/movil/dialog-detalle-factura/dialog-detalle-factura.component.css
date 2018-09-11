@@ -81,6 +81,7 @@
   padding-right: 7px;
   text-align: right;
   font-style: normal;
+  font-weight: bold;
 }
 
 .row#row-tipo{
@@ -202,8 +203,52 @@
 
 .buttonClose{
   color: #FFFFFF;
-  background-color: #2694B6;
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
+  background: #2694B6;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+/*********ICONO*********/
+.impugnar{
+  background-image: url("/assets/img/icono_impugnacion.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: -5px;
+}
+
+.impugnar:hover{
+  background-image: url("/assets/img/icono_impugnacion_hover.svg");
+}
+
+.factura{
+  background-image: url("/assets/img/icono_factura.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: -5px;
+}
+
+.factura:hover{
+  background-image: url("/assets/img/icono_factura_hover.svg");
+}
+
+/***********TEXTOS***********/
+.rojo{
+  color: #D93D3D !important;
+}
+
+.naranjo{
+  color: #FF7B00 !important;
+}
+
+.verde{
+  color: #00976D !important;
 }

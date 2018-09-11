@@ -58,6 +58,11 @@
   padding-right: 2px !important;
 }
 
+.tag{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /***********BOTONES**************/
 .botonMovistar{
   background-color: #FFFFFF;
@@ -140,20 +145,10 @@
 
 .boleta:hover{
   background-image: url("/assets/img/descargar_azul.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25px;
-  height: 45px;
-  vertical-align: bottom;
 }
 
 .boleta:active{
   background-image: url("/assets/img/descargar_azul.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 25px;
-  height: 45px;
-  vertical-align: bottom;
 }
 
 .dropdown.show .boleta{
@@ -302,11 +297,15 @@ table {
 }
 
 /*FACTURAS*/
+.mat-elevation-z8{
+  box-shadow: none;
+}
+
 .tabla-facturas{
-  /* background: transparent;
+  background: transparent;
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 
     0 5px 10px 1px rgba(0, 0, 0, 0.14), 
-    0 3px 14px 2px rgba(0, 0, 0, 0.12) */
+    0 3px 14px 2px rgba(0, 0, 0, 0.12) 
 }
 
 .tabla-facturas tr th{

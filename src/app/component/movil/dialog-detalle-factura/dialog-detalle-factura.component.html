@@ -29,7 +29,9 @@
             <span>Estado factura:</span>
           </div>
           <div class="col-sm-6" id="col-estado-factura">
-            <span>{{documento.situacion}}</span>
+            <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
+            'naranjo': documento.situacion === 'Por vencer', 
+            'verde': documento.situacion === 'Sin deuda'}"> {{documento.situacion}} </span>
           </div>
         </div>
         <mat-divider></mat-divider>
@@ -73,6 +75,7 @@
       <div class="card-body links">
         <h5 class="card-title">Visualizar Factura</h5>
         <mat-divider></mat-divider>
+        <span class="factura"></span>
         <button type="button" class="btn btn-link" (click)="downloadPDF()">Ver factura Electrónica</button>
       </div>
     </div>
@@ -80,6 +83,7 @@
       <div class="card-body links">
         <h5 class="card-title">Impugnar Factura</h5>
         <mat-divider></mat-divider>
+        <span class="impugnar"></span>
         <button type="button" class="btn btn-link">Ir a formulario de impugnación</button>
       </div>
     </div>
