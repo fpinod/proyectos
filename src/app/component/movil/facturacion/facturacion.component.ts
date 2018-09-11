@@ -60,7 +60,8 @@ export class FacturacionComponent implements OnInit {
 
   openDialogDocumentos(cuenta): void {
     const dialogRef = this.dialog.open(DialogDocumentosComponent, {
-      data: cuenta
+      data: cuenta,
+      width: '700px'
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -70,7 +71,8 @@ export class FacturacionComponent implements OnInit {
 
   openDialogDetalleFactura(documento): void {
     const dialogRef = this.dialog.open(DialogDetalleFacturaComponent, {
-      data: documento
+      data: documento,
+      id: 'dialogDetalleFactura'
     });
 
     dialogRef.afterClosed().subscribe(result => {

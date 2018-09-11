@@ -24,7 +24,8 @@ import {
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDividerModule
 } from '@angular/material';
 import { NgModule } from '@angular/core';
 
@@ -55,7 +56,8 @@ import { NgModule } from '@angular/core';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDividerModule
   ],
   exports: [
     MatAutocompleteModule,
@@ -83,7 +85,8 @@ import { NgModule } from '@angular/core';
     MatTableModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDividerModule
   ],
 })
 export class MaterialModule { }

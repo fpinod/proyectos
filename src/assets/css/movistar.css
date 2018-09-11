@@ -1454,8 +1454,9 @@ th.mat-header-cell {
 /* para q el modal no tenga padding */
 .mat-dialog-container {
   background: #fff;
-  /* color: rgba(0, 0, 0, 0.87); */
+  font-family: "TelefonicaWeb-Regular" !important;
   padding: 0px !important;
+  /* color: rgba(0, 0, 0, 0.87); */
 }
 .mat-divider {
   border-top-color: rgba(0, 0, 0, 0.12);
