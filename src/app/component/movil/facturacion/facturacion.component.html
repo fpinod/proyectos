@@ -158,7 +158,8 @@
 
       <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
       <tr mat-row *matRowDef="let cuenta; columns: columnsToDisplay;" class="example-element-row" [class.example-expanded-row]="expandedElement === cuenta"
-        (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta" [ngClass]="{'active': selection.isSelected(cuenta)}">
+        (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta" 
+        [ngClass]="{'active': selection.isSelected(cuenta), 'borderCuenta': expandedElement == cuenta}">
       </tr>
       <tr mat-row *matRowDef="let cuenta; columns: ['expandedDetail']" class="example-detail-row"></tr>
     </table>
