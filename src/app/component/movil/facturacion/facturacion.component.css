@@ -288,12 +288,12 @@ table {
   border-bottom: 2px outset rgba(60,64,67,.07);
 }
 
-.borderCuenta{
+/* .borderCuenta{
   border-top: 2px inset rgba(60, 64, 67, .1);
   border-left: 2px inset rgba(60,64,67,.2);
   border-right: 2px inset rgba(60,64,67,.4);
   border-bottom: none !important;
-}
+} */
 
 .tabla-cuentas tr.example-element-row.borderCuenta:hover{
   box-shadow: none;
