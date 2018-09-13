@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit, OnChanges {
   @Input() lista: Array<Documento>;
 
   total = 0;
+  cant_seleccionados = 0;
 
   constructor() {
 
@@ -25,6 +26,7 @@ export class FooterComponent implements OnInit, OnChanges {
     for (let index = 0; index < this.lista.length; index++) {
       this.total = this.total + this.lista[index].deuda;
     }
+    this.cant_seleccionados = this.lista.length;
   }
 
 }

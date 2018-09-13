@@ -17,7 +17,7 @@ import { DialogDetalleFacturaComponent } from '../dialog-detalle-factura/dialog-
   animations: [
     trigger('detailExpand', [
       state('collapsed', style({display: 'none'})),
-      state('expanded', style({height: '*', display:'*'})),
+      state('expanded', style({height: '*', display: '*'})),
       transition('expanded <=> collapsed', animate('225ms cubic-bezier(0.4, 0.0, 0.2, 1)')),
     ]),
   ],
@@ -27,7 +27,7 @@ export class FacturacionComponent implements OnInit {
   cuentas = Array<Cuenta>();
   dataSource;
   columnsToDisplay: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion', 'detalle'];
-  columnsDetailToDisplay: string[] = ['select_detail', 'mes', 'factura', 'fecha_emitida', 'fecha_vencida', 'valor', 'deuda', 'descarga'];
+  columnsDetailToDisplay: string[] = ['select_detail', 'mes', 'factura', 'f_emitida', 'f_vencida', 'valor', 'deuda', 'descarga', 'accion'];
   expandedElement: Cuenta;
   selection = new SelectionModel<Cuenta>(true, []);
   selection_detail = new SelectionModel<Documento>(true, []);

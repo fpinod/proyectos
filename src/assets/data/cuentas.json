@@ -41,7 +41,7 @@
       "deuda_vencida": 0,
       "total": 8549345,
       "tipo": "Batallón Logistico",
-      "cant_doc_vencida": "0 factura",
+      "cant_doc_vencida": "Sin Facturas vencidas",
       "cant_doc_total": "1 factura",
       "documentos": [
           {
