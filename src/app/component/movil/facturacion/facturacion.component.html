@@ -73,13 +73,24 @@
                 aria-expanded="false">
                 Pagar
               </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <div class="row">
-                  <div class="col-sm">
-                    <button>Deuda vencida</button>
+              <div class="dropdown-menu dropdown-menu-right drop-pagar-cuenta">
+                <div class="row row-titulo">
+                  <span>Seleccione el monto que desea pagar</span>
+                </div>
+                <div class="row row-titulo">
+                    <div class="col-sm col-monto">
+                      <span>{{cuenta.deuda_vencida | currency:'CLP':'$':0:es-CL}}</span>
+                    </div>
+                    <div class="col-sm col-monto">
+                      <span>{{cuenta.total | currency:'CLP':'$':0:es-CL}}</span>
+                    </div>
+                </div>
+                <div class="row row-pagar-cuenta">
+                  <div class="col-sm col-pagar">
+                    <button class="botonMovistarPagar">Deuda vencida</button>
                   </div>
-                  <div class="col-sm">
-                    <button>Deuda total</button>
+                  <div class="col-sm col-pagar">
+                    <button class="botonMovistarPagar">Deuda total</button>
                   </div>
                 </div>
               </div>

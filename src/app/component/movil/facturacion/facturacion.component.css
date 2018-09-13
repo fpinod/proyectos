@@ -303,9 +303,9 @@ table {
 
 .tabla-facturas{
   background: transparent;
-  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 
-    0 5px 10px 1px rgba(0, 0, 0, 0.14), 
-    0 3px 14px 2px rgba(0, 0, 0, 0.12) 
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 5px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12)
 }
 
 .tabla-facturas tr th{
@@ -390,4 +390,50 @@ table {
     margin: -50px 0px;
   }
 
+}
+
+/***** DROPDOWN PAGAR CUENTA *****/
+.drop-pagar-cuenta {
+  font-family: "TelefonicaWeb-Regular";
+  text-align: center;
+  min-width: 280px;
+  padding: 10px;
+}
+.row-titulo{
+  text-align: center !important;
+  font-size: 14px !important;
+  font-style: normal;
+  padding: 10px;
+}
+.row-pagar-cuenta{
+  padding: 0px;
+}
+.col-pagar {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-monto {
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.botonMovistarPagar{
+  background-color: #FFFFFF;
+  color: #00976D;
+  font-family: "TelefonicaWeb-Regular";
+  font-size: 12px !important;
+  height: 35px;
+  width: 102px;
+  border: 1px solid #00976D;
+  border-radius: 3px;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+.botonMovistarPagar:hover{
+  background-color: #00976D;
+  color: #FFFFFF;
 }
