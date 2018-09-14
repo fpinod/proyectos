@@ -17,7 +17,7 @@
         <!-- Checkbox Column -->
         <ng-container matColumnDef="select">
           <th mat-header-cell *matHeaderCellDef class="checkboxHeader">
-            <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()" [indeterminate]="selection.hasValue() && !isAllSelected()">
+            <mat-checkbox (change)="$event ? masterToggle() : null" [checked]="_carroService.selection_movil.hasValue() && isAllSelected()" [indeterminate]="_carroService.selection_movil.hasValue() && !isAllSelected()">
             </mat-checkbox>
             <div class="dropdown">
               <!-- <button class="dropdown-toggle selecTipo" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
@@ -32,7 +32,7 @@
             </div>
           </th>
           <td mat-cell *matCellDef="let row" (click)="$event.stopPropagation()" class="center">
-            <mat-checkbox (click)="seleccionarDocumentos(row)" (change)="$event ? selection.toggle(row) : null" [checked]="selection.isSelected(row)">
+            <mat-checkbox (click)="seleccionarDocumentos(row)" (change)="$event ? _carroService.selection_movil.toggle(row) : null" [checked]="_carroService.selection_movil.isSelected(row)">
             </mat-checkbox>
           </td>
         </ng-container>
@@ -116,7 +116,7 @@
                   <th mat-header-cell *matHeaderCellDef>
                   </th>
                   <td mat-cell *matCellDef="let row_documento" class="center">
-                    <mat-checkbox [checked]="selection_detail.isSelected(row_documento)" (change)="$event ? selection_detail.toggle(row_documento) : null"
+                    <mat-checkbox [checked]="_carroService.selection_movil_documento.isSelected(row_documento)" (change)="$event ? _carroService.selection_movil_documento.toggle(row_documento) : null"
                       (click)="checkCuenta(row_documento, cuenta)">
                     </mat-checkbox>
                   </td>
@@ -200,7 +200,7 @@
 
                 <tr mat-header-row *matHeaderRowDef="columnsDetailToDisplay"></tr>
                 <tr mat-row *matRowDef="let row_documento; columns: columnsDetailToDisplay;"
-                  [ngClass]="{'active':selection_detail.isSelected(row_documento)}">
+                  [ngClass]="{'active':_carroService.selection_movil_documento.isSelected(row_documento)}">
                 </tr>
               </table>
             </div>
@@ -209,7 +209,7 @@
 
         <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
         <tr mat-row *matRowDef="let cuenta; columns: columnsToDisplay;" class="example-element-row" [class.example-expanded-row]="expandedElement === cuenta"
-          [ngClass]="{'active': selection.isSelected(cuenta)}">
+          [ngClass]="{'active': _carroService.selection_movil.isSelected(cuenta)}">
         </tr>
         <tr mat-row *matRowDef="let cuenta; columns: ['expandedDetail']" class="example-detail-row"></tr>
       </table>
@@ -219,6 +219,6 @@
       </div>
     </div>
 
-    <div *ngIf="selection_detail.selected.length > 0 ">
-      <app-footer [lista]="selection_detail.selected"></app-footer>
+    <div *ngIf="_carroService.selection_movil_documento.selected.length > 0 ">
+      <app-footer [lista]="_carroService.selection_movil_documento.selected"></app-footer>
     </div>

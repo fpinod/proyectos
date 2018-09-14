@@ -19,6 +19,7 @@ import './polyfills';
 import { HttpClientModule } from '@angular/common/http';
 import { FacturacionComponent } from './component/movil/facturacion/facturacion.component';
 import { FacturacionService } from './service/movil/facturacion.service';
+import { CarroService } from './service/carro/carro.service';
 import { DialogPagarComponent } from './component/movil/dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from './component/movil/dialog-documentos/dialog-documentos.component';
 import { DialogFiltrosComponent } from './component/movil/dialog-filtros/dialog-filtros.component';
@@ -50,7 +51,7 @@ import { DialogDetalleFacturaComponent } from './component/movil/dialog-detalle-
     DialogDetalleFacturaComponent,
     DialogFiltrosComponent
   ],
-  providers: [FacturacionService],
+  providers: [FacturacionService, CarroService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
