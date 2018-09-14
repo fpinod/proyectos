@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
 import { Documento } from '../../model/movil/documento';
+import { FacturacionComponent } from '../movil/facturacion/facturacion.component';
 
 @Component({
   selector: 'app-footer',
