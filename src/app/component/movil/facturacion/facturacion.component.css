@@ -71,7 +71,7 @@
   height: 40px;
   width: 116px;
   border: 1px solid #00976D;
-  border-radius: 3px;
+  border-radius: 3px !important;
   box-shadow: none !important;
 }
 
@@ -354,6 +354,16 @@ table {
   padding: 0px 20px 0px 25px !important;
 }
 
+.tabla-facturas tr td.first,
+.tabla-facturas tr th.first{
+  padding: 0px 0px 0px 40px !important;
+}
+
+.tabla-facturas tr td.second,
+.tabla-facturas tr th.second{
+  padding: 0px 20px 0px 2px !important;
+}
+
 .tabla-facturas tr.active{
   background-color: #F4FAFB;
 }
@@ -463,7 +473,7 @@ table {
   height: 35px;
   width: 102px;
   border: 1px solid #00976D;
-  border-radius: 3px;
+  border-radius: 3px !important;
   box-shadow: none !important;
   cursor: pointer;
 }
@@ -479,7 +489,7 @@ table {
   height: 35px;
   width: 100px;
   border: 1px solid #00976D;
-  border-radius: 3px;
+  border-radius: 3px !important;
   box-shadow: none !important;
 }
 
