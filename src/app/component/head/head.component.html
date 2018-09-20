@@ -1,19 +1,17 @@
 <nav class="navbar navbar-expand-lg">
-    <button type="button" id="sidebarCollapse" class="btn btn-info">
-      <i class="fas fa-align-justify"></i>
-    </button>
+  <button type="button" id="sidebarCollapse" class="btn btn-info">
+    <i class="fas fa-align-justify"></i>
+  </button>
 
-    <ul class="navbar-nav bd-navbar-nav flex-row">
+  <ul class="navbar-nav bd-navbar-nav flex-row">
 
-      <div class="empresa">
-        <h5 class="text-white" id="empresa">{{nombre_empresa}}</h5>
-        <small>61.101.001-K</small>
-      </div>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Servicios Móviles</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Servicios Fijos</a>
-      </li>
-    </ul>
-  </nav>
+    <div class="empresa">
+      <h5 class="text-white" id="empresa">{{nombre_empresa}}</h5>
+      <small>61.101.001-K</small>
+    </div>
+      <select class="custom-select" [(ngModel)]="_seleccionarTipoService.selected">
+        <option value="movil">Servicios móviles</option>
+        <option value="fija">Servicios fijos</option>
+      </select>
+  </ul>
+</nav>

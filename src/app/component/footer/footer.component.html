@@ -15,7 +15,16 @@
       <div class="divisor"></div>
     </li>
     <li class="nav-item nav-text-detalle">
-      <p class="text-detalle">Ver detalle de pago</p>
+      <a class="nav-link active" href="#">Ver detalle de pago</a>
+    </li>
+    <li class="nav-item nav-total">
+      <h4 class="total">{{cant_seleccionados}}</h4>
+    </li>
+    <li class="nav-item">
+      <div class="divisor"></div>
+    </li>
+    <li class="nav-item nav-text-detalle">
+      <a class="nav-link active" href="#" (click)="clean()">Limpiar carro</a>
     </li>
   </ul>
 </div>

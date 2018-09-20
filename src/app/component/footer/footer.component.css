@@ -1,9 +1,9 @@
 #footer{
   font-family: "TelefonicaWeb-Regular";
   background:#343a40;
-  width: 100%;
   position: fixed;
-  bottom: 0;
+  min-width: 100%;
+  bottom: 0%;
   margin-left: -15px;
   color:#ffffff;
 }
@@ -18,7 +18,7 @@
   padding-top: 6px;
 }
 .nav-text-detalle {
-  padding-top: 6px;
+  padding-top: 0px;
 }
 .nav-total {
   padding-top: 3px;

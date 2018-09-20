@@ -1,4 +1,4 @@
-export interface Documento {
+export interface Documentofija {
   mes:           string;
   factura:       number;
   fecha_emitida: string;

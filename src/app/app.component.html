@@ -3,7 +3,12 @@
   <div id="content">
     <app-head></app-head>
     <app-sub-head></app-sub-head>
-    <app-facturacion></app-facturacion>
+    <div *ngIf=" _seleccionarTipoService.selected  == 'movil' " >
+      <app-facturacion></app-facturacion>
+    </div>
+    <div *ngIf=" _seleccionarTipoService.selected  == 'fija' " >
+      <app-facturacion-fija></app-facturacion-fija>
+    </div>
   </div>
 </div>
 <!-- <app-footer></app-footer> -->
