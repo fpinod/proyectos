@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeleccionarTipoService } from '../../service/seleccionar-tipo/seleccionar-tipo.service';
 
 @Component({
   selector: 'app-head',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeadComponent implements OnInit {
 
   nombre_empresa = '';
-  constructor() { }
+  constructor(private _seleccionarTipoService: SeleccionarTipoService) { }
 
   ngOnInit() {
     this.nombre_empresa = 'Ejercito De Chile Vi Division Arica';

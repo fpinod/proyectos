@@ -16,16 +16,20 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 
 import './polyfills';
 
-import { HttpClientModule } from '@angular/common/http';
-import { FacturacionComponent } from './component/movil/facturacion/facturacion.component';
+// SERVICIOS
 import { FacturacionService } from './service/movil/facturacion.service';
 import { CarroService } from './service/carro/carro.service';
+import { SeleccionarTipoService } from './service/seleccionar-tipo/seleccionar-tipo.service';
+
+import { HttpClientModule } from '@angular/common/http';
+import { FacturacionComponent } from './component/movil/facturacion/facturacion.component';
 import { DialogPagarComponent } from './component/movil/dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from './component/movil/dialog-documentos/dialog-documentos.component';
 import { DialogFiltrosComponent } from './component/movil/dialog-filtros/dialog-filtros.component';
 import { DialogDetalleFacturaComponent } from './component/movil/dialog-detalle-factura/dialog-detalle-factura.component';
 import { CarroComponent } from './component/carro/carro/carro.component';
 import { FacturacionFijaComponent } from './component/fija/facturacion-fija/facturacion-fija.component';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +59,7 @@ import { FacturacionFijaComponent } from './component/fija/facturacion-fija/fact
     DialogDetalleFacturaComponent,
     DialogFiltrosComponent
   ],
-  providers: [FacturacionService, CarroService],
+  providers: [FacturacionService, CarroService, SeleccionarTipoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

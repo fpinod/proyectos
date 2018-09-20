@@ -30,3 +30,8 @@ small{
 .nav-item{
   color: #00a9e0;
 }
+
+.custom-select {
+
+  width: auto !important ;
+}

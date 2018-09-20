@@ -3,11 +3,9 @@ import { FacturacionService } from '../../../service/movil/facturacion.service';
 import { Cuenta } from '../../../model/movil/cuenta';
 
 import { MatSort, MatPaginator, MatTableDataSource, MatDialog } from '@angular/material';
-import { SelectionModel } from '@angular/cdk/collections';
 import { DialogPagarComponent } from '../dialog-pagar/dialog-pagar.component';
 import { DialogDocumentosComponent } from '../dialog-documentos/dialog-documentos.component';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Documento } from '../../../model/movil/documento';
 import { DialogDetalleFacturaComponent } from '../dialog-detalle-factura/dialog-detalle-factura.component';
 import { CarroService } from '../../../service/carro/carro.service';
 
