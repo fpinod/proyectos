@@ -9,7 +9,7 @@
       <h5 class="text-white" id="empresa">{{nombre_empresa}}</h5>
       <small>61.101.001-K</small>
     </div>
-      <select class="custom-select" [(value)]="_seleccionarTipoService.selected">
+      <select class="custom-select" [(ngModel)]="_seleccionarTipoService.selected">
         <option value="movil">Servicios móviles</option>
         <option value="fija">Servicios fijos</option>
       </select>

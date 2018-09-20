@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SeleccionarTipoService {
 
-  selected = 'movil';
+  selected: String = 'movil';
 
   constructor() { }
 }

@@ -35,4 +35,13 @@ export class FooterComponent implements OnInit, OnChanges {
                               this._carroService.selection_fija_documento.selected.length;
   }
 
+  clean() {
+    this._carroService.selection_fija_documento.clear();
+    this._carroService.selection_movil_documento.clear();
+    this._carroService.selection_fija.clear();
+    this._carroService.selection_movil.clear();
+    this.total = 0;
+    this.cant_seleccionados = 0;
+  }
+
 }
