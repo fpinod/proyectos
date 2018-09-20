@@ -7,4 +7,5 @@ export interface Documentofija {
   deuda:         number;
   tipo:          string;
   situacion:     string; // solo estetico
+  suscrito:      string;
 }

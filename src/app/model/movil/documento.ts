@@ -7,4 +7,5 @@ export interface Documento {
   deuda:         number;
   tipo:          string;
   situacion:     string; // solo estetico
+  suscrito:      string;
 }
