@@ -24,6 +24,8 @@ import { DialogPagarComponent } from './component/movil/dialog-pagar/dialog-paga
 import { DialogDocumentosComponent } from './component/movil/dialog-documentos/dialog-documentos.component';
 import { DialogFiltrosComponent } from './component/movil/dialog-filtros/dialog-filtros.component';
 import { DialogDetalleFacturaComponent } from './component/movil/dialog-detalle-factura/dialog-detalle-factura.component';
+import { CarroComponent } from './component/carro/carro/carro.component';
+import { FacturacionFijaComponent } from './component/fija/facturacion-fija/facturacion-fija.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { DialogDetalleFacturaComponent } from './component/movil/dialog-detalle-
     DialogPagarComponent,
     DialogDocumentosComponent,
     DialogFiltrosComponent,
-    DialogDetalleFacturaComponent
+    DialogDetalleFacturaComponent,
+    CarroComponent,
+    FacturacionFijaComponent
   ],
   imports: [
     BrowserModule,
