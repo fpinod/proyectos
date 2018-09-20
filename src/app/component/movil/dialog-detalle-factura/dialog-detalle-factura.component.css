@@ -1,192 +1,135 @@
 .navbar{
-  font-size: 16px !important;
+  font-size: 16px;
   font-weight: bold;
   color: #FFFFFF;
-  background-color: #2694B6;
+  background: #2694B6;
   line-height: normal;
 }
-.row#row-principal{
-  padding-top: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
 
-#primera-col{
-  width: 500px;
-  padding-bottom: 20px;
-  padding-right: 5px;
-}
-#segunda-col{
-  padding-bottom: 20px;
-  padding-left: 5px;
-}
-
-.row#row-monto{
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-#col-monto{
-  padding-left: 7px;
-  padding-right: 0px !important;
-  text-align: left;
-  font-size: 20px !important;
-  font-style: normal;
-  font-weight: bold;
-  color: #86888C;
-}
-#col-valor{
-  padding-left: 3px;
-  padding-right: 3px;
-  text-align: center;
-  font-size: 24px !important;
-  font-style: normal;
-  font-weight: bold;
-  color: #86888C;
-}
-#col-pagar{
-  padding-left: 5px;
-  padding-right: 7px;
-  padding-bottom: 3px;
-}
-.botonMovistar{
-  background-color: #00976D !important;
-  color: #fff !important;
-  font-family: "TelefonicaWeb-Regular";
-  height: 100%;
+.mat-dialog-content{
+  margin: 25px 0px;
+  padding: 0px 10px 0px 24px;
   width: 100%;
-  border: 1px solid #00976D;
-  border-radius: 3px;
-  box-shadow: none !important;
+  display: flex;
 }
 
-.row#row-estado{
-  font-size: 14px !important;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-#col-estado-text{
+div{
   color: #86888C;
-  padding-left: 7px;
-  text-align: left;
-  font-style: normal;
+  font-size: 14px;
+}
+
+.col-sm-7{
+  display: inline-block !important;
+}
+
+.primera{
+  max-width: 60%;
+}
+
+.segunda{
+  max-width: 40%;
+}
+
+.box{
+  border: 1px solid #E9EAE8;
+  border-radius: 5px;
+  padding: 0px 25px;
+}
+
+.row-monto, .row-estado, .row-tipo {
+  padding: 23px 0px;
+}
+
+.row-monto{
   font-weight: bold;
 }
-#col-estado-factura{
-  color: #86888C;
-  padding-right: 7px;
-  text-align: right;
-  font-style: normal;
-  font-weight: bold;
+
+.col-monto, .col-valor, .col-pagar, .descripcion, .descripcionEstado, .textRight{
+  display: inline-block;
 }
 
-.row#row-tipo{
-  color: #86888C;
-  font-size: 14px !important;
-  font-style: normal;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-top: 8px;
-  padding-bottom: 2px;
-}
-#col-tipo-text{
-  padding-left: 7px;
-  padding-right: 7px;
+.col-monto{
+  font-size: 20px;
   text-align: left;
 }
-#col-tipo{
-  padding-left: 7px;
-  padding-right: 7px;
+
+.col-valor{
+  font-size: 24px;
+  text-align: center;
+}
+
+.col-pagar{
   text-align: right;
 }
 
-.row#row-emision{
-  color: #86888C;
-  font-size: 14px !important;
-  font-style: normal;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-#col-emision-text{
-  padding-left: 7px;
-  padding-right: 7px;
-  text-align: left;
-}
-#col-emision{
-  padding-left: 7px;
-  padding-right: 7px;
-  text-align: right;
+.descripcion{
+  padding-bottom: 5px;
+  width: 50%;
 }
 
-.row#row-cobro{
-  color: #86888C;
-  font-size: 14px !important;
-  font-style: normal;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-#col-cobro-text{
-  padding-left: 7px;
-  padding-right: 7px;
-  text-align: left;
-}
-#col-cobro{
-  padding-left: 7px;
-  padding-right: 7px;
-  text-align: right;
+.descripcionEstado{
+  padding-bottom: 0px;
+  width: 50%;
 }
 
-.row#row-vencimiento{
-  color: #86888C;
-  font-size: 14px !important;
-  font-style: normal;
-  font-weight: bold;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-#col-vencimiento-text{
-  padding-left: 7px;
-  padding-right: 7px;
-  text-align: left;
-}
-#col-vencimiento{
-  padding-left: 7px;
-  padding-right: 7px;
-  text-align: right;
+.dato{
+  width: 50%;
 }
 
-
-
-.card{
-  margin-top: 10px;
+.derecha{
+  padding: 10px;
+  margin: 10px;
 }
 
-.card-body{
-  padding: 5px;
+.segunda > .box{
+  height: 140px;
+  padding: 25px;
+  text-align: center;
 }
 
-.links{
-  text-align: center !important;
+.verFactura{
+  margin-bottom: 26px;
 }
 
 .card-title{
-  font-size: 14px !important;
-  font-style: normal;
+  font-size: 14px;
   font-weight: bold;
-  color: #86888C;
-  padding-top: 8px;
-  padding-bottom: 4px;
 }
+
+.linkVerFactura, .linkImpFactura{
+  margin-top: 10px;
+}
+
+.linkVerFactura:hover .btn-link,
+.linkImpFactura:hover .btn-link{
+  color: #2694B6;
+}
+
+.linkVerFactura:hover .factura{
+  background-image: url("/assets/img/icono_factura_hover.svg");
+}
+
+.linkImpFactura:hover .impugnar{
+  background-image: url("/assets/img/icono_impugnacion_hover.svg");
+}
+
+/**********BOTONES************/
+.botonMovistar{
+  background-color: #00976D;
+  color: #fff;
+  font-family: "TelefonicaWeb-Regular";
+  height: 100%;
+  width: 100px;
+  margin-left: -10px;
+  border: 1px solid #00976D;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.botonMovistar:hover, .botonMovistar:active{
+  box-shadow: none;
+}
+
 .btn-link{
   font-size: 14px !important;
   font-style: normal;
@@ -194,11 +137,6 @@
   padding-top: 18px;
   padding-bottom: 12px;
   text-decoration: underline;
-}
-.btn-link:hover{
-  font-size: 14px !important;
-  font-style: normal;
-  color: #2694B6;
 }
 
 .buttonClose{
@@ -222,10 +160,6 @@
   margin-right: -5px;
 }
 
-.impugnar:hover{
-  background-image: url("/assets/img/icono_impugnacion_hover.svg");
-}
-
 .factura{
   background-image: url("/assets/img/icono_factura.svg");
   background-repeat: no-repeat;
@@ -234,10 +168,6 @@
   height: 20px;
   vertical-align: -webkit-baseline-middle;
   margin-right: -5px;
-}
-
-.factura:hover{
-  background-image: url("/assets/img/icono_factura_hover.svg");
 }
 
 /***********TEXTOS***********/
@@ -251,4 +181,100 @@
 
 .verde{
   color: #00976D !important;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.textRight{
+  text-align: right;
+}
+
+/************PANTALLA RESPONSIVE**********/
+@media (max-width: 1009px) {
+
+  .mat-dialog-content{
+    width: 100%;
+    padding: 0;
+    display: block;
+  }
+
+  .col-sm-7{
+    max-width: 100% !important;
+    display: block !important;
+  }
+
+  .col-monto, .col-valor, .col-pagar{
+    max-width: 100%;
+    text-align: center;
+  }
+
+ .col-pagar{
+    margin: 0 5px;
+    margin-top: 10px;
+  }
+
+  .botonMovistar{
+    width: 100% !important;
+  }
+
+  .box{
+    padding: 0 10px;
+  }
+
+  .segunda{
+    margin-top: 26px;
+  }
+
+  .btn-link{
+    padding: 18px 0px 0px 5px;
+  }
+
+  .factura, .factura:hover, .factura:active, 
+  .impugnar, .impugnar:hover, .impugnar:active{
+    margin-right: 0px;
+    margin-bottom: -8px;
+  }
+
+  /****pantalla horizontal****/
+  @media screen and (orientation: landscape) {
+    .descripcion{
+      width: 50%;
+    }
+    .descripcionEstado{
+      width: 50%;
+    }
+    .dato{
+      width: 50%;
+    }
+  }
+ 
+}
+
+@media (max-width: 411px){
+
+  .descripcionEstado, .descripcion{
+    width: 64%;
+    padding: 0px 0px 0px 5px;
+  }
+
+  .dato{
+    width: 36%;
+    padding: 0px 5px 0px 0px;
+  }
+
+  .linkImpFactura{
+    margin-left: -1px;
+  }
+
+}
+
+@media (max-width: 320px){
+
+  .linkImpFactura{
+    width: 119% !important;
+    margin-left: -15px;
+  }
+
 }

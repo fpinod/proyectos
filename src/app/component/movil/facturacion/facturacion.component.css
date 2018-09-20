@@ -145,10 +145,20 @@
 
 .boleta:hover{
   background-image: url("/assets/img/descargar_azul.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 45px;
+  vertical-align: bottom;
 }
 
 .boleta:active{
   background-image: url("/assets/img/descargar_azul.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 45px;
+  vertical-align: bottom;
 }
 
 .dropdown.show .boleta{
@@ -158,6 +168,17 @@
   width: 25px;
   height: 45px;
   vertical-align: bottom;
+}
+
+.flechaDetalle{
+  background-image: url("/assets/img/triangulo_detalle_cuenta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  margin-top: -32px;
+  margin-left: -30px;
+  vertical-align: top;
 }
 
 
@@ -288,12 +309,12 @@ table {
   border-bottom: 2px outset rgba(60,64,67,.07);
 }
 
-/* .borderCuenta{
-  border-top: 2px inset rgba(60, 64, 67, .1);
+.borderCuenta{
+  /* border-top: 2px inset rgba(60, 64, 67, .1);
   border-left: 2px inset rgba(60,64,67,.2);
-  border-right: 2px inset rgba(60,64,67,.4);
+  border-right: 2px inset rgba(60,64,67,.4); */
   border-bottom: none !important;
-} */
+} 
 
 .tabla-cuentas tr.example-element-row.borderCuenta:hover{
   box-shadow: none;
@@ -330,7 +351,7 @@ table {
 
 .tabla-facturas tr th{
   color: #86888C;
-  background: #F6F7F6;
+  background-color: #F6F7F6;
   border: none;
   border-bottom: 1px solid #E9EAE8;
 }

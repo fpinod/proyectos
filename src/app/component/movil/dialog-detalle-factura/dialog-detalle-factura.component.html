@@ -1,4 +1,5 @@
 <!-- <embed class="pdf" src="../../../../assets/doc/Documento_Cliente_17812362.pdf"> -->
+
 <nav class="navbar">
   <span>Detalle Factura N° {{documento.factura}}</span>
   <button mat-dialog-close class="buttonClose">
@@ -6,136 +7,85 @@
   </button>
 </nav>
 
-<div class="row" id="row-principal">
-  <div class="col-sm-7" id="primera-col">
-    <div class="card">
-      <div class="card-body">
-        <div class="row" id="row-monto">
-          <div class="col-sm-4" id="col-monto">
+<mat-dialog-content>
+
+  <div class="col-sm-7 primera">
+    <div class="box">
+        <div class="row-monto">
+          <div class="col-sm-4 col-monto">
             <span class="total">Monto a pagar</span>
           </div>
-          <div class="col-sm-5" id="col-valor">
+          <div class="col-sm-5 col-valor">
             <span class="monto">{{documento.valor | currency:'CLP':'$':0:es-CL}}</span>
           </div>
-          <div class="col-sm-3" id="col-pagar">
+          <div class="col-sm-1 col-pagar">
             <button mat-raised-button class="botonMovistar">
               Pagar
             </button>
           </div>
         </div>
         <mat-divider></mat-divider>
-        <div class="row" id="row-estado">
-          <div class="col-sm-6" id="col-estado-text">
-            <span>Estado factura:</span>
+        <div class="row-estado">
+          <div class="col-sm-6 descripcionEstado">
+            <span class="bold">Estado factura:</span>
           </div>
-          <div class="col-sm-6" id="col-estado-factura">
+          <div class="col-sm-6 dato textRight">
             <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
             'naranjo': documento.situacion === 'Por vencer', 
             'verde': documento.situacion === 'Sin deuda'}"> {{documento.situacion}} </span>
           </div>
         </div>
         <mat-divider></mat-divider>
-        <div class="row" id="row-tipo">
-          <div class="col-sm-6" id="col-tipo-text">
+        <div class="row-tipo">
+          <div class="col-sm-6 descripcion">
             <span>Tipo documento:</span>
           </div>
-          <div class="col-sm-6" id="col-tipo">
+          <div class="col-sm-6 dato textRight">
             <span>{{documento.tipo}}</span>
           </div>
-        </div>
-        <div class="row" id="row-emision">
-          <div class="col-sm-6" id="col-emision-text">
+          <div class="col-sm-6 descripcion">
             <span>Emisión:</span>
           </div>
-          <div class="col-sm-6" id="col-emision">
+          <div class="col-sm-6 dato textRight">
             <span>{{documento.fecha_emitida}}</span>
           </div>
-        </div>
-        <div class="row" id="row-cobro">
-          <div class="col-sm-6" id="col-cobro-text">
+          <div class="col-sm-6 descripcion">
             <span>Período cobro</span>
           </div>
-          <div class="col-sm-6" id="col-cobro">
+          <div class="col-sm-6 dato textRight">
             <span>{{documento.fecha_vencida}}</span>
           </div>
-        </div>
-        <div class="row" id="row-vencimiento">
-          <div class="col-sm-6" id="col-vencimiento-text">
+          <div class="col-sm-6 descripcion">
             <span>Fecha vencimiento</span>
           </div>
-          <div class="col-sm-6" id="col-vencimiento">
+          <div class="col-sm-6 dato textRight">
             <span>{{documento.fecha_vencida}}</span>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-5" id="segunda-col">
-    <div class="card derecha">
-      <div class="card-body links">
-        <h5 class="card-title">Visualizar Factura</h5>
-        <mat-divider></mat-divider>
-        <span class="factura"></span>
-        <button type="button" class="btn btn-link" (click)="downloadPDF()">Ver factura Electrónica</button>
-      </div>
-    </div>
-    <div class="card derecha">
-      <div class="card-body links">
-        <h5 class="card-title">Impugnar Factura</h5>
-        <mat-divider></mat-divider>
-        <span class="impugnar"></span>
-        <button type="button" class="btn btn-link">Ir a formulario de impugnación</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-<!-- <div class="row primera-fila">
-    <div class="col-sm-3 col">
-      <div class="card factura">
-        <div class="card-body">
-          <h5 class="card-title">{{documento.factura}}</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-5 col">
-      <div class="card pagar">
-        <div class="card-body">
-          <h5 class="card-title">Pagar Deuda del Documento</h5>
-          <p class="card-text">{{documento.valor}}</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col">
-      <div class="card documento">
-        <div class="card-body">
-          <h5 class="card-title">Ver Factura electrónica</h5>
-          <button type="button" class="btn btn-link" (click)="downloadPDF()">Factura Electrónica</button>
-        </div>
-      </div>
     </div>
   </div>
 
-  <div class="row segunda-fila">
-    <div class="col-sm-5 col" >
-      <div class="card impugnar">
-        <div class="card-body">
+  <div class="col-sm-7 segunda">
+      <div class="box verFactura">
+          <h5 class="card-title">Visualizar Factura</h5>
+          <mat-divider></mat-divider>
+          <div class="linkVerFactura">
+            <span class="factura"></span>
+            <button type="button" class="btn btn-link" (click)="downloadPDF()">Ver factura Electrónica</button>
+          </div>
+      </div>
+      <div class="box impFactura">
           <h5 class="card-title">Impugnar Factura</h5>
-          <a href="">Ir a formulario de impugnación</a>
-        </div>
+          <mat-divider></mat-divider>
+          <div class="linkImpFactura">
+            <span class="impugnar"></span>
+            <button type="button" class="btn btn-link">Ir a formulario de impugnación</button>
+          </div>
       </div>
-    </div>
-    <div class="col-sm-7 col">
-      <div class="card detalle">
-        <div class="card-body">
-          <h5 class="card-title">Tipo Documento</h5>
-          <p class="card-text">Factura CICLO</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
+  </div>
+  
+</mat-dialog-content>
+
+
+
+
