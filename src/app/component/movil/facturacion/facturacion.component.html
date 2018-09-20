@@ -67,45 +67,6 @@
             <!-- <button mat-raised-button (click)="openDialogPagar(cuenta)" matTooltip="Seleccione monto que desea pagar" aria-label="Button that displays a tooltip when focused or hovered over"
             class="botonMovistar">
             Pagar
-<<<<<<< HEAD
-          </button>
-        </td>
-      </ng-container>
-
-      <ng-container matColumnDef="detalle">
-        <th mat-header-cell *matHeaderCellDef class="center"> Ver detalle </th>
-        <td mat-cell *matCellDef="let cuenta" class="center">
-          <span [ngClass]="{'detalleUp': expandedElement === cuenta, 'detalleDown': expandedElement !== cuenta}"></span>
-        </td>
-      </ng-container>
-
-      <ng-container matColumnDef="expandedDetail">
-        <td mat-cell *matCellDef="let cuenta" [attr.colspan]="columnsToDisplay.length">
-          <div class="example-element-detail" [@detailExpand]="cuenta == expandedElement ? 'expanded' : 'collapsed'">
-            <!-- AQUI SE DEBE PINTAR LAS FACTURAS -->
-            <table mat-table [dataSource]="cuenta.documentos" class="mat-elevation-z8 tabla-facturas">
-
-              <ng-container matColumnDef="select_detail">
-                <th mat-header-cell *matHeaderCellDef>
-                </th>
-                <td mat-cell *matCellDef="let row_documento" (click)="$event.stopPropagation()" class="center">
-                  <mat-checkbox [checked]="selection_detail.isSelected(row_documento)"
-                                (change)="$event ? selection_detail.toggle(row_documento) : null"
-                                (click)="checkCuenta(row_documento, cuenta)"  >
-                  </mat-checkbox>
-                </td>
-              </ng-container>
-
-              <ng-container matColumnDef="mes">
-                <th mat-header-cell *matHeaderCellDef class="sortDetalle"> Mes </th>
-                <td mat-cell *matCellDef="let documento"> {{documento.mes}} </td>
-              </ng-container>
-
-              <ng-container matColumnDef="factura">
-                <th mat-header-cell *matHeaderCellDef> <span class="flechaDetalle"></span> N° Factura </th>
-                <td mat-cell *matCellDef="let documento" (click)="$event.stopPropagation()"> <span class="tag" (click)="openDialogDetalleFactura(documento)" >{{documento.factura}} </span>
-                  <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
-=======
           </button> -->
             <div class="btn-group">
               <button (click)="show=true" type="button" class="btn btn-secondary botonMovistar" data-toggle="dropdown" aria-haspopup="true"
@@ -171,7 +132,6 @@
                   <td mat-cell *matCellDef="let documento" > <span class="tag" (click)="openDialogDetalleFactura(documento)">{{documento.factura}}
                     </span>
                     <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
->>>>>>> 0f9be4ede0b6c6195e40936f83cc4b12f78dfac2
                 'naranjo': documento.situacion === 'Por vencer'}"> {{documento.situacion}} </span>
                   </td>
                 </ng-container>
