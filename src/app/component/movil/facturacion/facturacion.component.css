@@ -303,7 +303,6 @@ table {
   -webkit-box-shadow:
     inset 1px 0 0 #dadce0,
     inset -1px 0 0 #dadce0,
-<<<<<<< HEAD
     0 0px 2px 0 rgba(60,64,67,.15),
     0 0px 3px 1px rgba(60,64,67,.3);
   border-bottom: 2px outset rgba(60,64,67,.07);
@@ -320,11 +319,6 @@ table {
   box-shadow: none;
   -webkit-box-shadow: none;
   border-bottom: none;
-=======
-    0 0px 2px 0 rgba(60,64,67,.3),
-    0 0px 3px 1px rgba(60,64,67,.15);
-  border-bottom: 2px outset rgba(60,64,67,.15);
->>>>>>> 0f9be4ede0b6c6195e40936f83cc4b12f78dfac2
 }
 
 .example-detail-row{
