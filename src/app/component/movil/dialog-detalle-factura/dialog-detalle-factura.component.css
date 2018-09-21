@@ -122,16 +122,19 @@ div{
   background-color: #00976D;
   color: #fff;
   font-family: "TelefonicaWeb-Regular";
+  font-size: 14px;
+  text-align: center;
   height: 100%;
   width: 100px;
   margin-left: -10px;
   border: 1px solid #00976D;
   border-radius: 3px;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .botonMovistar:hover, .botonMovistar:active{
-  box-shadow: none;
+  box-shadow: none !important;
+  background-color: #028862;
 }
 
 .btn-link{

@@ -68,6 +68,8 @@
   background-color: #FFFFFF;
   color: #00976D;
   font-family: "TelefonicaWeb-Regular";
+  font-size: 14px;
+  text-align: center;
   height: 40px;
   width: 116px;
   border: 1px solid #00976D;
@@ -76,7 +78,7 @@
 }
 
 .botonMovistar:hover{
-  background-color: #00976D;
+  background-color: #028862;
   color: #FFFFFF;
 }
 
@@ -464,35 +466,13 @@ table {
   padding-right: 5px;
 }
 
-.botonMovistarPagar{
-  background-color: #FFFFFF;
-  color: #00976D;
-  font-family: "TelefonicaWeb-Regular";
-  font-size: 12px !important;
+.pagar{
   height: 35px;
-  width: 102px;
-  border: 1px solid #00976D;
-  border-radius: 3px !important;
-  box-shadow: none !important;
-  cursor: pointer;
-}
-.botonMovistarPagar:hover{
-  background-color: #00976D;
-  color: #FFFFFF;
+  width: 110px;
 }
 
-.botonMovistarDocumento{
-  background-color: #FFFFFF;
-  color: #00976D;
-  font-family: "TelefonicaWeb-Regular";
+.documento{
   height: 35px;
   width: 100px;
-  border: 1px solid #00976D;
-  border-radius: 3px !important;
-  box-shadow: none !important;
 }
 
-.botonMovistarDocumento:hover{
-  background-color: #00976D;
-  color: #FFFFFF;
-}
