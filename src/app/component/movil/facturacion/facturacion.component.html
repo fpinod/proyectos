@@ -69,7 +69,7 @@
             Pagar
           </button> -->
             <div class="btn-group">
-              <button (click)="show=true" type="button" class="btn btn-secondary botonMovistar" data-toggle="dropdown" aria-haspopup="true"
+              <button (click)="show=true" type="button" class="btn botonMovistar" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 Pagar
               </button>
@@ -87,10 +87,10 @@
                 </div>
                 <div class="row row-pagar-cuenta">
                   <div class="col-sm col-pagar">
-                    <button class="botonMovistarPagar">Deuda vencida</button>
+                    <button class="btn botonMovistar pagar">Deuda vencida</button>
                   </div>
                   <div class="col-sm col-pagar">
-                    <button class="botonMovistarPagar">Deuda total</button>
+                    <button class="btn botonMovistar pagar">Deuda total</button>
                   </div>
                 </div>
               </div>
@@ -191,7 +191,7 @@
                 <ng-container matColumnDef="accion">
                     <th mat-header-cell *matHeaderCellDef class="center"> Acción </th>
                     <td mat-cell *matCellDef="let documento" class="center">
-                    <button mat-raised-button class="botonMovistarDocumento">
+                    <button mat-raised-button class="btn botonMovistar documento">
                       Pagar
                     </button>
                   </td>
