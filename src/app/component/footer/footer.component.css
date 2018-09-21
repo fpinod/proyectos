@@ -2,10 +2,11 @@
   font-family: "TelefonicaWeb-Regular";
   background:#343a40;
   position: fixed;
-  min-width: 100%;
+  width: 96%;
   bottom: 0%;
-  margin-left: -15px;
+  margin-left: -14px;
   color:#ffffff;
+  z-index: 2000;
 }
 
 .nav-item {
@@ -44,4 +45,12 @@
   color: #fff !important;
   min-width: 1px;
   min-height: 100%;
+}
+
+@media screen and (max-width: 768px){
+
+  #footer{
+    width: 100%;
+  }
+
 }
