@@ -24,6 +24,7 @@
               <!-- </button> -->
               <span class="selectTipo" href="#" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
               <div class="dropdown-menu dropdownMenuLeft" aria-labelledby="dropdownMenuButton">
+                <span class="flechaMenu menuSelectTipo"></span>
                 <a class="dropdown-item dropdownItemCheckbox" href="#">Seleccione que pagar</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" (click)="seleccionarDocumentosVencidos()">Deudas vencidas</a>
@@ -73,7 +74,8 @@
                 aria-expanded="false">
                 Pagar
               </button>
-              <div class="dropdown-menu dropdown-menu-right drop-pagar-cuenta">
+              <div class="dropdown-menu drop-pagar-cuenta">
+                <span class="flechaMenu menuPagar"></span>
                 <div class="row row-titulo">
                   <span>Seleccione el monto que desea pagar</span>
                 </div>
@@ -128,7 +130,7 @@
                 </ng-container>
 
                 <ng-container matColumnDef="factura">
-                  <th mat-header-cell *matHeaderCellDef> N° Factura </th>
+                  <th mat-header-cell *matHeaderCellDef> <span class="flechaMenu"></span> N° Factura </th>
                   <td mat-cell *matCellDef="let documento" > <span class="tag" (click)="openDialogDetalleFactura(documento)">{{documento.factura}}
                     </span>
                     <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
