@@ -15,6 +15,8 @@ export class FacturacionService {
   }
 
   getCuentas(): Observable<any> {
+    this.http.get('./../../../assets/data/cuentas.json').subscribe(data =>
+       this.cuentas = (data as Cuenta[]));
     return this.http.get('./../../../assets/data/cuentas.json');
   }
 

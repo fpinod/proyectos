@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
+import { FacturacionService } from '../../service/movil/facturacion.service';
 // movil
 import { Cuenta } from '../../model/movil/cuenta';
 import { Documento } from '../../model/movil/documento';
@@ -12,13 +13,15 @@ export interface FacturasSeleccionadas {
   cuenta: number;
   factura: number;
   monto: number;
-  
+  tipo_cuenta: string;
+  situacion: string;
 }
 export interface CuentasSeleccionadas {
   tipo: string;
   cuenta: number;
-  factura: number;
+  cant_factura: number;
   monto: number;
+  tipo_cuenta: string;
 }
 
 @Injectable({
@@ -32,22 +35,21 @@ export class CarroService {
 
   listaFacturas = Array<FacturasSeleccionadas>();
 
-  constructor() {}
+  constructor(private _facturacionService: FacturacionService) {}
 
   getFacturas() {
     this.listaFacturas = Array<FacturasSeleccionadas>();
-    for (
-      let index = 0;
-      index < this.selection_movil_documento.selected.length;
-      index++
-    ) {
+    for (let index = 0; index < this.selection_movil_documento.selected.length; index++    ) {
       if (!this.isAllSelected(index)) {
+        const c = this.getCuenta(index);
         const element = this.selection_movil_documento.selected[index];
         const agregar: FacturasSeleccionadas = {
           tipo: 'movil',
-          cuenta: 1,
+          cuenta: c.cuenta,
           factura: element.factura,
-          monto: element.valor
+          monto: element.valor,
+          tipo_cuenta: c.tipo,
+          situacion: element.situacion
         };
         this.listaFacturas.push(agregar);
       }
@@ -55,12 +57,19 @@ export class CarroService {
     return this.listaFacturas;
   }
 
-  getCuentas() {
 
+  getCuenta(i: number) {
+    for (let index = 0; index < this._facturacionService.cuentas.length; index++) {
+      for (let index2 = 0; index2 < this._facturacionService.cuentas[index].documentos.length; index2++ ) {
+        if ( this._facturacionService.cuentas[index].documentos[index2].factura ===
+             this.selection_movil_documento.selected[i].factura ) {
+          return this._facturacionService.cuentas[index];
+        }
+      }
+    }
   }
 
   isAllSelected(i: number) {
-    const element = this.selection_movil_documento.selected[i];
     for (let index = 0; index < this.selection_movil.selected.length; index++) {
       for (
         let index2 = 0;
