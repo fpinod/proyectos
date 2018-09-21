@@ -17,8 +17,8 @@ export class DialogCarroComponent implements OnInit {
   displayedColumnsFacturas: string[] = ['tipo', 'cuenta', 'factura', 'monto', 'eliminar'];
   dataSourceFacturas = new MatTableDataSource(this._carroService.getFacturas());
 
-  displayedColumnsCuentas: string[] = ['tipo', 'cuenta', 'factura', 'monto', 'eliminar'];
-  dataSourceCuentas = new MatTableDataSource();
+  displayedColumnsCuentas: string[] = ['tipo', 'cuenta', 'cant_factura', 'monto', 'eliminar'];
+  dataSourceCuentas = new MatTableDataSource(this._carroService.getCuentas());
 
   @ViewChild(MatSort)
   sortFacturas: MatSort;
