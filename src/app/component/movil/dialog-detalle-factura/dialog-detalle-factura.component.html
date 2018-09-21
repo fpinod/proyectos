@@ -18,7 +18,7 @@
           <div class="col-sm-5 col-valor">
             <span class="monto">{{documento.valor | currency:'CLP':'$':0:es-CL}}</span>
           </div>
-          <div class="col-sm-1 col-pagar">
+          <div class="col-sm-3 col-pagar">
             <button mat-raised-button class="botonMovistar">
               Pagar
             </button>
@@ -31,7 +31,7 @@
           </div>
           <div class="col-sm-6 dato textRight">
             <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
-            'naranjo': documento.situacion === 'Por vencer', 
+            'naranjo': documento.situacion === 'Por vencer',
             'verde': documento.situacion === 'Sin deuda'}"> {{documento.situacion}} </span>
           </div>
         </div>
@@ -50,13 +50,13 @@
             <span>{{documento.fecha_emitida}}</span>
           </div>
           <div class="col-sm-6 descripcion">
-            <span>Período cobro</span>
+            <span>Período cobro:</span>
           </div>
           <div class="col-sm-6 dato textRight">
             <span>{{documento.fecha_vencida}}</span>
           </div>
           <div class="col-sm-6 descripcion">
-            <span>Fecha vencimiento</span>
+            <span>Fecha vencimiento:</span>
           </div>
           <div class="col-sm-6 dato textRight">
             <span>{{documento.fecha_vencida}}</span>
@@ -83,7 +83,7 @@
           </div>
       </div>
   </div>
-  
+
 </mat-dialog-content>
 
 
