@@ -34,6 +34,7 @@ export class CarroService {
   selection_fija_documento = new SelectionModel<Documentofija>(true, []);
 
   listaFacturas = Array<FacturasSeleccionadas>();
+  listaCuentas = Array<CuentasSeleccionadas>();
 
   constructor(private _facturacionService: FacturacionService) {}
 
@@ -44,7 +45,7 @@ export class CarroService {
         const c = this.getCuenta(index);
         const element = this.selection_movil_documento.selected[index];
         const agregar: FacturasSeleccionadas = {
-          tipo: 'movil',
+          tipo: 'móvil',
           cuenta: c.cuenta,
           factura: element.factura,
           monto: element.valor,
@@ -57,6 +58,21 @@ export class CarroService {
     return this.listaFacturas;
   }
 
+  getCuentas() {
+    this.listaCuentas = Array<CuentasSeleccionadas>();
+    for (let index = 0; index < this.selection_movil.selected.length; index++    ) {
+        const element = this.selection_movil.selected[index];
+        const agregar: CuentasSeleccionadas = {
+          tipo: 'móvil',
+          cuenta: element.cuenta,
+          cant_factura: element.documentos.length,
+          monto: element.total,
+          tipo_cuenta: element.tipo
+        };
+        this.listaCuentas.push(agregar);
+    }
+    return this.listaCuentas;
+  }
 
   getCuenta(i: number) {
     for (let index = 0; index < this._facturacionService.cuentas.length; index++) {
