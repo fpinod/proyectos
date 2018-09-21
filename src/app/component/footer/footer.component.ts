@@ -3,6 +3,8 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { Documento } from '../../model/movil/documento';
 import { FacturacionComponent } from '../movil/facturacion/facturacion.component';
 import { CarroService } from '../../service/carro/carro.service';
+import { MatDialog } from '@angular/material';
+import { DialogCarroComponent } from '../carro/dialog-carro/dialog-carro.component';
 
 @Component({
   selector: 'app-footer',
@@ -15,8 +17,8 @@ export class FooterComponent implements OnInit, OnChanges {
   total = 0;
   cant_seleccionados = 0;
 
-  constructor(private _carroService: CarroService) {
-
+  constructor(private _carroService: CarroService,
+              public dialog: MatDialog) {
    }
 
   ngOnInit() {
@@ -44,4 +46,12 @@ export class FooterComponent implements OnInit, OnChanges {
     this.cant_seleccionados = 0;
   }
 
+
+  openDialogCarro(): void {
+    const dialogRef = this.dialog.open(DialogCarroComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 }
