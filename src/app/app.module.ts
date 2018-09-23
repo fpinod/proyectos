@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
+import LocaleEsCL from '@angular/common/locales/es-CL';
 import { FormsModule } from '@angular/forms';
+import {registerLocaleData} from '@angular/common';
+
+registerLocaleData(LocaleEsCL);
 
 import { AppComponent } from './app.component';
 import { HeadComponent } from './component/head/head.component';
@@ -60,7 +64,8 @@ import { DialogCarroComponent } from './component/carro/dialog-carro/dialog-carr
     DialogFiltrosComponent,
     DialogCarroComponent
   ],
-  providers: [FacturacionService, CarroService, SeleccionarTipoService],
+  providers: [FacturacionService, CarroService, SeleccionarTipoService,
+    {provide: LOCALE_ID, useValue: 'es-CL'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
