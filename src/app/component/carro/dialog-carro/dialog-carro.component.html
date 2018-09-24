@@ -31,7 +31,7 @@
         <!-- Symbol Column -->
         <ng-container matColumnDef="monto">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Monto </th>
-          <td mat-cell *matCellDef="let element"> {{element.monto}} </td>
+          <td mat-cell *matCellDef="let element"> {{element.monto | currency:'CLP':'$':0:es-CL}} </td>
         </ng-container>
 
         <ng-container matColumnDef="eliminar">
@@ -69,7 +69,7 @@
           <!-- Symbol Column -->
           <ng-container matColumnDef="monto">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Monto </th>
-            <td mat-cell *matCellDef="let element"> {{element.monto}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.monto | currency:'CLP':'$':0:es-CL}} </td>
           </ng-container>
 
           <ng-container matColumnDef="eliminar">
