@@ -13,30 +13,30 @@
         <!-- Position Column -->
         <ng-container matColumnDef="tipo">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Tipo de servicio </th>
-          <td mat-cell *matCellDef="let element"> {{element.tipo}} </td>
+          <td mat-cell *matCellDef="let documento"> {{documento.tipo}} </td>
         </ng-container>
 
         <!-- Name Column -->
         <ng-container matColumnDef="cuenta">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> N° Cuenta </th>
-          <td mat-cell *matCellDef="let element"> {{element.cuenta}} </td>
+          <td mat-cell *matCellDef="let documento"> {{documento.cuenta}} </td>
         </ng-container>
 
         <!-- Weight Column -->
         <ng-container matColumnDef="factura">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> N° Factura </th>
-          <td mat-cell *matCellDef="let element"> {{element.factura}} </td>
+          <td mat-cell *matCellDef="let documento"> {{documento.factura}} </td>
         </ng-container>
 
         <!-- Symbol Column -->
         <ng-container matColumnDef="monto">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Monto </th>
-          <td mat-cell *matCellDef="let element"> {{element.monto | currency:'CLP':'$':0:es-CL}} </td>
+          <td mat-cell *matCellDef="let documento"> {{documento.monto | currency:'CLP':'$':0:es-CL}} </td>
         </ng-container>
 
         <ng-container matColumnDef="eliminar">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Quitar de pago </th>
-            <td mat-cell *matCellDef="let element"> </td>
+            <td mat-cell *matCellDef="let documento"> <button (click)="borrarDocumento(documento)"></button> </td>
           </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumnsFacturas"></tr>
