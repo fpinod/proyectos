@@ -42,6 +42,7 @@ div{
 
 table {
   width: 100%;
+  font-family: "TelefonicaWeb-Regular";
 }
 
 th.mat-sort-header-sorted {
@@ -50,4 +51,40 @@ th.mat-sort-header-sorted {
 
 .facturas{
   margin-bottom: 10px;
+}
+
+.mat-elevation-z8{
+  box-shadow: none;
+}
+
+tr.mat-header-row{
+  height: 30px;
+}
+
+table tr th{
+  color: #86888C;
+  background-color: #F6F7F6;
+  border: none;
+  border-bottom: 1px solid #E9EAE8;
+  text-align: center;
+  font-size: 14px;
+  margin: 0px 10px;
+}
+
+table tr td{
+  color: #86888C;
+  font-family: "TelefonicaWeb-Regular";
+  font-size: 14px;
+}
+
+.flechaMenuBlanco{
+  background-image: url("/assets/img/triangulo_detalle_cuenta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  margin-top: -32px;
+  margin-left: -30px;
+  vertical-align: top;
+  color: black;
 }

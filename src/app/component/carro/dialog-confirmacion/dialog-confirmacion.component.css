@@ -7,5 +7,26 @@
 }
 
 .mat-button{
-  width: 50%;
+  width: 40%;
+  background-color: #FFFFFF !important;
+  color: #00976D;
+  font-family: "TelefonicaWeb-Regular";
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #00976D;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+}
+
+.mat-button:hover, .mat-button:active, .mat-button:focus{
+  background-color: #028862 !important;
+  color: #FFFFFF !important;
+}
+
+.buttonLeft{
+  margin: 0px 20px 0px 0px;
+}
+
+.buttonRight{
+  margin: 0px 0px 0px 20px;
 }
