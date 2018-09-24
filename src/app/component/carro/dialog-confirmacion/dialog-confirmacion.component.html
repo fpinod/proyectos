@@ -1,11 +1,8 @@
-
-  <div class="card">
-      <div class="card-body">
-  <p>{{data.pregunta}}</p>
-
-
-  <button mat-button [mat-dialog-close]="confirmacion" cdkFocusInitial>Si</button>
-  <button mat-button [mat-dialog-close]>No</button>
-
-</div>
+<div class="card text-center">
+  <div class="card-body">
+    <i class="fas fa-exclamation-triangle"></i>
+    <p class="card-text">{{data.pregunta}}</p>
+    <button mat-button [mat-dialog-close]="confirmacion" cdkFocusInitial>Si</button>
+    <button mat-button [mat-dialog-close]>No</button>
+  </div>
 </div>
