@@ -681,7 +681,7 @@ input.mat-input-element {
   box-sizing: border-box;
   z-index: 1000;
   display: flex;
-  max-width: 72vw !important;
+  max-width: 90vw !important;
   /* max-width: 100%; */
   max-height: 100%;
 }

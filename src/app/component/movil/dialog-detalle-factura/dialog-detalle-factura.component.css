@@ -52,17 +52,20 @@ div{
 .col-monto{
   font-size: 20px;
   text-align: left;
-  padding-right: 5px;
+  padding: 0;
 }
 
 .col-valor{
   font-size: 24px;
   text-align: center;
-  padding-right: 5px;
+  margin: 0px 5px 0px 0px;
+  padding: 0;
 }
 
 .col-pagar{
   text-align: right;
+  max-width: 23%;
+  padding: 0;
 }
 
 .descripcion{
@@ -199,7 +202,7 @@ div{
 }
 
 /************PANTALLA RESPONSIVE**********/
-@media (max-width: 1009px) {
+@media (max-width: 970px) {
 
   .mat-dialog-content{
     width: 100%;
@@ -213,7 +216,8 @@ div{
   }
 
   .col-monto, .col-valor, .col-pagar{
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     text-align: center;
   }
 
