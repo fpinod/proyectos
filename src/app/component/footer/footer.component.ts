@@ -16,7 +16,8 @@ export class FooterComponent implements OnInit, OnChanges {
 
   total = 0;
   cant_seleccionados = 0;
-
+  show_dialog_carro = false;
+  dialogRef;
   constructor(private _carroService: CarroService,
               public dialog: MatDialog) {
    }
@@ -48,10 +49,16 @@ export class FooterComponent implements OnInit, OnChanges {
 
 
   openDialogCarro(): void {
-    const dialogRef = this.dialog.open(DialogCarroComponent);
+    this.dialogRef = this.dialog.open(DialogCarroComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
+    this.dialogRef.afterClosed().subscribe(result => {
+      this.show_dialog_carro = false;
       console.log('The dialog was closed');
     });
+  }
+
+
+  closeDialogCarro(): void {
+    this.dialogRef.close();
   }
 }

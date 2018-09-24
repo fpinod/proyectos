@@ -15,7 +15,12 @@
       <div class="divisor"></div>
     </li>
     <li class="nav-item nav-text-detalle">
-      <a class="nav-link active" href="#" (click)="openDialogCarro()">Ver detalle de pago</a>
+        <div *ngIf="!show_dialog_carro">
+            <a class="nav-link active" href="#" (click)="openDialogCarro()" (click)="show_dialog_carro = true">Ver detalle de pago</a>
+          </div>
+          <div *ngIf="show_dialog_carro">
+              <a class="nav-link active" href="#" (click)="closeDialogCarro()">Ocultar detalle de pago</a>
+            </div>
     </li>
     <li class="nav-item nav-total">
       <h4 class="total">{{cant_seleccionados}}</h4>
@@ -24,6 +29,7 @@
       <div class="divisor"></div>
     </li>
     <li class="nav-item nav-text-detalle">
+
       <a class="nav-link active" href="#" (click)="clean()">Limpiar carro</a>
     </li>
   </ul>
