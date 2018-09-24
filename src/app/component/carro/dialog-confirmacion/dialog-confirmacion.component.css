@@ -1,7 +1,11 @@
 .card{
-  padding: 0px 10px 0px 24px;
+  padding: 10px 20px 10px 20px;
   width: 100%;
   display: flex;
   font-family: "TelefonicaWeb-Bold" !important;
   color: #86888C !important;
+}
+
+.mat-button{
+  width: 50%;
 }
