@@ -41,10 +41,14 @@
         <ng-container matColumnDef="cuenta">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Cuenta / Código de Cliente</th>
           <td mat-cell *matCellDef="let cuenta">
-            <span (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta" [ngClass]="{'detalleUpFirst': expandedElement === cuenta, 'detalleDownFirst': expandedElement !== cuenta}"></span>
-            &nbsp;<span class="bold" (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta"> {{cuenta.cuenta}}</span>
-            &nbsp;&nbsp;<span class="grisMargin">{{cuenta.tipo}}</span>
-            &nbsp;|&nbsp;<span [ngClass]="{'suscritoPac': cuenta.suscrito === 'PAC', 'suscritoPat': cuenta.suscrito === 'PAT'}"></span>
+            <div class="divCuenta">
+              <span (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta" [ngClass]="{'detalleUpFirst': expandedElement === cuenta, 'detalleDownFirst': expandedElement !== cuenta}"></span>
+              &nbsp;<span class="bold" (click)="expandedElement == cuenta ? expandedElement = null : expandedElement = cuenta"> {{cuenta.cuenta}}</span>
+              <span class="grisMargin">{{cuenta.tipo}}</span>
+            </div>
+            <div class="divSuscrito">
+              <span [ngClass]="{'suscritoPac': cuenta.suscrito === 'PAC', 'suscritoPat': cuenta.suscrito === 'PAT'}"></span>
+            </div>
           </td>
         </ng-container>
 

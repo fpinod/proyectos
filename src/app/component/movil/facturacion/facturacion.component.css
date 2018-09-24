@@ -88,16 +88,18 @@
   background-image: url("/assets/img/pac.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  padding-left: 55px;
+  border-left: 1px solid #86888C;
 }
 
 .suscritoPat{
   background-image: url("/assets/img/patpass.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  padding-left: 85px;
+  border-left: 1px solid #86888C;
 }
 
 .accion{
@@ -369,6 +371,13 @@ table {
 .tabla-cuentas tr.example-detail-row td{
   height: 0;
   padding: 0;
+}
+
+.divCuenta, .divSuscrito{
+  display: inline-block;
+}
+.divCuenta{
+  padding-right: 20px;
 }
 
 /*FACTURAS*/
