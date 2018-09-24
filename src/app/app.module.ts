@@ -33,6 +33,7 @@ import { DialogFiltrosComponent } from './component/movil/dialog-filtros/dialog-
 import { DialogDetalleFacturaComponent } from './component/movil/dialog-detalle-factura/dialog-detalle-factura.component';
 import { FacturacionFijaComponent } from './component/fija/facturacion-fija/facturacion-fija.component';
 import { DialogCarroComponent } from './component/carro/dialog-carro/dialog-carro.component';
+import { DialogConfirmacionComponent } from './component/carro/dialog-confirmacion/dialog-confirmacion.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { DialogCarroComponent } from './component/carro/dialog-carro/dialog-carr
     DialogFiltrosComponent,
     DialogDetalleFacturaComponent,
     FacturacionFijaComponent,
-    DialogCarroComponent
+    DialogCarroComponent,
+    DialogConfirmacionComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +64,8 @@ import { DialogCarroComponent } from './component/carro/dialog-carro/dialog-carr
     DialogDocumentosComponent,
     DialogDetalleFacturaComponent,
     DialogFiltrosComponent,
-    DialogCarroComponent
+    DialogCarroComponent,
+    DialogConfirmacionComponent
   ],
   providers: [FacturacionService, CarroService, SeleccionarTipoService,
     {provide: LOCALE_ID, useValue: 'es-CL'}],
