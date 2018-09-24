@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.827999114990234" height="33.827999114990234"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+		stroke: rgba(0,0,0,0.5);
+		stroke-width: 1;
+      }
+	  .cls-2 {
+        stroke: #fff;
+		stroke-width: 2;
+      }
+    </style>
+  </defs>
+  
+  
+<g class="currentLayer" style=""><title>Layer 1</title><path id="Path_2307" data-name="Path 2307" class="cls-1" d="M18.622999557495117,33.82899856567383 H40.83399955749512 L16.913999557495117,57.74899856567383 V35.53799856567383 A1.709,1.709 0 0 1 18.622999557495117,33.82899856567383 z" transform="rotate(-135 16.913999557495117,33.82899856567383) "/><path fill="" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M1.36945,16.9635L32.75558,16.9635" id="svg_1" class="selected"/><path fill="" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M0.9734049514390932,16.666473665653882L1.8644940266941887,17.35954294640785" id="svg_2"/><path fill="" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M0.6763752596873971,16.27043407665162L1.072414848689661,16.76548356290445" id="svg_3"/><path fill="" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M32.95360176337208,16.369443973902186L31.567463201864143,17.854592432660688" id="svg_4"/><path fill="" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M33.1516215578732,16.369443973902186L31.66647309911471,17.656572638159552" id="svg_6"/><path fill="" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="1" stroke-dasharray="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" d="M0.9734049514390932,16.072414282150483L33.052611660622645,16.56746376840332" id="svg_8"/></g></svg>
