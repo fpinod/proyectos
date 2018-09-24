@@ -1,17 +1,7 @@
-.mat-dialog-content{
-  margin: 25px 0px;
+.card{
   padding: 0px 10px 0px 24px;
   width: 100%;
   display: flex;
   font-family: "TelefonicaWeb-Bold" !important;
   color: #86888C !important;
-}
-
-.p{
-  font-family: "TelefonicaWeb-Bold" !important;
-  color: #86888C !important;
-}
-
-.mat-dialog-actions{
-  width: 100%;
 }
