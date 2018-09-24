@@ -102,4 +102,19 @@ export class CarroService {
     }
     return false;
   }
+
+  borrarDocumento(factura) {
+    for (let index = 0; index < this.listaFacturas.length; index++    ) {
+      const element = this.listaFacturas[index];
+      if (factura === element.factura) {
+        this.listaFacturas.splice(index, 1);
+      }
+    }
+    for (let index = 0; index < this.selection_movil_documento.selected.length; index++    ) {
+      const element = this.selection_movil_documento.selected[index];
+      if (factura === element.factura) {
+        this.selection_movil_documento.toggle(element);
+      }
+    }
+  }
 }
