@@ -41,5 +41,10 @@
         <a class="nav-link active" href="#" (click)="openDialogConfirmacion()">Limpiar carro</a>
       </li>
     </div>
+    <div *ngIf="show_dialog_carro">
+      <li class="nav-item nav-text-detalle">
+        <a class="nav-link active" href="#" disabled>Limpiar carro</a>
+      </li>
+    </div>
   </ul>
 </div>
