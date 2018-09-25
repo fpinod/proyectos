@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.094 36.134">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ff7b00;
+      }
+    </style>
+  </defs>
+  <g id="Icono_Alerta" data-name="Icono Alerta" transform="translate(0.001 0)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(0)">
+      <path id="Path_241" data-name="Path 241" class="cls-1" d="M4.92,39.683H38.783L21.852,5.87Zm16.932-3.829a.676.676,0,1,1,.676-.676.633.633,0,0,1-.673.676ZM22.4,16.1V31.158a.515.515,0,0,1-1.029,0V16.093a.515.515,0,1,1,1.029,0Z" transform="translate(-3.806 -4.542)"/>
+      <path id="Path_242" data-name="Path 242" class="cls-2" d="M35.959,34.925,18.693.443a.721.721,0,0,0-1.351,0L.081,34.925a.815.815,0,0,0,0,.809.815.815,0,0,0,.718.372H35.232a.784.784,0,0,0,.727-1.178Zm-34.872.189L18.02,1.3,34.95,35.115Z" transform="translate(0.026 0.026)"/>
+      <path id="Path_243" data-name="Path 243" class="cls-2" d="M78,49.49V64.548a.515.515,0,0,0,1.029,0V49.49a.515.515,0,0,0-1.029,0Z" transform="translate(-60.427 -37.939)"/>
+      <path id="Path_244" data-name="Path 244" class="cls-2" d="M77.786,132.895a.676.676,0,1,0,.676.676.633.633,0,0,0-.676-.676Z" transform="translate(-59.737 -102.956)"/>
+    </g>
+  </g>
+</svg>

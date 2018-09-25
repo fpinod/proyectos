@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 19.989">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #86888c;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="noun_Eye_1810298" transform="translate(-311 -192.738)">
+    <g id="Group_401" data-name="Group 401" transform="translate(311 192.738)">
+      <path id="Path_2315" data-name="Path 2315" class="cls-1" d="M0,9.636C11.9-3.715,22.253-3.457,34,9.791,21.114,23.091,12.161,23.04,0,9.636ZM17.026,2.7A7.038,7.038,0,1,1,9.988,9.74,7,7,0,0,1,17.026,2.7Z" transform="translate(0 0.262)"/>
+      <ellipse id="Ellipse_5" data-name="Ellipse 5" class="cls-2" cx="4.088" cy="4.088" rx="4.088" ry="4.088" transform="translate(12.938 6.068)"/>
+    </g>
+  </g>
+</svg>
