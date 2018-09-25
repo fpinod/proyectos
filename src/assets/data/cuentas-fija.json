@@ -18,21 +18,21 @@
         "situacion": "Por vencer"
       },
       {
-        "mes": "Septiembre",
-        "factura": 20381295190,
-        "fecha_emitida": "",
-        "fecha_vencida": "2016/00/26",
-        "valor": 11,
-        "deuda": 11,
-        "situacion": "Vencida"
-      },
-      {
         "mes": "Agosto",
         "factura": 20381295870,
         "fecha_emitida": "",
         "fecha_vencida": "2018/08/24",
         "valor": 11090,
         "deuda": 11090,
+        "situacion": "Vencida"
+      },
+      {
+        "mes": "Septiembre",
+        "factura": 20381295190,
+        "fecha_emitida": "",
+        "fecha_vencida": "2016/09/26",
+        "valor": 11,
+        "deuda": 11,
         "situacion": "Vencida"
       }
     ]
