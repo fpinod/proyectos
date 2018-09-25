@@ -6,6 +6,35 @@
   color: #86888C !important;
 }
 
-.mat-button{
-  width: 50%;
+.header{
+  width: 110.5%;
+  background-color: #FF7B00;
+  height: 20px;
+  margin-top: -11px;
+  margin-left: -21px;
+}
+
+.botonConfirmar{
+  background-color: #FFFFFF;
+  color: #00976D;
+  font-family: "TelefonicaWeb-Regular";
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #00976D;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  width: 40%;
+}
+
+.botonConfirmar:hover, .botonConfirmar:active, .botonConfirmar:focus{
+  background-color: #028862;
+  color: #FFFFFF;
+}
+
+.buttonLeft{
+  margin-right: 20px;
+}
+
+.buttonRight{
+  margin-left: 20px;
 }
