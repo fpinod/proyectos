@@ -1,0 +1,85 @@
+<nav class="navbar">
+    <span>Detalle Factura N° {{documento.factura}}</span>
+    <button mat-dialog-close class="buttonClose">
+      <i class="fas fa-times"></i>
+    </button>
+  </nav>
+
+  <mat-dialog-content>
+
+    <div class="col-sm-7 primera">
+      <div class="box">
+          <div class="row-monto">
+            <div class="col-sm-4 col-monto">
+              <span class="total">Monto a pagar</span>
+            </div>
+            <div class="col-sm-5 col-valor">
+              <span class="monto">{{documento.valor | currency:'CLP':'$':0:es-CL}}</span>
+            </div>
+            <div class="col-sm-3 col-pagar">
+              <button mat-raised-button class="btn botonMovistar">
+                Pagar
+              </button>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="row-estado">
+            <div class="col-sm-6 descripcionEstado">
+              <span class="bold">Estado factura:</span>
+            </div>
+            <div class="col-sm-6 dato textRight">
+              <span [ngClass]="{'rojo': documento.situacion === 'Vencida',
+              'naranjo': documento.situacion === 'Por vencer',
+              'verde': documento.situacion === 'Sin deuda'}"> {{documento.situacion}} </span>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="row-tipo">
+            <div class="col-sm-6 descripcion">
+              <span>Tipo documento:</span>
+            </div>
+            <div class="col-sm-6 dato textRight">
+              <span>{{documento.tipo}}</span>
+            </div>
+            <div class="col-sm-6 descripcion">
+              <span>Emisión:</span>
+            </div>
+            <div class="col-sm-6 dato textRight">
+              <span>{{documento.fecha_emitida}}</span>
+            </div>
+            <div class="col-sm-6 descripcion">
+              <span>Período cobro:</span>
+            </div>
+            <div class="col-sm-6 dato textRight">
+              <span>{{documento.fecha_vencida}}</span>
+            </div>
+            <div class="col-sm-6 descripcion">
+              <span>Fecha vencimiento:</span>
+            </div>
+            <div class="col-sm-6 dato textRight">
+              <span>{{documento.fecha_vencida}}</span>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-sm-7 segunda">
+        <div class="box verFactura">
+            <h5 class="card-title">Visualizar Factura</h5>
+            <mat-divider></mat-divider>
+            <div class="linkVerFactura">
+              <span class="factura"></span>
+              <button type="button" class="btn btn-link" (click)="downloadPDF()">Ver factura Electrónica</button>
+            </div>
+        </div>
+        <div class="box impFactura">
+            <h5 class="card-title">Impugnar Factura</h5>
+            <mat-divider></mat-divider>
+            <div class="linkImpFactura">
+              <span class="impugnar"></span>
+              <button type="button" class="btn btn-link">Ir a formulario de impugnación</button>
+            </div>
+        </div>
+    </div>
+
+  </mat-dialog-content>

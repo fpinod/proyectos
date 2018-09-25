@@ -24,7 +24,6 @@ import { CarroService } from '../../../service/carro/carro.service';
 export class FacturacionComponent implements OnInit {
 
   cuentas = Array<Cuenta>();
-  dataSource;
   columnsToDisplay: string[] = ['select', 'cuenta', 'deuda_vencida', 'total', 'accion', 'detalle'];
   columnsDetailToDisplay: string[] = ['select_detail', 'mes', 'factura', 'f_emitida', 'f_vencida', 'valor', 'deuda', 'descarga', 'accion'];
   expandedElement: Cuenta;
@@ -32,18 +31,25 @@ export class FacturacionComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
+
   constructor(private _facturacionService: FacturacionService,
               private _carroService: CarroService,
               public dialog: MatDialog) {
   }
 
   ngOnInit() {
-    this._facturacionService.getCuentas().subscribe(data => {
-      this.dataSource = new MatTableDataSource<Cuenta>(data as Cuenta[]);
-      // console.log(this.dataSource);
-      this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.sort;
-    });
+    if ( !this._facturacionService.cuentas ) {
+      this._facturacionService.getCuentas().subscribe(data => {
+        this._facturacionService.dataSource = new MatTableDataSource<Cuenta>(data as Cuenta[]);
+        // console.log(this.dataSource);
+        this._facturacionService.dataSource.paginator = this.paginator;
+        this._facturacionService.dataSource.sort = this.sort;
+      });
+    } else {
+      this._facturacionService.dataSource.paginator = this.paginator;
+      this._facturacionService.dataSource.sort = this.sort;
+    }
+
   }
 
   openDialogPagar(cuenta): void {
@@ -79,13 +85,13 @@ export class FacturacionComponent implements OnInit {
   }
 
   applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    this._facturacionService.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {
     const numSelected = this._carroService.selection_movil.selected.length;
-    const numRows = this.dataSource.data.length;
+    const numRows = this._facturacionService.dataSource.data.length;
     return numSelected === numRows;
   }
 
@@ -95,9 +101,9 @@ export class FacturacionComponent implements OnInit {
     if ( this.isAllSelected() ) {
       this._carroService.selection_movil.clear();
     } else {
-      for ( let i = 0; i < this.dataSource.data.length; i++) {
-        this._carroService.selection_movil.select(this.dataSource.data[i]);
-        this.seleccionarDocumentos(this.dataSource.data[i]);
+      for ( let i = 0; i < this._facturacionService.dataSource.data.length; i++) {
+        this._carroService.selection_movil.select(this._facturacionService.dataSource.data[i]);
+        this.seleccionarDocumentos(this._facturacionService.dataSource.data[i]);
       }
     }
   }
@@ -118,15 +124,15 @@ export class FacturacionComponent implements OnInit {
   seleccionarDocumentosVencidos() {
     this._carroService.selection_movil.clear();
     this._carroService.selection_movil_documento.clear();
-    for (let index = 0; index < this.dataSource.data.length; index++) {
-      for (let index2 = 0; index2 < this.dataSource.data[index].documentos.length; index2++) {
-        const element = this.dataSource.data[index].documentos[index2];
+    for (let index = 0; index < this._facturacionService.dataSource.data.length; index++) {
+      for (let index2 = 0; index2 < this._facturacionService.dataSource.data[index].documentos.length; index2++) {
+        const element = this._facturacionService.dataSource.data[index].documentos[index2];
         if ( element.situacion === 'Vencida' ) {
           this._carroService.selection_movil_documento.select(element);
         }
       }
-      if ( this.isAllDocumentSelected(this.dataSource.data[index]) ) {
-        this._carroService.selection_movil.select(this.dataSource.data[index]);
+      if ( this.isAllDocumentSelected(this._facturacionService.dataSource.data[index]) ) {
+        this._carroService.selection_movil.select(this._facturacionService.dataSource.data[index]);
       }
     }
   }
@@ -134,15 +140,15 @@ export class FacturacionComponent implements OnInit {
   seleccionarDocumentosPorVencer() {
     this._carroService.selection_movil.clear();
     this._carroService.selection_movil_documento.clear();
-    for (let index = 0; index < this.dataSource.data.length; index++) {
-      for (let index2 = 0; index2 < this.dataSource.data[index].documentos.length; index2++) {
-        const element = this.dataSource.data[index].documentos[index2];
+    for (let index = 0; index < this._facturacionService.dataSource.data.length; index++) {
+      for (let index2 = 0; index2 < this._facturacionService.dataSource.data[index].documentos.length; index2++) {
+        const element = this._facturacionService.dataSource.data[index].documentos[index2];
         if ( element.situacion === 'Por vencer' ) {
           this._carroService.selection_movil_documento.select(element);
         }
       }
-      if ( this.isAllDocumentSelected(this.dataSource.data[index]) ) {
-        this._carroService.selection_movil.select(this.dataSource.data[index]);
+      if ( this.isAllDocumentSelected(this._facturacionService.dataSource.data[index]) ) {
+        this._carroService.selection_movil.select(this._facturacionService.dataSource.data[index]);
       }
     }
   }

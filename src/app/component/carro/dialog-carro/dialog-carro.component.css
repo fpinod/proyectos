@@ -66,7 +66,7 @@ table tr th{
   background-color: #F6F7F6;
   border: none;
   border-bottom: 1px solid #E9EAE8;
-  text-align: center;
+  text-align: center !important;
   font-size: 14px;
   margin: 0px 10px;
 }
@@ -75,6 +75,7 @@ table tr td{
   color: #86888C;
   font-family: "TelefonicaWeb-Regular";
   font-size: 14px;
+  text-align: center !important;
 }
 
 .flechaMenuBlanco{
@@ -87,4 +88,8 @@ table tr td{
   margin-left: -30px;
   vertical-align: top;
   color: black;
+}
+
+.borrar {
+  cursor: pointer;
 }

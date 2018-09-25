@@ -20,11 +20,8 @@ export class DialogCarroComponent implements OnInit {
   displayedColumnsCuentas: string[] = ['tipo', 'cuenta', 'cant_factura', 'monto', 'eliminar'];
   dataSourceCuentas = new MatTableDataSource(this._carroService.getCuentas());
 
-  @ViewChild(MatSort)
-  sortFacturas: MatSort;
-
-  @ViewChild(MatSort)
-  sortCuentas: MatSort;
+  @ViewChild(MatSort)  sortFacturas: MatSort;
+  @ViewChild(MatSort)  sortCuentas: MatSort;
 
   ngOnInit() {
     this.dataSourceFacturas.sort = this.sortFacturas;
@@ -33,7 +30,6 @@ export class DialogCarroComponent implements OnInit {
 
   borrarDocumento(documento) {
     this._carroService.borrarDocumento(documento.factura);
-
 
     console.log('asdas' + documento.factura);
     console.log(this._carroService.selection_movil_documento.selected.length);
@@ -47,5 +43,14 @@ export class DialogCarroComponent implements OnInit {
     // }
     // console.log(this._carroService.listaFacturas.length);
     this.dataSourceFacturas = new MatTableDataSource(this._carroService.listaFacturas);
+  }
+
+  borrarCuenta(cuenta) {
+    this._carroService.borrarCuenta(cuenta.cuenta);
+
+    console.log('asdas' + cuenta.cuenta);
+    console.log(this._carroService.selection_movil_documento.selected.length);
+
+    this.dataSourceCuentas = new MatTableDataSource(this._carroService.listaCuentas);
   }
 }

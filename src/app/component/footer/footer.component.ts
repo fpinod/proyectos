@@ -1,9 +1,7 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
-import { SelectionModel } from '@angular/cdk/collections';
 import { Documento } from '../../model/movil/documento';
-import { FacturacionComponent } from '../movil/facturacion/facturacion.component';
 import { CarroService } from '../../service/carro/carro.service';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog } from '@angular/material';
 import { DialogCarroComponent } from '../carro/dialog-carro/dialog-carro.component';
 import { DialogConfirmacionComponent } from '../carro/dialog-confirmacion/dialog-confirmacion.component';
 
@@ -60,7 +58,7 @@ export class FooterComponent implements OnInit, OnChanges {
 
   openDialogConfirmacion(): void {
     this.dialogRef = this.dialog.open(DialogConfirmacionComponent, {
-      data: {pregunta: 'Estas seguro que deseas limpiar el carro de pago'}
+      data: {pregunta: '¿Está seguro que deseas limpiar el carro de pago?'}
     });
 
     this.dialogRef.afterClosed().subscribe(result => {

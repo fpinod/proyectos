@@ -1,22 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { Cuenta } from '../../model/movil/cuenta';
+import { MatTableDataSource } from '@angular/material';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FacturacionService {
-
   cuentas: Cuenta[];
+  dataSource;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) {}
 
-  }
-
-  getCuentas(): Observable<any> {
+  getCuentas() {
     this.http.get('./../../../assets/data/cuentas.json').subscribe(data =>
-       this.cuentas = (data as Cuenta[]));
+      this.cuentas = (data as Cuenta[]));
+
     return this.http.get('./../../../assets/data/cuentas.json');
   }
 
